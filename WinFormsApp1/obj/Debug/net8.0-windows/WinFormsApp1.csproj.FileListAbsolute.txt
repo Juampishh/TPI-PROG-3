@@ -81,3 +81,28 @@ C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\refi
 C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
 C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
+C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
+C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.EmailForm.resources
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Login.resources
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Menuop.resources
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.PasswordChangeForm.resources
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.TokenVerificationForm.resources
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinForms.E4050A35.Up2Date
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll

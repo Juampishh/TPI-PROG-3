@@ -11,9 +11,9 @@ namespace WinFormsApp1
             button1.MouseDown += new MouseEventHandler(button1_MouseDown);
             button1.MouseMove += new MouseEventHandler(button1_MouseMove);
             button1.MouseUp += new MouseEventHandler(button1_MouseUp);
-            
+
             agregarMesaButton.Click += new EventHandler(AgregarMesaButton_Click);
-            
+
         }
         private void AgregarMesaButton_Click(object sender, EventArgs e)
         {
@@ -46,6 +46,11 @@ namespace WinFormsApp1
         {
             // Finalizar el arrastre
             isDragging = false;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //simon gato
         }
     }
     public class Mesa : Button
