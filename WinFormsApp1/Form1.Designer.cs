@@ -33,6 +33,7 @@
             btnAddPared = new Button();
             agregarMesaButton = new Button();
             panel2 = new Panel();
+            VolverButtom = new Button();
             btnSalir = new Button();
             button2 = new Button();
             btnModificar = new Button();
@@ -42,7 +43,6 @@
             button6 = new Button();
             button5 = new Button();
             button1 = new Button();
-            VolverButtom = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -95,6 +95,16 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(137, 775);
             panel2.TabIndex = 1;
+            // 
+            // VolverButtom
+            // 
+            VolverButtom.Location = new Point(7, 126);
+            VolverButtom.Name = "VolverButtom";
+            VolverButtom.Size = new Size(127, 29);
+            VolverButtom.TabIndex = 3;
+            VolverButtom.Text = "Volver";
+            VolverButtom.UseVisualStyleBackColor = true;
+            VolverButtom.Click += VolverButtom_Click;
             // 
             // btnSalir
             // 
@@ -157,6 +167,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // button7
             // 
@@ -202,16 +213,6 @@
             button1.Size = new Size(128, 85);
             button1.TabIndex = 0;
             button1.UseVisualStyleBackColor = false;
-            // 
-            // VolverButtom
-            // 
-            VolverButtom.Location = new Point(7, 126);
-            VolverButtom.Name = "VolverButtom";
-            VolverButtom.Size = new Size(127, 29);
-            VolverButtom.TabIndex = 3;
-            VolverButtom.Text = "Volver";
-            VolverButtom.UseVisualStyleBackColor = true;
-            VolverButtom.Click += VolverButtom_Click;
             // 
             // Form1
             // 

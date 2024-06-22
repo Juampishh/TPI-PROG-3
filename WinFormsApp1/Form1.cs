@@ -13,6 +13,7 @@ namespace WinFormsApp1
             btnSalir.Click += new EventHandler(btnSalir_Click);
             agregarMesaButton.Visible = false;
             btnAddPared.Visible = false;
+            this.FormClosing += new FormClosingEventHandler(Form1_FormClosing);
         }
 
         private void AgregarMesaButton_Click(object sender, EventArgs e)
@@ -99,6 +100,35 @@ namespace WinFormsApp1
             menuop.Show();
             this.Hide();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                // Mostrar un mensaje de confirmación
+                DialogResult result = MessageBox.Show(
+                    "¿Está seguro de que desea salir? Sus cambios no están guardados.",
+                    "Confirmar salida",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Yes)
+                {
+                    // El usuario confirmó que quiere salir
+                    this.Hide();
+                    Application.Exit();
+                }
+                else
+                {
+                    // El usuario decidió no salir
+                    e.Cancel = true;
+                }
+            }
+        }
     }
 
     public class Mesa : Button
@@ -157,6 +187,7 @@ namespace WinFormsApp1
             this.ContextMenuStrip = new ContextMenuStrip(); 
             this.ContextMenuStrip.Items.Add("Cambiar Color").Click += new EventHandler(CambiarColor_Click);
             this.ContextMenuStrip.Items.Add("Eliminar Pared").Click += new EventHandler(EliminarPared_Click);
+
         }
         // Eventos para arrastrar y redimensionar
         private void Pared_MouseDown(object sender, MouseEventArgs e)
