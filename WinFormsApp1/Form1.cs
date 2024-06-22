@@ -35,15 +35,15 @@ namespace WinFormsApp1
             startPoint = new Point(e.X, e.Y);
         }
 
-        private void button1_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (isDragging)
-            {
-                // Mover el botón con el ratón
-                Point p = PointToClient(MousePosition);
-                button1.Location = new Point(p.X - startPoint.X, p.Y - startPoint.Y);
-            }
-        }
+        //private void button1_MouseMove(object sender, MouseEventArgs e)
+        //{
+        //    if (isDragging)
+        //    {
+        //        // Mover el botón con el ratón
+        //        Point p = PointToClient(MousePosition);
+        //        button1.Location = new Point(p.X - startPoint.X, p.Y - startPoint.Y);
+        //    }
+        //}
 
         private void button1_MouseUp(object sender, MouseEventArgs e)
         {
@@ -128,6 +128,16 @@ namespace WinFormsApp1
                     e.Cancel = true;
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void agregarMesaButton_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 

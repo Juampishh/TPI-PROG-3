@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
             btnAddPared = new Button();
             agregarMesaButton = new Button();
@@ -38,10 +37,8 @@
             button2 = new Button();
             btnModificar = new Button();
             panel3 = new Panel();
-            button7 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
-            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -76,6 +73,7 @@
             agregarMesaButton.TabIndex = 3;
             agregarMesaButton.Text = "Agregar Mesa";
             agregarMesaButton.UseVisualStyleBackColor = true;
+            agregarMesaButton.Click += agregarMesaButton_Click_1;
             // 
             // panel2
             // 
@@ -124,6 +122,7 @@
             button2.TabIndex = 1;
             button2.Text = "Cancelar reservas";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // btnModificar
             // 
@@ -140,24 +139,12 @@
             // 
             panel3.BackColor = Color.Bisque;
             panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Controls.Add(button7);
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(0, 0);
             panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
             panel3.Size = new Size(1015, 775);
             panel3.TabIndex = 2;
-            // 
-            // button7
-            // 
-            button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
-            button7.BackgroundImageLayout = ImageLayout.Zoom;
-            button7.Location = new Point(130, 517);
-            button7.Margin = new Padding(3, 4, 3, 4);
-            button7.Name = "button7";
-            button7.Size = new Size(128, 85);
-            button7.TabIndex = 3;
-            button7.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -174,7 +161,6 @@
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
-            panel3.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -186,7 +172,6 @@
         private Button btnSalir;
         private Button button2;
         private Button btnModificar;
-        private Button button7;
         private Button agregarMesaButton;
         private PictureBox pictureBox1;
         private Button btnAddPared;
