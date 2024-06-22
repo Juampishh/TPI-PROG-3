@@ -38,15 +38,10 @@
             button2 = new Button();
             btnModificar = new Button();
             panel3 = new Panel();
-            pictureBox2 = new PictureBox();
             button7 = new Button();
-            button6 = new Button();
-            button5 = new Button();
-            button1 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -145,29 +140,13 @@
             // 
             panel3.BackColor = Color.Bisque;
             panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Controls.Add(pictureBox2);
             panel3.Controls.Add(button7);
-            panel3.Controls.Add(button6);
-            panel3.Controls.Add(button5);
-            panel3.Controls.Add(button1);
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(0, 0);
             panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
             panel3.Size = new Size(1015, 775);
             panel3.TabIndex = 2;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(297, 69);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(90, 67);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 4;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
             // 
             // button7
             // 
@@ -179,40 +158,6 @@
             button7.Size = new Size(128, 85);
             button7.TabIndex = 3;
             button7.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
-            button6.BackgroundImageLayout = ImageLayout.Zoom;
-            button6.Location = new Point(130, 376);
-            button6.Margin = new Padding(3, 4, 3, 4);
-            button6.Name = "button6";
-            button6.Size = new Size(128, 85);
-            button6.TabIndex = 2;
-            button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
-            button5.BackgroundImageLayout = ImageLayout.Zoom;
-            button5.Location = new Point(130, 225);
-            button5.Margin = new Padding(3, 4, 3, 4);
-            button5.Name = "button5";
-            button5.Size = new Size(128, 85);
-            button5.TabIndex = 1;
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Transparent;
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.Zoom;
-            button1.Location = new Point(130, 69);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(128, 85);
-            button1.TabIndex = 0;
-            button1.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -230,7 +175,6 @@
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -243,11 +187,7 @@
         private Button button2;
         private Button btnModificar;
         private Button button7;
-        private Button button6;
-        private Button button5;
-        private Button button1;
         private Button agregarMesaButton;
-        private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private Button btnAddPared;
         private Button VolverButtom;
