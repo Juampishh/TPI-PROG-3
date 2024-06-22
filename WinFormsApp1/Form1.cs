@@ -99,6 +99,20 @@ namespace WinFormsApp1
             menuop.Show();
             this.Hide();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+                this.Hide();
+                Application.Exit();
+            }
+        }
     }
 
     public class Mesa : Button
