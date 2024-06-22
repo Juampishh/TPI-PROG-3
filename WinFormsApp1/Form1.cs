@@ -92,6 +92,13 @@ namespace WinFormsApp1
             btnAddPared.Visible = true;
             agregarMesaButton.Visible = true;
         }
+
+        private void VolverButtom_Click(object sender, EventArgs e)
+        {
+            Menuop menuop = new Menuop();
+            menuop.Show();
+            this.Hide();
+        }
     }
 
     public class Mesa : Button

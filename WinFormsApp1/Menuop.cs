@@ -47,10 +47,25 @@
 
         private void panelPrevisualizacion_Paint(object sender, PaintEventArgs e)
         {
-           
+
         }
 
         private void ingresoPrev_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Menuop_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelEdicion_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void Edicion_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
             form1.Show();

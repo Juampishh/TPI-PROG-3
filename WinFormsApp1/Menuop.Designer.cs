@@ -21,20 +21,24 @@
             btnEdicion = new Button();
             labelEdicion = new Label();
             panelPrevisualizacion = new Panel();
+            ingresoPrev = new Button();
             btnPrevisualizacion = new Button();
             labelPrevisualizacion = new Label();
-            ingresoPrev = new Button();
+            Edicion = new Button();
+            panelEdicion.SuspendLayout();
             panelPrevisualizacion.SuspendLayout();
             SuspendLayout();
             // 
             // panelEdicion
             // 
             panelEdicion.BackColor = Color.WhiteSmoke;
+            panelEdicion.Controls.Add(Edicion);
             panelEdicion.Cursor = Cursors.Hand;
             panelEdicion.Location = new Point(20, 20);
             panelEdicion.Name = "panelEdicion";
             panelEdicion.Size = new Size(300, 450);
             panelEdicion.TabIndex = 0;
+            panelEdicion.Paint += panelEdicion_Paint;
             panelEdicion.MouseEnter += panelEdicion_MouseEnter;
             panelEdicion.MouseLeave += panelEdicion_MouseLeave;
             // 
@@ -74,6 +78,15 @@
             panelPrevisualizacion.MouseEnter += panelPrevisualizacion_MouseEnter;
             panelPrevisualizacion.MouseLeave += panelPrevisualizacion_MouseLeave;
             // 
+            // ingresoPrev
+            // 
+            ingresoPrev.Location = new Point(0, 0);
+            ingresoPrev.Name = "ingresoPrev";
+            ingresoPrev.Size = new Size(300, 450);
+            ingresoPrev.TabIndex = 0;
+            ingresoPrev.UseVisualStyleBackColor = true;
+            ingresoPrev.Click += ingresoPrev_Click;
+            // 
             // btnPrevisualizacion
             // 
             btnPrevisualizacion.BackColor = Color.MediumSeaGreen;
@@ -97,14 +110,14 @@
             labelPrevisualizacion.TabIndex = 3;
             labelPrevisualizacion.Text = "Previsualización";
             // 
-            // ingresoPrev
+            // Edicion
             // 
-            ingresoPrev.Location = new Point(0, 0);
-            ingresoPrev.Name = "ingresoPrev";
-            ingresoPrev.Size = new Size(300, 450);
-            ingresoPrev.TabIndex = 0;
-            ingresoPrev.UseVisualStyleBackColor = true;
-            ingresoPrev.Click += ingresoPrev_Click;
+            Edicion.Location = new Point(0, 0);
+            Edicion.Name = "Edicion";
+            Edicion.Size = new Size(300, 450);
+            Edicion.TabIndex = 0;
+            Edicion.UseVisualStyleBackColor = true;
+            Edicion.Click += Edicion_Click;
             // 
             // Menuop
             // 
@@ -119,6 +132,8 @@
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Menuop";
             Text = "Menú de Opciones";
+            Load += Menuop_Load;
+            panelEdicion.ResumeLayout(false);
             panelPrevisualizacion.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -133,5 +148,6 @@
         private Button btnEdicion;
         private Button btnPrevisualizacion;
         private Button ingresoPrev;
+        private Button Edicion;
     }
 }
