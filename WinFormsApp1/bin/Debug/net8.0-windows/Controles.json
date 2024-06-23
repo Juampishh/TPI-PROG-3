@@ -1,42 +1,42 @@
 [
   {
     "Tipo": "Mesa_para_4",
-    "X": 280,
-    "Y": 529,
+    "X": 455,
+    "Y": 49,
     "Alto": 0,
     "Ancho": 0,
     "ColorFondo": null
   },
   {
     "Tipo": "Mesa_para_2",
-    "X": 1429,
-    "Y": 54,
+    "X": 641,
+    "Y": 48,
     "Alto": 0,
     "Ancho": 0,
     "ColorFondo": null
   },
   {
     "Tipo": "Pared",
-    "X": 174,
-    "Y": 175,
+    "X": 6,
+    "Y": 14,
     "Alto": 28,
     "Ancho": 698,
     "ColorFondo": "Red"
   },
   {
     "Tipo": "Mesa_para_4",
-    "X": 212,
-    "Y": 352,
+    "X": 549,
+    "Y": 47,
     "Alto": 0,
     "Ancho": 0,
     "ColorFondo": null
   },
   {
     "Tipo": "Pared",
-    "X": 941,
-    "Y": 290,
-    "Alto": 100,
-    "Ancho": 30,
+    "X": 775,
+    "Y": 39,
+    "Alto": 373,
+    "Ancho": 70,
     "ColorFondo": "Black"
   }
 ]
