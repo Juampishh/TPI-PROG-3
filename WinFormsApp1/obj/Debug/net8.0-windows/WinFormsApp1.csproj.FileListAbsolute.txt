@@ -203,6 +203,7 @@ C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows
 C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
 C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+<<<<<<< HEAD
 C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.ElegirMesa.resources
 C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
 C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-amarillo.png
@@ -214,3 +215,5 @@ C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-verde
 C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-amarillo.png
 C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-rojo.png
 C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-verde.png
+=======
+>>>>>>> cc1504d6d43ec3b34c1e97bf59bae71ac64f62b0
