@@ -16,6 +16,15 @@
     <Compile Update="Menuop.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Mesas\Mesa_para_2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Mesas\Mesa_para_4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Mesas\Mesa_para_6.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="PasswordChangeForm.cs">
       <SubType>Form</SubType>
     </Compile>

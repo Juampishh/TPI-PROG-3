@@ -72,7 +72,6 @@
             // 
             labelEdicion.AutoSize = true;
             labelEdicion.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelEdicion.ForeColor = SystemColors.Control;
             labelEdicion.Location = new Point(90, 480);
             labelEdicion.Name = "labelEdicion";
             labelEdicion.Size = new Size(123, 37);
@@ -121,7 +120,6 @@
             // 
             labelPrevisualizacion.AutoSize = true;
             labelPrevisualizacion.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelPrevisualizacion.ForeColor = SystemColors.Control;
             labelPrevisualizacion.Location = new Point(370, 480);
             labelPrevisualizacion.Name = "labelPrevisualizacion";
             labelPrevisualizacion.Size = new Size(249, 37);
@@ -132,8 +130,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkRed;
-            ClientSize = new Size(660, 540);
+            BackColor = Color.Brown;
+            ClientSize = new Size(681, 540);
             Controls.Add(labelPrevisualizacion);
             Controls.Add(panelPrevisualizacion);
             Controls.Add(labelEdicion);

@@ -12,9 +12,35 @@ namespace WinFormsApp1
 {
     public partial class ElegirMesa : Form
     {
+        public int opcionElegida {  get; set; }
         public ElegirMesa()
         {
             InitializeComponent();
+        }
+
+        private void pbCuatroP_Click(object sender, EventArgs e)
+        {
+            opcionElegida = 4;
+            DialogResult = DialogResult.OK;
+
+        }
+
+        private void PBDos_Click(object sender, EventArgs e)
+        {
+            opcionElegida = 2;
+            DialogResult = DialogResult.OK;
+        }
+
+        private void BTCancelar_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.Cancel;
+            this.Close();
+        }
+
+        private void PBSeis_Click(object sender, EventArgs e)
+        {
+            opcionElegida = 6;
+            DialogResult = DialogResult.OK;
         }
     }
 }

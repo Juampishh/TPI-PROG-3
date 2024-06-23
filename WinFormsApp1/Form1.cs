@@ -1,3 +1,6 @@
+using WinFormsApp1.Mesas;
+
+
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
@@ -18,38 +21,40 @@ namespace WinFormsApp1
 
         private void AgregarMesaButton_Click(object sender, EventArgs e)
         {
-            AgregarMesa();
+            ElegirMesa elegirMesa = new ElegirMesa();
+            
+            if (elegirMesa.ShowDialog() == DialogResult.OK)
+            {
+                switch (elegirMesa.opcionElegida)
+                {
+                    case 2:
+                        Mesa_para_2 mesa_para_2 = new Mesa_para_2();
+                        mesa_para_2.Location = new Point(10, 10);
+                        panel3.Controls.Add(mesa_para_2);
+
+                        break;
+                    case 4:
+                        Mesa_para_4 mesa_para_4 = new Mesa_para_4();
+                        mesa_para_4.Location = new Point(10, 10);
+                        panel3.Controls.Add(mesa_para_4);
+                        
+                        break;
+                    case 6:
+                        Mesa_para_6 mesa_para_6 = new Mesa_para_6();
+                        mesa_para_6.Location = new Point(10, 10);
+                        panel3.Controls.Add(mesa_para_6);
+
+                        break;
+                    default: break;
+                }
+            }
+            
         }
 
-        private void AgregarMesa()
-        {
-            Mesa nuevaMesa = new Mesa();
-            nuevaMesa.Location = new Point(10, 10);
-            panel3.Controls.Add(nuevaMesa);
-        }
 
-        private void button1_MouseDown(object sender, MouseEventArgs e)
-        {
-            // Iniciar el arrastre
-            isDragging = true;
-            startPoint = new Point(e.X, e.Y);
-        }
+        
 
-        //private void button1_MouseMove(object sender, MouseEventArgs e)
-        //{
-        //    if (isDragging)
-        //    {
-        //        // Mover el botón con el ratón
-        //        Point p = PointToClient(MousePosition);
-        //        button1.Location = new Point(p.X - startPoint.X, p.Y - startPoint.Y);
-        //    }
-        //}
 
-        private void button1_MouseUp(object sender, MouseEventArgs e)
-        {
-
-            isDragging = false;
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -129,53 +134,9 @@ namespace WinFormsApp1
                 }
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void agregarMesaButton_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 
-    public class Mesa : Button
-    {
-        private bool isDragging = false;
-        private Point startPoint = new Point(0, 0);
-
-        public Mesa()
-        {
-            this.BackColor = Color.Red;
-            this.Width = 100;
-            this.Height = 100;
-            this.MouseDown += new MouseEventHandler(Mesa_MouseDown);
-            this.MouseMove += new MouseEventHandler(Mesa_MouseMove);
-            this.MouseUp += new MouseEventHandler(Mesa_MouseUp);
-        }
-
-        private void Mesa_MouseDown(object sender, MouseEventArgs e)
-        {
-            isDragging = true;
-            startPoint = new Point(e.X, e.Y);
-        }
-
-        private void Mesa_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (isDragging)
-            {
-                Point p = ((Control)sender).Parent.PointToClient(MousePosition);
-                this.Location = new Point(p.X - startPoint.X, p.Y - startPoint.Y);
-            }
-        }
-
-        private void Mesa_MouseUp(object sender, MouseEventArgs e)
-        {
-            isDragging = false;
-        }
-    }
+  
 
     public class Pared : Button
     {
@@ -197,7 +158,6 @@ namespace WinFormsApp1
             this.ContextMenuStrip = new ContextMenuStrip(); 
             this.ContextMenuStrip.Items.Add("Cambiar Color").Click += new EventHandler(CambiarColor_Click);
             this.ContextMenuStrip.Items.Add("Eliminar Pared").Click += new EventHandler(EliminarPared_Click);
-
         }
         // Eventos para arrastrar y redimensionar
         private void Pared_MouseDown(object sender, MouseEventArgs e)
