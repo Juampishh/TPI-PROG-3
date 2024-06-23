@@ -34,11 +34,12 @@
             btnAddPared = new Button();
             agregarMesaButton = new Button();
             panel2 = new Panel();
+            btnGuardar = new Button();
             VolverButtom = new Button();
             btnSalir = new Button();
             button2 = new Button();
             btnModificar = new Button();
-            panel3 = new Panel();
+            panelPlano = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
@@ -88,6 +89,7 @@
             // panel2
             // 
             panel2.BackColor = Color.DarkGray;
+            panel2.Controls.Add(btnGuardar);
             panel2.Controls.Add(VolverButtom);
             panel2.Controls.Add(btnSalir);
             panel2.Controls.Add(button2);
@@ -97,6 +99,17 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(120, 462);
             panel2.TabIndex = 1;
+            panel2.Paint += panel2_Paint;
+            // 
+            // btnGuardar
+            // 
+            btnGuardar.Location = new Point(6, 134);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(111, 23);
+            btnGuardar.TabIndex = 4;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // VolverButtom
             // 
@@ -141,22 +154,22 @@
             btnModificar.UseVisualStyleBackColor = true;
             btnModificar.Click += btnModificar_Click;
             // 
-            // panel3
+            // panelPlano
             // 
-            panel3.BackColor = Color.Bisque;
-            panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(0, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(888, 462);
-            panel3.TabIndex = 2;
+            panelPlano.BackColor = Color.Bisque;
+            panelPlano.BorderStyle = BorderStyle.FixedSingle;
+            panelPlano.Dock = DockStyle.Fill;
+            panelPlano.Location = new Point(0, 0);
+            panelPlano.Name = "panelPlano";
+            panelPlano.Size = new Size(888, 462);
+            panelPlano.TabIndex = 2;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1008, 562);
-            Controls.Add(panel3);
+            Controls.Add(panelPlano);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "Form1";
@@ -173,7 +186,7 @@
 
         private Panel panel1;
         private Panel panel2;
-        private Panel panel3;
+        private Panel panelPlano;
         private Button btnSalir;
         private Button button2;
         private Button btnModificar;
@@ -182,5 +195,6 @@
         private Button btnAddPared;
         private Button VolverButtom;
         private PictureBox pictureBox2;
+        private Button btnGuardar;
     }
 }
