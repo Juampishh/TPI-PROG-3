@@ -149,7 +149,7 @@ namespace WinFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            ///////////////////hola lourdes
         }
 
         private void btnAddPared_Click(object sender, EventArgs e)
