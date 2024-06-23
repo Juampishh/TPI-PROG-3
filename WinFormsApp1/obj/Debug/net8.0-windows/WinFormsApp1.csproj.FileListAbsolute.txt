@@ -167,3 +167,39 @@ C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\Resourc
 C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-amarillo.png
 C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-rojo.png
 C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-verde.png
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-amarillo.png
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-rojo.png
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-verde.png
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-amarillo.png
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-Rojo.png
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-verde.png
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-amarillo.png
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-rojo.png
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-verde.png
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.ElegirMesa.resources
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.EmailForm.resources
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Login.resources
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Menuop.resources
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.PasswordChangeForm.resources
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.TokenVerificationForm.resources
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinForms.E4050A35.Up2Date
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
