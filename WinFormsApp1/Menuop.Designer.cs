@@ -58,7 +58,9 @@
             // labelEdicion
             // 
             labelEdicion.AutoSize = true;
-            labelEdicion.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+
+            labelEdicion.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+
             labelEdicion.Location = new Point(90, 480);
             labelEdicion.Name = "labelEdicion";
             labelEdicion.Size = new Size(121, 41);
@@ -103,7 +105,9 @@
             // labelPrevisualizacion
             // 
             labelPrevisualizacion.AutoSize = true;
+
             labelPrevisualizacion.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+
             labelPrevisualizacion.Location = new Point(370, 480);
             labelPrevisualizacion.Name = "labelPrevisualizacion";
             labelPrevisualizacion.Size = new Size(243, 41);
@@ -125,6 +129,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(660, 540);
+
             Controls.Add(labelPrevisualizacion);
             Controls.Add(panelPrevisualizacion);
             Controls.Add(labelEdicion);
