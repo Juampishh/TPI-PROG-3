@@ -17,7 +17,6 @@
 
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menuop));
             panelEdicion = new Panel();
             Edicion = new Button();
             btnEdicion = new Button();
@@ -46,7 +45,6 @@
             // Edicion
             // 
             Edicion.FlatStyle = FlatStyle.Popup;
-            Edicion.Image = (Image)resources.GetObject("Edicion.Image");
             Edicion.Location = new Point(0, 0);
             Edicion.Name = "Edicion";
             Edicion.Size = new Size(300, 450);
@@ -93,7 +91,6 @@
             // ingresoPrev
             // 
             ingresoPrev.FlatStyle = FlatStyle.Popup;
-            ingresoPrev.Image = (Image)resources.GetObject("ingresoPrev.Image");
             ingresoPrev.Location = new Point(0, 0);
             ingresoPrev.Name = "ingresoPrev";
             ingresoPrev.Size = new Size(300, 450);
@@ -128,7 +125,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Firebrick;
+            BackColor = Color.DarkRed;
             ClientSize = new Size(672, 540);
             Controls.Add(labelPrevisualizacion);
             Controls.Add(panelPrevisualizacion);
