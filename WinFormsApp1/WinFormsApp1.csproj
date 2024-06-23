@@ -9,11 +9,64 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <None Remove="Resources\Mesa-2-amarillo.png" />
+    <None Remove="Resources\Mesa-2-rojo.png" />
+    <None Remove="Resources\Mesa-2-verde.png" />
+    <None Remove="Resources\Mesa-4-amarillo.png" />
+    <None Remove="Resources\Mesa-4-Rojo.png" />
+    <None Remove="Resources\Mesa-4-verde.png" />
+    <None Remove="Resources\Mesa-6-amarillo.png" />
+    <None Remove="Resources\Mesa-6-rojo.png" />
+    <None Remove="Resources\Mesa-6-verde.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Mesa-2-amarillo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mesa-2-rojo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mesa-2-verde.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mesa-4-amarillo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mesa-4-Rojo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mesa-4-verde.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mesa-6-amarillo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mesa-6-rojo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mesa-6-verde.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
