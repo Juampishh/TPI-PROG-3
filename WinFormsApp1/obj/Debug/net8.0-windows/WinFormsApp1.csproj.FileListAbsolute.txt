@@ -1,98 +1,26 @@
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
-C:\Users\Tomi\Desktop\Ejeplos prog 3\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
-C:\Users\Juan Pablo\Desktop\WinFormsApp1\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Login.resources
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
-C:\Users\lauta\Source\Repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
-C:\Users\lauta\source\repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
-C:\Users\lauta\source\repos\TPI-PROG3\WinFormsApp1\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
-C:\Users\lauta\source\repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinForms.E4050A35.Up2Date
-C:\Users\lauta\source\repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.EmailForm.resources
-C:\Users\lauta\source\repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.PasswordChangeForm.resources
-C:\Users\lauta\source\repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.TokenVerificationForm.resources
-C:\Users\lauta\source\repos\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Menuop.resources
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.EmailForm.resources
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Login.resources
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Menuop.resources
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.PasswordChangeForm.resources
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.TokenVerificationForm.resources
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinForms.E4050A35.Up2Date
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
-C:\Users\Juan Pablo\Desktop\TPI-PROG3\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
 C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
+C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-amarillo.png
+C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-rojo.png
+C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-verde.png
+C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-amarillo.png
+C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-Rojo.png
+C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-verde.png
+C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-amarillo.png
+C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-rojo.png
+C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-verde.png
 C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
 C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
 C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
 C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
 C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.ElegirMesa.resources
 C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.EmailForm.resources
 C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
 C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Login.resources
 C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Menuop.resources
 C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.PasswordChangeForm.resources
+C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
 C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.TokenVerificationForm.resources
 C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
 C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
@@ -106,114 +34,3 @@ C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dl
 C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
 C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.EmailForm.resources
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Login.resources
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Menuop.resources
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.PasswordChangeForm.resources
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.TokenVerificationForm.resources
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinForms.E4050A35.Up2Date
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
-C:\Users\Juan Pablo\Desktop\TPI\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.ElegirMesa.resources
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.EmailForm.resources
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Login.resources
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Menuop.resources
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.PasswordChangeForm.resources
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.TokenVerificationForm.resources
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinForms.E4050A35.Up2Date
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-amarillo.png
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-Rojo.png
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-verde.png
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-amarillo.png
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-rojo.png
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-verde.png
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-amarillo.png
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-rojo.png
-C:\Users\Tomi\Desktop\Repositorios\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-verde.png
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-amarillo.png
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-rojo.png
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-verde.png
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-amarillo.png
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-Rojo.png
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-verde.png
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-amarillo.png
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-rojo.png
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-verde.png
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.ElegirMesa.resources
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.EmailForm.resources
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Login.resources
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Menuop.resources
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.PasswordChangeForm.resources
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.TokenVerificationForm.resources
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinForms.E4050A35.Up2Date
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
-C:\Users\Tomi\Desktop\Repositorios- BACKUP\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
-<<<<<<< HEAD
-C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.ElegirMesa.resources
-C:\Prog3\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
-C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-amarillo.png
-C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-rojo.png
-C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-verde.png
-C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-amarillo.png
-C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-Rojo.png
-C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-verde.png
-C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-amarillo.png
-C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-rojo.png
-C:\Prog3\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-verde.png
-=======
->>>>>>> cc1504d6d43ec3b34c1e97bf59bae71ac64f62b0
