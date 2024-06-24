@@ -23,7 +23,8 @@ namespace WinFormsApp1
             agregarMesaButton.Visible = false;
             btnAddPared.Visible = false;
             this.FormClosing += new FormClosingEventHandler(Form1_FormClosing);
-
+            btnBaño.Visible = false;
+            btnBarra.Visible = false;
             this.estadoControles = estadoControles; //recibe los controles de la lista
             this.archivo = archivo;
             controles = new List<Control>();
@@ -149,7 +150,7 @@ namespace WinFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ///////////////////hola lourdes
+
         }
 
         private void btnAddPared_Click(object sender, EventArgs e)
@@ -189,6 +190,8 @@ namespace WinFormsApp1
         {
             btnAddPared.Visible = true;
             agregarMesaButton.Visible = true;
+            btnBaño.Visible = true;
+            btnBarra.Visible = true;
         }
 
         private void VolverButtom_Click(object sender, EventArgs e)
@@ -236,6 +239,55 @@ namespace WinFormsApp1
         {
 
         }
+        private void agregrarBaño()
+        {
+            Baño nuevoBaño = new Baño();
+            nuevoBaño.Location = new Point(15, 15);
+            nuevoBaño.MouseDown += new MouseEventHandler(Baño_MouseDown);
+            panelPlano.Controls.Add(nuevoBaño);
+            controles.Add(nuevoBaño);
+            //panel3.Controls.Add(nuevoBaño);
+        }
+        private void Baño_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Baño baño = sender as Baño;
+                if (baño != null)
+                {
+                    baño.ContextMenuStrip.Show(baño, e.Location);
+                }
+            }
+        }
+        private void btnBaño_Click(object sender, EventArgs e)
+        {
+            agregrarBaño();
+        }
+
+        private void agregrarBarra()
+        {
+            Barra nuevaBarra = new Barra();
+            nuevaBarra.Location = new Point(15, 15);
+            nuevaBarra.MouseDown += new MouseEventHandler(Barra_MouseDown);
+            panelPlano.Controls.Add(nuevaBarra);
+            controles.Add(nuevaBarra);
+            //panel3.Controls.Add(nuevaBarra);
+        }
+        private void Barra_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Barra barra = sender as Barra;
+                if (barra != null)
+                {
+                    barra.ContextMenuStrip.Show(barra, e.Location);
+                }
+            }
+        }
+        private void btnBarra_Click(object sender, EventArgs e)
+        {
+            agregrarBarra();
+        }
     }
 
 
@@ -257,7 +309,7 @@ namespace WinFormsApp1
             this.MouseDown += new MouseEventHandler(Pared_MouseDown);
             this.MouseMove += new MouseEventHandler(Pared_MouseMove);
             this.MouseUp += new MouseEventHandler(Pared_MouseUp);
-            this.ContextMenuStrip = new ContextMenuStrip(); 
+            this.ContextMenuStrip = new ContextMenuStrip();
             this.ContextMenuStrip.Items.Add("Cambiar Color").Click += new EventHandler(CambiarColor_Click);
             this.ContextMenuStrip.Items.Add("Eliminar Pared").Click += new EventHandler(EliminarPared_Click);
         }
@@ -315,5 +367,143 @@ namespace WinFormsApp1
             ControlPaint.DrawSizeGrip(pe.Graphics, this.BackColor, this.Width - gripSize, this.Height - gripSize, gripSize, gripSize);
         }
     }
+    public class Baño : Button
+    {
+        // Variables para arrastrar y redimensionar
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+        private bool isDragging = false;
+        private bool isResizing = false;
+        private Point startPoint = new Point(10, 10);
+        private const int gripSize = 10;
 
+
+        public Baño()
+        {
+            this.Width = 150;
+            this.Height = 150;
+            this.BackgroundImage = (Image)resources.GetObject("btnBaño.BackgroundImage");
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+            //this.BackgroundImageLayout = ImageLayout.Stretch;
+            this.MouseDown += new MouseEventHandler(Baño_MouseDown);
+            this.MouseMove += new MouseEventHandler(Baño_MouseMove);
+            this.MouseUp += new MouseEventHandler(Baño_MouseUp);
+            this.ContextMenuStrip = new ContextMenuStrip();
+            this.ContextMenuStrip.Items.Add("Eliminar Baño").Click += new EventHandler(EliminarBaño_Click);
+        }
+
+        private void EliminarBaño_Click(object? sender, EventArgs e)
+        {
+            this.Parent.Controls.Remove(this);
+
+        }
+
+        private void Baño_MouseUp(object? sender, MouseEventArgs e)
+        {
+            isDragging = false;
+            isResizing = false;
+        }
+
+        private void Baño_MouseMove(object? sender, MouseEventArgs e)
+        {
+            if (isDragging)
+            {
+                Point p = ((Control)sender).Parent.PointToClient(MousePosition);
+                this.Location = new Point(p.X - startPoint.X, p.Y - startPoint.Y);
+            }
+            else if (isResizing)
+            {
+                this.Width = e.X;
+                this.Height = e.Y;
+            }
+        }
+
+        private void Baño_MouseDown(object? sender, MouseEventArgs e)
+        {
+            if (e.X >= this.Width - gripSize && e.Y >= this.Height - gripSize)
+            {
+                isResizing = true;
+            }
+            else
+            {
+                isDragging = true;
+            }
+            startPoint = new Point(e.X, e.Y);
+        }
+        protected override void OnPaint(PaintEventArgs pe)
+        {
+            base.OnPaint(pe);
+            ControlPaint.DrawSizeGrip(pe.Graphics, this.BackColor, this.Width - gripSize, this.Height - gripSize, gripSize, gripSize);
+        }
+    }
+
+    public class Barra : Button
+    {
+        // Variables para arrastrar y redimensionar
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+        private bool isDragging = false;
+        private bool isResizing = false;
+        private Point startPoint = new Point(10, 10);
+        private const int gripSize = 10;
+        //System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+        public Barra()
+        {
+            //System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.Width = 150;
+            this.Height = 150;
+            this.BackgroundImage = (Image)resources.GetObject("btnBarra.BackgroundImage");
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+            //this.BackgroundImage = (Image)resources.GetObject("btnBaño.BackgroundImage");
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+            this.MouseDown += new MouseEventHandler(Barra_MouseDown);
+            this.MouseMove += new MouseEventHandler(Barra_MouseMove);
+            this.MouseUp += new MouseEventHandler(Barra_MouseUp);
+            this.ContextMenuStrip = new ContextMenuStrip();
+            this.ContextMenuStrip.Items.Add("Eliminar Barra").Click += new EventHandler(EliminarBarra_Click);
+        }
+
+        private void EliminarBarra_Click(object? sender, EventArgs e)
+        {
+            this.Parent.Controls.Remove(this);
+
+        }
+
+        private void Barra_MouseUp(object? sender, MouseEventArgs e)
+        {
+            isDragging = false;
+            isResizing = false;
+        }
+
+        private void Barra_MouseMove(object? sender, MouseEventArgs e)
+        {
+            if (isDragging)
+            {
+                Point p = ((Control)sender).Parent.PointToClient(MousePosition);
+                this.Location = new Point(p.X - startPoint.X, p.Y - startPoint.Y);
+            }
+            else if (isResizing)
+            {
+                this.Width = e.X;
+                this.Height = e.Y;
+            }
+        }
+
+        private void Barra_MouseDown(object? sender, MouseEventArgs e)
+        {
+            if (e.X >= this.Width - gripSize && e.Y >= this.Height - gripSize)
+            {
+                isResizing = true;
+            }
+            else
+            {
+                isDragging = true;
+            }
+            startPoint = new Point(e.X, e.Y);
+        }
+        protected override void OnPaint(PaintEventArgs pe)
+        {
+            base.OnPaint(pe);
+            ControlPaint.DrawSizeGrip(pe.Graphics, this.BackColor, this.Width - gripSize, this.Height - gripSize, gripSize, gripSize);
+        }
+    }
 }
