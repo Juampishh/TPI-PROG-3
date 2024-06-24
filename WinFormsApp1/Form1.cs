@@ -81,11 +81,20 @@ namespace WinFormsApp1
                         pared.BackColor.Name);
                     estadoControles.Add(estado);
                 }
-                else
+                else if (control is Mesa_para_2 || control is Mesa_para_4 || control is Mesa_para_6)
                 {
                     ControlState estado = new ControlState(control.GetType().Name,
                         control.Location.X,
                         control.Location.Y);
+                    estadoControles.Add(estado);
+                }
+                else if(control is Barra || control is Baño)
+                {
+                    ControlState estado = new ControlState(control.GetType().Name,
+                        control.Location.X,
+                        control.Location.Y,
+                        control.Height,
+                        control.Width);
                     estadoControles.Add(estado);
                 }
 
@@ -137,6 +146,21 @@ namespace WinFormsApp1
                 {
                     control = new Mesa_para_6();
                     control.Location = new Point(estado.X, estado.Y);
+                }
+                else if (estado.Tipo == nameof(Baño))
+                {
+                    control = new Baño();
+                    control.Location = new Point(estado.X, estado.Y);
+                    control.Width = estado.Ancho;
+                    control.Height = estado.Alto;
+
+                }
+                else if (estado.Tipo == nameof(Barra))
+                {
+                    control = new Barra();
+                    control.Location = new Point(estado.X, estado.Y);
+                    control.Width = estado.Ancho;
+                    control.Height = estado.Alto;
                 }
 
                 if (control != null)
@@ -219,8 +243,9 @@ namespace WinFormsApp1
                 if (result == DialogResult.Yes)
                 {
                     // El usuario confirmó que quiere salir
+                    Menuop menuop = new Menuop();
+                    menuop.Show();
                     this.Hide();
-                    Application.Exit();
                 }
                 else
                 {
@@ -381,7 +406,7 @@ namespace WinFormsApp1
         {
             this.Width = 150;
             this.Height = 150;
-            this.BackgroundImage = (Image)resources.GetObject("btnBaño.BackgroundImage");
+            this.BackgroundImage = Image.FromFile("Resources/baño1.jpg");
             this.BackgroundImageLayout = ImageLayout.Stretch;
             //this.BackgroundImageLayout = ImageLayout.Stretch;
             this.MouseDown += new MouseEventHandler(Baño_MouseDown);

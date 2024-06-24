@@ -86,7 +86,7 @@
             Name = "PrevisualizacionForm";
             Text = "Previsualizacion";
             WindowState = FormWindowState.Maximized;
-            
+            FormClosing += PrevisualizacionForm_FormClosing;
             panel2.ResumeLayout(false);
             ResumeLayout(false);
         }

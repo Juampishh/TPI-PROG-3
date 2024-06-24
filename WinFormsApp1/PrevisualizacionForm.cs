@@ -17,7 +17,7 @@ namespace WinFormsApp1
         public PrevisualizacionForm(ref List<ControlState> estadoControles)
         {
             InitializeComponent();
-            this.FormClosing += new FormClosingEventHandler(Form1_FormClosing);
+
 
             this.estadoControles = estadoControles; // Recibe los controles de la lista
 
@@ -62,6 +62,21 @@ namespace WinFormsApp1
                         Location = new Point(estado.X, estado.Y)
                     };
                 }
+                else if (estado.Tipo == nameof(Baño))
+                {
+                    control = new Baño();
+                    control.Location = new Point(estado.X, estado.Y);
+                    control.Width = estado.Ancho;
+                    control.Height = estado.Alto;
+
+                }
+                else if (estado.Tipo == nameof(Barra))
+                {
+                    control = new Barra();
+                    control.Location = new Point(estado.X, estado.Y);
+                    control.Width = estado.Ancho;
+                    control.Height = estado.Alto;
+                }
 
                 if (control != null)
                 {
@@ -78,16 +93,11 @@ namespace WinFormsApp1
             this.Hide();
         }
 
-
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        private void PrevisualizacionForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-               
-                this.Hide();
-                Application.Exit();
-                
-            }
+            Menuop menuop = new Menuop();
+            menuop.Show();
+            this.Hide();
         }
     }
 }

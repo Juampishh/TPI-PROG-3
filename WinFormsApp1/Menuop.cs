@@ -83,7 +83,7 @@ namespace WinFormsApp1
 
         private void panelEdicion_Paint(object sender, PaintEventArgs e)
         {
-           
+
         }
 
         private void Edicion_Click(object sender, EventArgs e)
@@ -91,6 +91,11 @@ namespace WinFormsApp1
             Form1 form1 = new Form1(ref estadoControles, archivo);
             form1.Show();
             this.Hide();
+        }
+
+        private void Menuop_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Application.Exit();
         }
     }
     public class ControlState
@@ -108,6 +113,15 @@ namespace WinFormsApp1
             Tipo = tipo;
             X = x;
             Y = y;
+            
+        }
+        public ControlState(string tipo, int x, int y, int alto, int ancho)
+        {
+            Tipo = tipo;
+            X = x;
+            Y = y;
+            Alto = alto;
+            Ancho = ancho;
             
         }
         public ControlState(string tipo, int x, int y, int alto, int ancho, string colorFondo)

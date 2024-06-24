@@ -34,9 +34,10 @@
             panelEdicion.BackColor = Color.WhiteSmoke;
             panelEdicion.Controls.Add(Edicion);
             panelEdicion.Cursor = Cursors.Hand;
-            panelEdicion.Location = new Point(20, 20);
+            panelEdicion.Location = new Point(18, 15);
+            panelEdicion.Margin = new Padding(3, 2, 3, 2);
             panelEdicion.Name = "panelEdicion";
-            panelEdicion.Size = new Size(300, 450);
+            panelEdicion.Size = new Size(262, 338);
             panelEdicion.TabIndex = 0;
             panelEdicion.Paint += panelEdicion_Paint;
             panelEdicion.MouseEnter += panelEdicion_MouseEnter;
@@ -46,8 +47,9 @@
             // 
             Edicion.FlatStyle = FlatStyle.Popup;
             Edicion.Location = new Point(0, 0);
+            Edicion.Margin = new Padding(3, 2, 3, 2);
             Edicion.Name = "Edicion";
-            Edicion.Size = new Size(300, 450);
+            Edicion.Size = new Size(262, 338);
             Edicion.TabIndex = 0;
             Edicion.UseVisualStyleBackColor = true;
             Edicion.Click += Edicion_Click;
@@ -69,9 +71,9 @@
             // 
             labelEdicion.AutoSize = true;
             labelEdicion.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelEdicion.Location = new Point(90, 480);
+            labelEdicion.Location = new Point(79, 360);
             labelEdicion.Name = "labelEdicion";
-            labelEdicion.Size = new Size(123, 37);
+            labelEdicion.Size = new Size(96, 28);
             labelEdicion.TabIndex = 1;
             labelEdicion.Text = "Edición";
             // 
@@ -80,9 +82,10 @@
             panelPrevisualizacion.BackColor = Color.WhiteSmoke;
             panelPrevisualizacion.Controls.Add(ingresoPrev);
             panelPrevisualizacion.Cursor = Cursors.Hand;
-            panelPrevisualizacion.Location = new Point(340, 20);
+            panelPrevisualizacion.Location = new Point(298, 15);
+            panelPrevisualizacion.Margin = new Padding(3, 2, 3, 2);
             panelPrevisualizacion.Name = "panelPrevisualizacion";
-            panelPrevisualizacion.Size = new Size(300, 450);
+            panelPrevisualizacion.Size = new Size(262, 338);
             panelPrevisualizacion.TabIndex = 2;
             panelPrevisualizacion.Paint += panelPrevisualizacion_Paint;
             panelPrevisualizacion.MouseEnter += panelPrevisualizacion_MouseEnter;
@@ -92,8 +95,9 @@
             // 
             ingresoPrev.FlatStyle = FlatStyle.Popup;
             ingresoPrev.Location = new Point(0, 0);
+            ingresoPrev.Margin = new Padding(3, 2, 3, 2);
             ingresoPrev.Name = "ingresoPrev";
-            ingresoPrev.Size = new Size(300, 450);
+            ingresoPrev.Size = new Size(262, 338);
             ingresoPrev.TabIndex = 0;
             ingresoPrev.UseVisualStyleBackColor = true;
             ingresoPrev.Click += ingresoPrev_Click;
@@ -115,26 +119,28 @@
             // 
             labelPrevisualizacion.AutoSize = true;
             labelPrevisualizacion.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelPrevisualizacion.Location = new Point(370, 480);
+            labelPrevisualizacion.Location = new Point(324, 360);
             labelPrevisualizacion.Name = "labelPrevisualizacion";
-            labelPrevisualizacion.Size = new Size(249, 37);
+            labelPrevisualizacion.Size = new Size(197, 28);
             labelPrevisualizacion.TabIndex = 3;
             labelPrevisualizacion.Text = "Previsualización";
             // 
             // Menuop
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkRed;
-            ClientSize = new Size(672, 540);
+            ClientSize = new Size(588, 405);
             Controls.Add(labelPrevisualizacion);
             Controls.Add(panelPrevisualizacion);
             Controls.Add(labelEdicion);
             Controls.Add(panelEdicion);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Menuop";
             Opacity = 0.9D;
             Text = "Menú de Opciones";
+            FormClosed += Menuop_FormClosed;
             Load += Menuop_Load;
             panelEdicion.ResumeLayout(false);
             panelPrevisualizacion.ResumeLayout(false);

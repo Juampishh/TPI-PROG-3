@@ -17,8 +17,8 @@
   },
   {
     "Tipo": "Pared",
-    "X": 6,
-    "Y": 14,
+    "X": 44,
+    "Y": 20,
     "Alto": 28,
     "Ancho": 698,
     "ColorFondo": "Red"
@@ -33,10 +33,26 @@
   },
   {
     "Tipo": "Pared",
-    "X": 775,
-    "Y": 39,
-    "Alto": 373,
-    "Ancho": 70,
+    "X": 741,
+    "Y": 19,
+    "Alto": 364,
+    "Ancho": 35,
     "ColorFondo": "Black"
+  },
+  {
+    "Tipo": "Ba\u00F1o",
+    "X": 788,
+    "Y": 22,
+    "Alto": 150,
+    "Ancho": 150,
+    "ColorFondo": null
+  },
+  {
+    "Tipo": "Barra",
+    "X": 390,
+    "Y": 336,
+    "Alto": 42,
+    "Ancho": 351,
+    "ColorFondo": null
   }
 ]

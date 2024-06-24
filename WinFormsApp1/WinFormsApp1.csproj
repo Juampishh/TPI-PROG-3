@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\baño1.jpg" />
     <None Remove="Resources\Mesa-2-amarillo.png" />
     <None Remove="Resources\Mesa-2-rojo.png" />
     <None Remove="Resources\Mesa-2-verde.png" />
@@ -21,6 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Resources\baño1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Mesa-2-amarillo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
