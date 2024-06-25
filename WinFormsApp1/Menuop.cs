@@ -136,4 +136,9 @@ namespace WinFormsApp1
         
 
     }
+    public interface IEventos
+    {
+        public abstract void ModoEdicion();
+        public abstract void ModoPrevisualizacion();
+    }
 }

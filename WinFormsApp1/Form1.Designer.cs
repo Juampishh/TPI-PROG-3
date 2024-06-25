@@ -39,8 +39,6 @@
             btnGuardar = new Button();
             VolverButtom = new Button();
             btnSalir = new Button();
-            button2 = new Button();
-            btnModificar = new Button();
             panelPlano = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -63,7 +61,7 @@
             // 
             // btnBarra
             // 
-            btnBarra.Location = new Point(462, 17);
+            btnBarra.Location = new Point(736, 17);
             btnBarra.Margin = new Padding(5, 6, 5, 6);
             btnBarra.Name = "btnBarra";
             btnBarra.Size = new Size(129, 45);
@@ -74,7 +72,7 @@
             // 
             // btnBaño
             // 
-            btnBaño.Location = new Point(307, 17);
+            btnBaño.Location = new Point(513, 17);
             btnBaño.Margin = new Padding(5, 6, 5, 6);
             btnBaño.Name = "btnBaño";
             btnBaño.Size = new Size(133, 45);
@@ -95,7 +93,7 @@
             // 
             // btnAddPared
             // 
-            btnAddPared.Location = new Point(160, 17);
+            btnAddPared.Location = new Point(280, 17);
             btnAddPared.Name = "btnAddPared";
             btnAddPared.Size = new Size(133, 45);
             btnAddPared.TabIndex = 4;
@@ -105,7 +103,7 @@
             // 
             // agregarMesaButton
             // 
-            agregarMesaButton.Location = new Point(12, 17);
+            agregarMesaButton.Location = new Point(60, 17);
             agregarMesaButton.Name = "agregarMesaButton";
             agregarMesaButton.Size = new Size(132, 45);
             agregarMesaButton.TabIndex = 3;
@@ -118,8 +116,6 @@
             panel2.Controls.Add(btnGuardar);
             panel2.Controls.Add(VolverButtom);
             panel2.Controls.Add(btnSalir);
-            panel2.Controls.Add(button2);
-            panel2.Controls.Add(btnModificar);
             panel2.Dock = DockStyle.Right;
             panel2.Location = new Point(922, 0);
             panel2.Name = "panel2";
@@ -129,7 +125,7 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(6, 134);
+            btnGuardar.Location = new Point(6, 63);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(111, 23);
             btnGuardar.TabIndex = 4;
@@ -139,7 +135,7 @@
             // 
             // VolverButtom
             // 
-            VolverButtom.Location = new Point(6, 94);
+            VolverButtom.Location = new Point(6, 11);
             VolverButtom.Margin = new Padding(3, 2, 3, 2);
             VolverButtom.Name = "VolverButtom";
             VolverButtom.Size = new Size(111, 22);
@@ -160,25 +156,6 @@
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(6, 53);
-            button2.Name = "button2";
-            button2.Size = new Size(111, 23);
-            button2.TabIndex = 1;
-            button2.Text = "Cancelar reservas";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // btnModificar
-            // 
-            btnModificar.Location = new Point(3, 12);
-            btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(111, 23);
-            btnModificar.TabIndex = 0;
-            btnModificar.Text = "Modificar";
-            btnModificar.UseVisualStyleBackColor = true;
-            btnModificar.Click += btnModificar_Click;
             // 
             // panelPlano
             // 
@@ -214,8 +191,6 @@
         private Panel panel2;
         private Panel panelPlano;
         private Button btnSalir;
-        private Button button2;
-        private Button btnModificar;
         private Button agregarMesaButton;
         private PictureBox pictureBox1;
         private Button btnAddPared;

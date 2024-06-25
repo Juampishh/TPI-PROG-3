@@ -25,8 +25,8 @@
   },
   {
     "Tipo": "Mesa_para_4",
-    "X": 549,
-    "Y": 47,
+    "X": 316,
+    "Y": 59,
     "Alto": 0,
     "Ancho": 0,
     "ColorFondo": null
@@ -62,5 +62,29 @@
     "Alto": 370,
     "Ancho": 34,
     "ColorFondo": "Maroon"
+  },
+  {
+    "Tipo": "Barra",
+    "X": 45,
+    "Y": 47,
+    "Alto": 213,
+    "Ancho": 20,
+    "ColorFondo": null
+  },
+  {
+    "Tipo": "Ba\u00F1o",
+    "X": 787,
+    "Y": 178,
+    "Alto": 150,
+    "Ancho": 150,
+    "ColorFondo": null
+  },
+  {
+    "Tipo": "Pared",
+    "X": 744,
+    "Y": 383,
+    "Alto": 37,
+    "Ancho": 232,
+    "ColorFondo": "Black"
   }
 ]

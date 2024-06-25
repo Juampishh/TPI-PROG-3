@@ -86,9 +86,9 @@ namespace WinFormsApp1
 
             foreach (Control control in panelPlano.Controls)
             {
-                if (control is Pared pared)
+                if (control is IEventos eventos)
                 {
-                    pared.ModoPrevisualizacion();
+                    eventos.ModoPrevisualizacion();
                 }
             }
         }

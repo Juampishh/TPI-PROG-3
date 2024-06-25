@@ -28,18 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrevisualizacionForm));
             panel2 = new Panel();
             VolverButtom = new Button();
-            button2 = new Button();
             panelPlano = new Panel();
+            pictureBox2 = new PictureBox();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel2
             // 
             panel2.BackColor = Color.DarkGray;
+            panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(VolverButtom);
-            panel2.Controls.Add(button2);
             panel2.Dock = DockStyle.Right;
             panel2.Location = new Point(952, 0);
             panel2.Name = "panel2";
@@ -57,15 +59,6 @@
             VolverButtom.UseVisualStyleBackColor = true;
             VolverButtom.Click += VolverButtom_Click;
             // 
-            // button2
-            // 
-            button2.Location = new Point(6, 76);
-            button2.Name = "button2";
-            button2.Size = new Size(111, 23);
-            button2.TabIndex = 1;
-            button2.Text = "Cancelar reservas";
-            button2.UseVisualStyleBackColor = true;
-            // 
             // panelPlano
             // 
             panelPlano.BackColor = Color.Bisque;
@@ -75,6 +68,16 @@
             panelPlano.Name = "panelPlano";
             panelPlano.Size = new Size(952, 611);
             panelPlano.TabIndex = 4;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Dock = DockStyle.Bottom;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(0, 511);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(120, 100);
+            pictureBox2.TabIndex = 6;
+            pictureBox2.TabStop = false;
             // 
             // PrevisualizacionForm
             // 
@@ -88,13 +91,14 @@
             WindowState = FormWindowState.Maximized;
             FormClosing += PrevisualizacionForm_FormClosing;
             panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private Panel panel2;
         private Button VolverButtom;
-        private Button button2;
         private Panel panelPlano;
+        private PictureBox pictureBox2;
     }
 }

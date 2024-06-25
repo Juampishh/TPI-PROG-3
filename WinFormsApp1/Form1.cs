@@ -20,11 +20,11 @@ namespace WinFormsApp1
 
             agregarMesaButton.Click += new EventHandler(AgregarMesaButton_Click);
             btnSalir.Click += new EventHandler(btnSalir_Click);
-            agregarMesaButton.Visible = false;
-            btnAddPared.Visible = false;
+            agregarMesaButton.Visible = true;
+            btnAddPared.Visible = true;
             this.FormClosing += new FormClosingEventHandler(Form1_FormClosing);
-            btnBaño.Visible = false;
-            btnBarra.Visible = false;
+            btnBaño.Visible = true;
+            btnBarra.Visible = true;
             this.estadoControles = estadoControles; //recibe los controles de la lista
             this.archivo = archivo;
             controles = new List<Control>();
