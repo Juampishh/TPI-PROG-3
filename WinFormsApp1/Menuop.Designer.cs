@@ -135,11 +135,11 @@
             Controls.Add(panelPrevisualizacion);
             Controls.Add(labelEdicion);
             Controls.Add(panelEdicion);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Menuop";
             Opacity = 0.9D;
             Text = "Menú de Opciones";
+            FormClosing += Menuop_FormClosing;
             FormClosed += Menuop_FormClosed;
             Load += Menuop_Load;
             panelEdicion.ResumeLayout(false);
