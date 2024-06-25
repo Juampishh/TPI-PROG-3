@@ -223,8 +223,7 @@ namespace WinFormsApp1
 
         private void VolverButtom_Click(object sender, EventArgs e)
         {
-            //Menuop menuop = new Menuop();
-            //menuop.Show();
+            
             this.Hide();
         }
 
@@ -272,7 +271,7 @@ namespace WinFormsApp1
             nuevoBaño.MouseDown += new MouseEventHandler(Baño_MouseDown);
             panelPlano.Controls.Add(nuevoBaño);
            
-            //panel3.Controls.Add(nuevoBaño);
+            
         }
         private void Baño_MouseDown(object sender, MouseEventArgs e)
         {
