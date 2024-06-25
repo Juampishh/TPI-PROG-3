@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace WinFormsApp1.Clases
 {
@@ -44,6 +45,16 @@ namespace WinFormsApp1.Clases
                 new Pedidos("Café", 0, 2.49m, "Bebidas"),
                 new Pedidos("Agua mineral", 0, 1.99m, "Bebidas")
             };
+        }
+
+
+        public void mostrarPedidos()
+        {
+            List<Pedidos> p = ObtenerMenuCompleto();
+            foreach (Pedidos pedidos in p)
+            {
+
+            }
         }
     }
 }

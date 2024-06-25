@@ -100,7 +100,7 @@ namespace WinFormsApp1
 
         private void Menuop_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
     public class ControlState

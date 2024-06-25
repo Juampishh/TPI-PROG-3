@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrevisualizacionForm));
             panel2 = new Panel();
+            pictureBox2 = new PictureBox();
             VolverButtom = new Button();
             panelPlano = new Panel();
-            pictureBox2 = new PictureBox();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -47,6 +47,16 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(120, 611);
             panel2.TabIndex = 2;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Dock = DockStyle.Bottom;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(0, 511);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(120, 100);
+            pictureBox2.TabIndex = 6;
+            pictureBox2.TabStop = false;
             // 
             // VolverButtom
             // 
@@ -68,16 +78,6 @@
             panelPlano.Name = "panelPlano";
             panelPlano.Size = new Size(952, 611);
             panelPlano.TabIndex = 4;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Dock = DockStyle.Bottom;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 511);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(120, 100);
-            pictureBox2.TabIndex = 6;
-            pictureBox2.TabStop = false;
             // 
             // PrevisualizacionForm
             // 
