@@ -17,6 +17,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menuop));
             panelEdicion = new Panel();
             Edicion = new Button();
             btnEdicion = new Button();
@@ -45,6 +46,8 @@
             // 
             // Edicion
             // 
+            Edicion.BackgroundImage = (Image)resources.GetObject("Edicion.BackgroundImage");
+            Edicion.BackgroundImageLayout = ImageLayout.Stretch;
             Edicion.FlatStyle = FlatStyle.Popup;
             Edicion.Location = new Point(0, 0);
             Edicion.Margin = new Padding(3, 2, 3, 2);
@@ -93,6 +96,8 @@
             // 
             // ingresoPrev
             // 
+            ingresoPrev.BackgroundImage = (Image)resources.GetObject("ingresoPrev.BackgroundImage");
+            ingresoPrev.BackgroundImageLayout = ImageLayout.Stretch;
             ingresoPrev.FlatStyle = FlatStyle.Popup;
             ingresoPrev.Location = new Point(0, 0);
             ingresoPrev.Margin = new Padding(3, 2, 3, 2);
@@ -138,6 +143,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "Menuop";
             Opacity = 0.9D;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Menú de Opciones";
             FormClosing += Menuop_FormClosing;
             FormClosed += Menuop_FormClosed;

@@ -19,6 +19,8 @@
     <None Remove="Resources\Mesa-6-amarillo.png" />
     <None Remove="Resources\Mesa-6-rojo.png" />
     <None Remove="Resources\Mesa-6-verde.png" />
+    <None Remove="Resources\OIG1.jpeg" />
+    <None Remove="Resources\previsualizacion.jpeg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -50,6 +52,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Mesa-6-verde.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\OIG1.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\previsualizacion.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

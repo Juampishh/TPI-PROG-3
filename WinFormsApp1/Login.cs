@@ -9,12 +9,13 @@ namespace WinFormsApp1
     {
         private const string CredentialsFilePath = "credentials.json";
         private Credentials credentials;
-
+        public Menuop menu;
         ////////////////
         public Login()
         {
             InitializeComponent();
             LoadCredentials();
+            menu = new Menuop();
         }
 
         private void LoadCredentials()
@@ -85,12 +86,12 @@ namespace WinFormsApp1
             }
         }
 
-        protected void Ingresar_Click(object sender, EventArgs e)
+        public void Ingresar_Click(object sender, EventArgs e)
         {
             if (Usuario.Text == credentials.Username && Contraseña.Text == credentials.Password)
             {
-                Menuop menuop = new Menuop();
-                menuop.Show();
+                
+                menu.Show();
                 this.Hide();
             }
             else

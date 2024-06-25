@@ -9,7 +9,9 @@ namespace WinFormsApp1
     {
         private List<ControlState> estadoControles;
         private const string archivo = "Controles.json";
-        
+        public Form1 formDiseño;
+        PrevisualizacionForm formPrevisualizacion;
+
         public Menuop()
         {
             InitializeComponent();
@@ -17,6 +19,8 @@ namespace WinFormsApp1
             btnPrevisualizacion.Visible = false;
             estadoControles = new List<ControlState>();
             CargarControles();
+            formDiseño= new Form1(ref estadoControles, archivo);
+            formPrevisualizacion = new PrevisualizacionForm(ref estadoControles);
         }
 
         private void CargarControles()
@@ -73,9 +77,9 @@ namespace WinFormsApp1
 
         private void ingresoPrev_Click(object sender, EventArgs e)
         {
-            PrevisualizacionForm prevForm = new PrevisualizacionForm(ref estadoControles);
-            prevForm.Show();
-            this.Hide();
+
+            formPrevisualizacion.ShowDialog();
+            //this.Hide();
         }
 
         private void Menuop_Load(object sender, EventArgs e)
@@ -90,9 +94,9 @@ namespace WinFormsApp1
 
         private void Edicion_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1(ref estadoControles, archivo);
-            form1.Show();
-            this.Hide();
+            
+            formDiseño.ShowDialog();
+            //this.Hide();
         }
 
         private void Menuop_FormClosed(object sender, FormClosedEventArgs e)

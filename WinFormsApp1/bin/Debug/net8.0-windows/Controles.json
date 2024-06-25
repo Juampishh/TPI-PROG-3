@@ -13,7 +13,7 @@
     "Y": 9,
     "Alto": 28,
     "Ancho": 698,
-    "ColorFondo": "Red"
+    "ColorFondo": "ff000040"
   },
   {
     "Tipo": "Mesa_para_4",
@@ -32,43 +32,27 @@
     "ColorFondo": "Black"
   },
   {
-    "Tipo": "Barra",
-    "X": 301,
-    "Y": 344,
-    "Alto": 42,
-    "Ancho": 351,
-    "ColorFondo": null
-  },
-  {
-    "Tipo": "Pared",
-    "X": 839,
-    "Y": 34,
-    "Alto": 370,
-    "Ancho": 34,
-    "ColorFondo": "Maroon"
-  },
-  {
-    "Tipo": "Mesa_para_4",
-    "X": 311,
-    "Y": 47,
-    "Alto": 0,
-    "Ancho": 0,
-    "ColorFondo": null
-  },
-  {
-    "Tipo": "Mesa_para_6",
-    "X": 316,
-    "Y": 152,
-    "Alto": 0,
-    "Ancho": 0,
-    "ColorFondo": null
-  },
-  {
     "Tipo": "Ba\u00F1o",
     "X": 686,
     "Y": 38,
     "Alto": 150,
     "Ancho": 150,
+    "ColorFondo": null
+  },
+  {
+    "Tipo": "Mesa_para_6",
+    "X": 133,
+    "Y": 178,
+    "Alto": 0,
+    "Ancho": 0,
+    "ColorFondo": null
+  },
+  {
+    "Tipo": "Mesa_para_2",
+    "X": 204,
+    "Y": 181,
+    "Alto": 0,
+    "Ancho": 0,
     "ColorFondo": null
   }
 ]

@@ -72,14 +72,11 @@ C:\Users\celes\OneDrive\Escritorio\resto\WinFormsApp1\obj\Debug\net8.0-windows\r
 C:\Users\celes\OneDrive\Escritorio\resto\WinFormsApp1\bin\Debug\net8.0-windows\Resources\baño1.jpg
 C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
 C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.ElegirMesa.resources
-C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.EmailForm.resources
 C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
 C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Login.resources
 C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Menuop.resources
-C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.PasswordChangeForm.resources
 C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.PrevisualizacionForm.resources
 C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
-C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.TokenVerificationForm.resources
 C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
 C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
@@ -116,3 +113,6 @@ C:\Users\celes\OneDrive\Escritorio\resto\WinFormsApp1\obj\Debug\net8.0-windows\W
 C:\Users\celes\OneDrive\Escritorio\resto\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.FormVerPedidos.resources
 C:\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.FormVerPedidos.resources
 C:\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.CambioContraseña.resources
+C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.CambioContraseña.resources
+C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\bin\Debug\net8.0-windows\Resources\OIG1.jpeg
+C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\bin\Debug\net8.0-windows\Resources\previsualizacion.jpeg

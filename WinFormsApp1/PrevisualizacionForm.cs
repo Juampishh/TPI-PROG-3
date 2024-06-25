@@ -97,15 +97,13 @@ namespace WinFormsApp1
 
         private void VolverButtom_Click(object sender, EventArgs e)
         {
-            Menuop menuop = new Menuop();
-            menuop.Show();
             this.Hide();
         }
 
         private void PrevisualizacionForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Menuop menuop = new Menuop();
-            menuop.Show();
+           // Menuop menuop = new Menuop();
+            //menuop.Show();
             this.Hide();
         }
     }
