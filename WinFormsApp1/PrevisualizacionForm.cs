@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsApp1.Clases;
 using WinFormsApp1.Mesas;
 
 namespace WinFormsApp1
