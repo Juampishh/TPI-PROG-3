@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5p9euYCIUJQ=",
+  "dgSpecHash": "YzB78kY9tqU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tomi\\Desktop\\Repositorios PROG 3 TPI\\WinFormsApp1\\WinFormsApp1.csproj",
+  "projectFilePath": "C:\\Users\\celes\\OneDrive\\Escritorio\\resto\\WinFormsApp1\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Tomi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\celes\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
