@@ -83,6 +83,14 @@ namespace WinFormsApp1
                     panelPlano.Controls.Add(control);
                 }
             }
+
+            foreach (Control control in panelPlano.Controls)
+            {
+                if (control is Pared pared)
+                {
+                    pared.ModoPrevisualizacion();
+                }
+            }
         }
 
 

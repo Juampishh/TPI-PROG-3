@@ -54,5 +54,13 @@
     "Alto": 42,
     "Ancho": 351,
     "ColorFondo": null
+  },
+  {
+    "Tipo": "Pared",
+    "X": 942,
+    "Y": 19,
+    "Alto": 370,
+    "Ancho": 34,
+    "ColorFondo": "Maroon"
   }
 ]

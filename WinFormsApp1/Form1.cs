@@ -170,6 +170,14 @@ namespace WinFormsApp1
                 }
 
             }
+
+            foreach(Control control in controles)
+            {
+                if (control is IEventos eventos)
+                {
+                    eventos.ModoEdicion();
+                }
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -317,7 +325,7 @@ namespace WinFormsApp1
 
 
 
-    public class Pared : Button
+    public class Pared : Button, IEventos
     {
         // Variables para arrastrar y redimensionar
         private bool isDragging = false;
@@ -331,13 +339,31 @@ namespace WinFormsApp1
             this.BackColor = Color.Black;
             this.Width = 30;
             this.Height = 100;
+            ModoEdicion();
+        }
+
+        public void ModoEdicion()
+        {
             this.MouseDown += new MouseEventHandler(Pared_MouseDown);
             this.MouseMove += new MouseEventHandler(Pared_MouseMove);
             this.MouseUp += new MouseEventHandler(Pared_MouseUp);
             this.ContextMenuStrip = new ContextMenuStrip();
             this.ContextMenuStrip.Items.Add("Cambiar Color").Click += new EventHandler(CambiarColor_Click);
             this.ContextMenuStrip.Items.Add("Eliminar Pared").Click += new EventHandler(EliminarPared_Click);
+
         }
+
+        
+
+        public void ModoPrevisualizacion()
+        {
+            this.MouseDown -= new MouseEventHandler(Pared_MouseDown);
+            this.MouseMove -= new MouseEventHandler(Pared_MouseMove);
+            this.MouseUp -= new MouseEventHandler(Pared_MouseUp);
+            this.ContextMenuStrip = null;
+            
+        }
+
         // Eventos para arrastrar y redimensionar
         private void Pared_MouseDown(object sender, MouseEventArgs e)
         {
@@ -371,7 +397,7 @@ namespace WinFormsApp1
             isDragging = false;
             isResizing = false;
         }
-        // Evento para cambiar el color de la pared
+        // Evento para cambiar el color de la eventos
         private void CambiarColor_Click(object sender, EventArgs e)
         {
             ColorDialog colorDialog = new ColorDialog();
@@ -380,12 +406,12 @@ namespace WinFormsApp1
                 this.BackColor = colorDialog.Color;
             }
         }
-        // Evento para eliminar la pared
+        // Evento para eliminar la eventos
         private void EliminarPared_Click(object sender, EventArgs e)
         {
             this.Parent.Controls.Remove(this);
         }
-        // Método para dibujar el tamaño de la pared
+        // Método para dibujar el tamaño de la eventos
         protected override void OnPaint(PaintEventArgs pe)
         {
             base.OnPaint(pe);
