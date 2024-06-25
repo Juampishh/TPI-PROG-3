@@ -48,19 +48,19 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Century Gothic", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(423, 46);
             label1.Name = "label1";
-            label1.Size = new Size(151, 49);
+            label1.Size = new Size(147, 47);
             label1.TabIndex = 2;
             label1.Text = "LOGIN";
             // 
             // Ingresar
             // 
             Ingresar.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Ingresar.Location = new Point(384, 337);
+            Ingresar.Location = new Point(393, 337);
             Ingresar.Name = "Ingresar";
-            Ingresar.Size = new Size(208, 40);
+            Ingresar.Size = new Size(208, 48);
             Ingresar.TabIndex = 3;
             Ingresar.Text = "INGRESAR";
             Ingresar.UseVisualStyleBackColor = true;
@@ -74,6 +74,7 @@
             Usuario.Size = new Size(295, 36);
             Usuario.TabIndex = 6;
             Usuario.Text = "Usuario";
+            Usuario.TextChanged += Usuario_TextChanged;
             Usuario.MouseEnter += Usuario_MouseEnter;
             Usuario.MouseLeave += Usuario_MouseLeave;
             // 
@@ -91,12 +92,12 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(393, 380);
+            linkLabel1.Location = new Point(423, 403);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(199, 20);
+            linkLabel1.Size = new Size(143, 20);
             linkLabel1.TabIndex = 8;
             linkLabel1.TabStop = true;
-            linkLabel1.Text = "¿Ha olvidado su contraseña?";
+            linkLabel1.Text = "Cambiar Contraseña";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // Login

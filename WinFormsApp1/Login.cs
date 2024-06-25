@@ -85,7 +85,7 @@ namespace WinFormsApp1
             }
         }
 
-        protected  void Ingresar_Click(object sender, EventArgs e)
+        protected void Ingresar_Click(object sender, EventArgs e)
         {
             if (Usuario.Text == credentials.Username && Contraseña.Text == credentials.Password)
             {
@@ -106,12 +106,17 @@ namespace WinFormsApp1
 
         }
 
+
+
+        private void Usuario_TextChanged(object sender, EventArgs e)
+        {
+        }
+
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            EmailForm form = new EmailForm();
-            form.Show();
+            CambioContraseña contraseñanueva= new CambioContraseña();
+            contraseñanueva.Show();
             this.Hide();
-            
         }
     }
 
