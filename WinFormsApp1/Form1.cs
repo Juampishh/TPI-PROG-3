@@ -418,7 +418,7 @@ namespace WinFormsApp1
             ControlPaint.DrawSizeGrip(pe.Graphics, this.BackColor, this.Width - gripSize, this.Height - gripSize, gripSize, gripSize);
         }
     }
-    public class Baño : Button
+    public class Baño : Button, IEventos
     {
         // Variables para arrastrar y redimensionar
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
@@ -435,11 +435,8 @@ namespace WinFormsApp1
             this.BackgroundImage = Image.FromFile("Resources/baño1.jpg");
             this.BackgroundImageLayout = ImageLayout.Stretch;
             //this.BackgroundImageLayout = ImageLayout.Stretch;
-            this.MouseDown += new MouseEventHandler(Baño_MouseDown);
-            this.MouseMove += new MouseEventHandler(Baño_MouseMove);
-            this.MouseUp += new MouseEventHandler(Baño_MouseUp);
-            this.ContextMenuStrip = new ContextMenuStrip();
-            this.ContextMenuStrip.Items.Add("Eliminar Baño").Click += new EventHandler(EliminarBaño_Click);
+
+            ModoEdicion();
         }
 
         private void EliminarBaño_Click(object? sender, EventArgs e)
@@ -485,9 +482,27 @@ namespace WinFormsApp1
             base.OnPaint(pe);
             ControlPaint.DrawSizeGrip(pe.Graphics, this.BackColor, this.Width - gripSize, this.Height - gripSize, gripSize, gripSize);
         }
+
+        public void ModoEdicion()
+        {
+            this.MouseDown += new MouseEventHandler(Baño_MouseDown);
+            this.MouseMove += new MouseEventHandler(Baño_MouseMove);
+            this.MouseUp += new MouseEventHandler(Baño_MouseUp);
+            this.ContextMenuStrip = new ContextMenuStrip();
+            this.ContextMenuStrip.Items.Add("Eliminar Baño").Click += new EventHandler(EliminarBaño_Click);
+        }
+
+        public void ModoPrevisualizacion()
+        {
+            this.MouseDown -= new MouseEventHandler(Baño_MouseDown);
+            this.MouseMove -= new MouseEventHandler(Baño_MouseMove);
+            this.MouseUp -= new MouseEventHandler(Baño_MouseUp);
+            this.ContextMenuStrip = null;
+            
+        }
     }
 
-    public class Barra : Button
+    public class Barra : Button, IEventos
     {
         // Variables para arrastrar y redimensionar
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
@@ -506,6 +521,7 @@ namespace WinFormsApp1
             this.BackgroundImageLayout = ImageLayout.Stretch;
             //this.BackgroundImage = (Image)resources.GetObject("btnBaño.BackgroundImage");
             this.BackgroundImageLayout = ImageLayout.Stretch;
+
             this.MouseDown += new MouseEventHandler(Barra_MouseDown);
             this.MouseMove += new MouseEventHandler(Barra_MouseMove);
             this.MouseUp += new MouseEventHandler(Barra_MouseUp);
@@ -555,6 +571,23 @@ namespace WinFormsApp1
         {
             base.OnPaint(pe);
             ControlPaint.DrawSizeGrip(pe.Graphics, this.BackColor, this.Width - gripSize, this.Height - gripSize, gripSize, gripSize);
+        }
+
+        public void ModoEdicion()
+        {
+            this.MouseDown += new MouseEventHandler(Barra_MouseDown);
+            this.MouseMove += new MouseEventHandler(Barra_MouseMove);
+            this.MouseUp += new MouseEventHandler(Barra_MouseUp);
+            this.ContextMenuStrip = new ContextMenuStrip();
+            this.ContextMenuStrip.Items.Add("Eliminar Barra").Click += new EventHandler(EliminarBarra_Click);
+        }
+
+        public void ModoPrevisualizacion()
+        {
+            this.MouseDown -= new MouseEventHandler(Barra_MouseDown);
+            this.MouseMove -= new MouseEventHandler(Barra_MouseMove);
+            this.MouseUp -= new MouseEventHandler(Barra_MouseUp);
+            this.ContextMenuStrip = null;
         }
     }
 }
