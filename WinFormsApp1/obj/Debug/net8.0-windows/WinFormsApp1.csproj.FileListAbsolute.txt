@@ -115,3 +115,5 @@ C:\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\baño1.jpg
 C:\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.FormPedidos.resources
 C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.FormPedidos.resources
 C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.FormVerPedidos.resources
+C:\Users\celes\OneDrive\Escritorio\resto\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.FormPedidos.resources
+C:\Users\celes\OneDrive\Escritorio\resto\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.FormVerPedidos.resources

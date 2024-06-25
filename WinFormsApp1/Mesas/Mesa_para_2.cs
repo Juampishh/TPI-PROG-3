@@ -79,6 +79,7 @@ namespace WinFormsApp1.Mesas
         {
             // Lógica para eliminar la mesa
             this.Parent.Controls.Remove(this);
+
         }
 
         //-----------------------------------------------------------------------------------

@@ -11,7 +11,7 @@ namespace WinFormsApp1
         private bool isDragging = false;
         private Point startPoint = new Point(0, 0);
         private List<ControlState> estadoControles;
-        private List<Control> controles;
+        
         private string archivo;
 
         public Form1(ref List<ControlState> estadoControles, string archivo)
@@ -27,7 +27,7 @@ namespace WinFormsApp1
             btnBarra.Visible = true;
             this.estadoControles = estadoControles; //recibe los controles de la lista
             this.archivo = archivo;
-            controles = new List<Control>();
+            
             CargarControles();
         }
 
@@ -43,21 +43,21 @@ namespace WinFormsApp1
                         Mesa_para_2 mesa_para_2 = new Mesa_para_2();
                         mesa_para_2.Location = new Point(10, 10);
                         panelPlano.Controls.Add(mesa_para_2);
-                        controles.Add(mesa_para_2);
+                        
 
                         break;
                     case 4:
                         Mesa_para_4 mesa_para_4 = new Mesa_para_4();
                         mesa_para_4.Location = new Point(10, 10);
                         panelPlano.Controls.Add(mesa_para_4);
-                        controles.Add(mesa_para_4);
+                        
 
                         break;
                     case 6:
                         Mesa_para_6 mesa_para_6 = new Mesa_para_6();
                         mesa_para_6.Location = new Point(10, 10);
                         panelPlano.Controls.Add(mesa_para_6);
-                        controles.Add(mesa_para_6);
+                        
                         break;
                     default: break;
                 }
@@ -69,7 +69,7 @@ namespace WinFormsApp1
         private void GuardarControles()
         {
             estadoControles.Clear();
-            foreach (Control control in controles)
+            foreach (Control control in panelPlano.Controls)
             {
                 if (control is Pared pared)
                 {
@@ -117,7 +117,7 @@ namespace WinFormsApp1
 
 
             panelPlano.Controls.Clear();
-            controles.Clear();
+            
 
             foreach (ControlState estado in estadoControles)
             {
@@ -166,12 +166,12 @@ namespace WinFormsApp1
                 if (control != null)
                 {
                     panelPlano.Controls.Add(control);
-                    controles.Add(control);
+                    
                 }
 
             }
 
-            foreach(Control control in controles)
+            foreach(Control control in panelPlano.Controls)
             {
                 if (control is IEventos eventos)
                 {
@@ -197,7 +197,7 @@ namespace WinFormsApp1
             nuevaPared.Location = new Point(10, 10);
             nuevaPared.MouseDown += new MouseEventHandler(Pared_MouseDown);
             panelPlano.Controls.Add(nuevaPared);
-            controles.Add(nuevaPared);
+            
         }
 
         // Evento para mostrar el menú contextual al hacer clic derecho
@@ -269,7 +269,7 @@ namespace WinFormsApp1
             nuevoBaño.Location = new Point(15, 15);
             nuevoBaño.MouseDown += new MouseEventHandler(Baño_MouseDown);
             panelPlano.Controls.Add(nuevoBaño);
-            controles.Add(nuevoBaño);
+           
             //panel3.Controls.Add(nuevoBaño);
         }
         private void Baño_MouseDown(object sender, MouseEventArgs e)
@@ -294,8 +294,7 @@ namespace WinFormsApp1
             nuevaBarra.Location = new Point(15, 15);
             nuevaBarra.MouseDown += new MouseEventHandler(Barra_MouseDown);
             panelPlano.Controls.Add(nuevaBarra);
-            controles.Add(nuevaBarra);
-            //panel3.Controls.Add(nuevaBarra);
+           
         }
         private void Barra_MouseDown(object sender, MouseEventArgs e)
         {
