@@ -95,7 +95,12 @@ namespace WinFormsApp1
 
         private void Menuop_FormClosed(object sender, FormClosedEventArgs e)
         {
-            //Application.Exit();
+
+        }
+
+        private void Menuop_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Close();
         }
     }
     public class ControlState

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WinFormsApp1.Mesas
 {
-    public class Mesa_para_6 : PictureBox
+    public class Mesa_para_6 : PictureBox , IEventos
     {
         private bool isDragging = false;
         private Point startPoint = new Point(0, 0);
@@ -21,31 +21,10 @@ namespace WinFormsApp1.Mesas
             this.Height = 100;
             this.BackgroundImage = Image.FromFile("Resources/Mesa-6-verde.png");
             this.BackgroundImageLayout = ImageLayout.Zoom;
-
-            //Movimiento del pictureBox
-            this.MouseDown += new MouseEventHandler(Mesa_MouseDown);
-            this.MouseMove += new MouseEventHandler(Mesa_MouseMove);
-            this.MouseUp += new MouseEventHandler(Mesa_MouseUp);
-
             //Opciones de click derecho
             this.ContextMenuStrip = new ContextMenuStrip();
-            this.ContextMenuStrip.Items.Add("Asignar numero de mesa").Click += new EventHandler(Mesa_Numero);
-            this.ContextMenuStrip.Items.Add("Eliminar mesa").Click += new EventHandler(EliminarMesa);
-
-
-            //SubMenu dentro del click derecho(Elegir estado de la mesa)
-            ToolStripMenuItem CambiarColor = new ToolStripMenuItem("Cambiar estado de mesa");
-            ToolStripMenuItem colorVerdeItem = new ToolStripMenuItem("Libre");
-            colorVerdeItem.Click += (sender, e) => CambiarColorMesa("Libre");
-            ToolStripMenuItem colorRojoItem = new ToolStripMenuItem("Ocupado");
-            colorRojoItem.Click += (sender, e) => CambiarColorMesa("Ocupado");
-            ToolStripMenuItem colorAmarilloItem = new ToolStripMenuItem("Reservado");
-            colorAmarilloItem.Click += (sender, e) => CambiarColorMesa("Reservado");
-            CambiarColor.DropDownItems.Add(colorVerdeItem);
-            CambiarColor.DropDownItems.Add(colorRojoItem);
-            CambiarColor.DropDownItems.Add(colorAmarilloItem);
-
-            this.ContextMenuStrip.Items.Add(CambiarColor);
+            ModoEdicion();
+            
 
         }
 
@@ -145,6 +124,43 @@ namespace WinFormsApp1.Mesas
             float y = (this.Height - textSize.Height) / 2;
 
             pe.Graphics.DrawString(text, font, brush, x, y);
+        }
+
+        public void ModoEdicion()
+        {
+            this.ContextMenuStrip.Items.Clear();
+            this.MouseDown += new MouseEventHandler(Mesa_MouseDown);
+            this.MouseMove += new MouseEventHandler(Mesa_MouseMove);
+            this.MouseUp += new MouseEventHandler(Mesa_MouseUp);
+
+            //Opciones de click derecho
+            this.ContextMenuStrip.Items.Add("Asignar numero de mesa").Click += new EventHandler(Mesa_Numero);
+            this.ContextMenuStrip.Items.Add("Eliminar mesa").Click += new EventHandler(EliminarMesa);
+
+        }
+
+
+
+        public void ModoPrevisualizacion()
+        {
+            this.ContextMenuStrip.Items.Clear();
+            this.MouseDown -= new MouseEventHandler(Mesa_MouseDown);
+            this.MouseMove -= new MouseEventHandler(Mesa_MouseMove);
+            this.MouseUp -= new MouseEventHandler(Mesa_MouseUp);
+
+            //SubMenu dentro del click derecho(Elegir estado de la mesa)
+            ToolStripMenuItem CambiarColor = new ToolStripMenuItem("Cambiar estado de mesa");
+            ToolStripMenuItem colorVerdeItem = new ToolStripMenuItem("Libre");
+            colorVerdeItem.Click += (sender, e) => CambiarColorMesa("Libre");
+            ToolStripMenuItem colorRojoItem = new ToolStripMenuItem("Ocupado");
+            colorRojoItem.Click += (sender, e) => CambiarColorMesa("Ocupado");
+            ToolStripMenuItem colorAmarilloItem = new ToolStripMenuItem("Reservado");
+            colorAmarilloItem.Click += (sender, e) => CambiarColorMesa("Reservado");
+            CambiarColor.DropDownItems.Add(colorVerdeItem);
+            CambiarColor.DropDownItems.Add(colorRojoItem);
+            CambiarColor.DropDownItems.Add(colorAmarilloItem);
+            this.ContextMenuStrip.Items.Add(CambiarColor);
+
         }
     }
 }
