@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WinFormsApp1.Clases;
 
 namespace WinFormsApp1.Mesas
 {
@@ -11,7 +12,9 @@ namespace WinFormsApp1.Mesas
     {
         private bool isDragging = false;
         private Point startPoint = new Point(0, 0);
-        private int mesaNumber = 1; // Número de mesa inicial
+        public int mesaNumber = 1; // Número de mesa inicial
+        public List<Pedidos> pedidos;
+        public decimal montoFinal;
 
         public Mesa_para_6()
         {
@@ -23,6 +26,8 @@ namespace WinFormsApp1.Mesas
             this.BackgroundImageLayout = ImageLayout.Zoom;
             //Opciones de click derecho
             this.ContextMenuStrip = new ContextMenuStrip();
+            this.pedidos = new List<Pedidos>();
+            this.montoFinal = 0;
             ModoEdicion();
             
 
@@ -126,6 +131,55 @@ namespace WinFormsApp1.Mesas
             pe.Graphics.DrawString(text, font, brush, x, y);
         }
 
+        //-----------------------------------------------------------------------------------
+
+        public void hacerPedidos(object sender, EventArgs e)
+        {
+            FormPedidos formPedidos = new FormPedidos();
+
+            DialogResult dialogResult = formPedidos.ShowDialog();
+            if (dialogResult == DialogResult.OK)
+            {
+                pedidos = formPedidos.pedidoActual;
+                montoFinal = formPedidos.montoTotal;
+            }
+        }
+
+
+
+        public void verPedidos(object sender, EventArgs e)
+        {
+
+            FormVerPedidos formVerPedido = new FormVerPedidos();
+
+            formVerPedido.listBox1.Items.Clear();
+            foreach (Pedidos p in pedidos)
+            {
+                if (pedidos.Count > 0)
+                {
+                    formVerPedido.listBox1.Items.Add($"{p.Producto} x{p.Cantidad} - ${p.PrecioUnitario * p.Cantidad}");
+                }
+                else
+                {
+                    formVerPedido.listBox1.Text = "";
+                    break;
+                }
+            }
+            formVerPedido.label2.Text = $"${montoFinal:F2}";
+            formVerPedido.label3.Text += $"{mesaNumber}";
+            //formVerPedido.label4.Text += $"{Mozo.nombre}";
+            formVerPedido.label5.Text += $" {DateTime.Now.ToString("dd/MM/yy")}";
+
+            DialogResult dialogResult = formVerPedido.ShowDialog();
+            if (dialogResult == DialogResult.Cancel)
+            {
+                montoFinal = 0;
+                pedidos.Clear();
+            }
+
+        }
+        //-----------------------------------------------------------------------------------
+
         public void ModoEdicion()
         {
             this.ContextMenuStrip.Items.Clear();
@@ -147,6 +201,8 @@ namespace WinFormsApp1.Mesas
             this.MouseDown -= new MouseEventHandler(Mesa_MouseDown);
             this.MouseMove -= new MouseEventHandler(Mesa_MouseMove);
             this.MouseUp -= new MouseEventHandler(Mesa_MouseUp);
+            this.ContextMenuStrip.Items.Add("Hacer pedido").Click += new EventHandler(hacerPedidos);
+            this.ContextMenuStrip.Items.Add("Ver pedido").Click += new EventHandler(verPedidos);
 
             //SubMenu dentro del click derecho(Elegir estado de la mesa)
             ToolStripMenuItem CambiarColor = new ToolStripMenuItem("Cambiar estado de mesa");

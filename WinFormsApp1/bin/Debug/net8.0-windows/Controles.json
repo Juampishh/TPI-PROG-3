@@ -25,8 +25,8 @@
   },
   {
     "Tipo": "Mesa_para_4",
-    "X": 372,
-    "Y": 190,
+    "X": 417,
+    "Y": 266,
     "Alto": 0,
     "Ancho": 0,
     "ColorFondo": null
@@ -109,6 +109,30 @@
     "Y": 454,
     "Alto": 150,
     "Ancho": 150,
+    "ColorFondo": null
+  },
+  {
+    "Tipo": "Mesa_para_6",
+    "X": 254,
+    "Y": 271,
+    "Alto": 0,
+    "Ancho": 0,
+    "ColorFondo": null
+  },
+  {
+    "Tipo": "Mesa_para_2",
+    "X": 336,
+    "Y": 267,
+    "Alto": 0,
+    "Ancho": 0,
+    "ColorFondo": null
+  },
+  {
+    "Tipo": "Mesa_para_6",
+    "X": 50,
+    "Y": 357,
+    "Alto": 0,
+    "Ancho": 0,
     "ColorFondo": null
   }
 ]

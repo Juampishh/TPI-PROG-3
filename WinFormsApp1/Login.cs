@@ -85,7 +85,7 @@ namespace WinFormsApp1
             }
         }
 
-        private void Ingresar_Click(object sender, EventArgs e)
+        protected  void Ingresar_Click(object sender, EventArgs e)
         {
             if (Usuario.Text == credentials.Username && Contraseña.Text == credentials.Password)
             {

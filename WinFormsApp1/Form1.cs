@@ -217,14 +217,8 @@ namespace WinFormsApp1
         {
             Application.Exit();
         }
-        //Evento para cambiar a modo de modificación
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-            btnAddPared.Visible = true;
-            agregarMesaButton.Visible = true;
-            btnBaño.Visible = true;
-            btnBarra.Visible = true;
-        }
+        
+        
 
         private void VolverButtom_Click(object sender, EventArgs e)
         {
@@ -233,13 +227,10 @@ namespace WinFormsApp1
             this.Hide();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
+        
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason == CloseReason.UserClosing)
+            /*if (e.CloseReason == CloseReason.UserClosing)
             {
                 // Mostrar un mensaje de confirmación
                 DialogResult result = MessageBox.Show(
@@ -260,7 +251,7 @@ namespace WinFormsApp1
                     // El usuario decidió no salir
                     e.Cancel = true;
                 }
-            }
+            }*/
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

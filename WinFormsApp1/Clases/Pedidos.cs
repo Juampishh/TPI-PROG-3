@@ -46,6 +46,10 @@ namespace WinFormsApp1.Clases
                 new Pedidos("Agua mineral", 0, 1.99m, "Bebidas")
             };
         }
+        public override string ToString()
+        {
+            return $"Producto: {Producto}, Cantidad: {Cantidad}, Precio Unitario: {PrecioUnitario:C}, Categoría: {Categoria}";
+        }
 
 
         public void mostrarPedidos()

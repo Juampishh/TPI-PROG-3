@@ -135,7 +135,7 @@
             // 
             // VolverButtom
             // 
-            VolverButtom.Location = new Point(6, 11);
+            VolverButtom.Location = new Point(3, 22);
             VolverButtom.Margin = new Padding(3, 2, 3, 2);
             VolverButtom.Name = "VolverButtom";
             VolverButtom.Size = new Size(111, 22);
@@ -149,11 +149,11 @@
             btnSalir.BackColor = Color.Red;
             btnSalir.BackgroundImageLayout = ImageLayout.Center;
             btnSalir.Cursor = Cursors.Hand;
-            btnSalir.Location = new Point(22, 546);
+            btnSalir.Location = new Point(6, 546);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(77, 29);
+            btnSalir.Size = new Size(111, 29);
             btnSalir.TabIndex = 2;
-            btnSalir.Text = "Salir";
+            btnSalir.Text = "Cerrar aplicacion";
             btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
             // 

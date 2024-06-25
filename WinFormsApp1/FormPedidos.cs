@@ -10,8 +10,8 @@ namespace WinFormsApp1
     public partial class FormPedidos : Form
     {
         private List<Pedidos> menuCompleto;
-        private List<Pedidos> pedidoActual = new List<Pedidos>();
-        private decimal montoTotal = 0;
+        public List<Pedidos> pedidoActual = new List<Pedidos>();
+        public decimal montoTotal = 0;
 
         public FormPedidos()
         {
@@ -72,6 +72,18 @@ namespace WinFormsApp1
                 listaPedido.Items.Add($"{pedido.Producto} x{pedido.Cantidad} - ${pedido.PrecioUnitario * pedido.Cantidad}");
             }
             lblMontoTotal.Text = $"Monto Total: ${montoTotal:F2}";
+        }
+
+        private void btAceptarPedido_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+
+
+        }
+
+        private void btCancelarPedido_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.Cancel;
         }
     }
 }

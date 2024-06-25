@@ -28,117 +28,162 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelBienvenida = new System.Windows.Forms.Panel();
-            this.lblBienvenida = new System.Windows.Forms.Label();
-            this.listaCategorias = new System.Windows.Forms.ListBox();
-            this.listaProductos = new System.Windows.Forms.ListBox();
-            this.listaPedido = new System.Windows.Forms.ListBox();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.lblMontoTotal = new System.Windows.Forms.Label();
-            this.panelBienvenida.SuspendLayout();
-            this.SuspendLayout();
+            panelBienvenida = new Panel();
+            lblBienvenida = new Label();
+            listaCategorias = new ListBox();
+            listaProductos = new ListBox();
+            listaPedido = new ListBox();
+            btnAgregar = new Button();
+            lblMontoTotal = new Label();
+            panel1 = new Panel();
+            btCancelarPedido = new Button();
+            btAceptarPedido = new Button();
+            panelBienvenida.SuspendLayout();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // panelBienvenida
             // 
-            this.panelBienvenida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(173)))));
-            this.panelBienvenida.Controls.Add(this.lblBienvenida);
-            this.panelBienvenida.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBienvenida.Location = new System.Drawing.Point(0, 0);
-            this.panelBienvenida.Name = "panelBienvenida";
-            this.panelBienvenida.Size = new System.Drawing.Size(984, 100);
-            this.panelBienvenida.TabIndex = 0;
+            panelBienvenida.BackColor = Color.FromArgb(255, 222, 173);
+            panelBienvenida.Controls.Add(lblBienvenida);
+            panelBienvenida.Dock = DockStyle.Top;
+            panelBienvenida.Location = new Point(0, 0);
+            panelBienvenida.Margin = new Padding(3, 2, 3, 2);
+            panelBienvenida.Name = "panelBienvenida";
+            panelBienvenida.Size = new Size(851, 75);
+            panelBienvenida.TabIndex = 0;
             // 
             // lblBienvenida
             // 
-            this.lblBienvenida.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblBienvenida.AutoSize = true;
-            this.lblBienvenida.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblBienvenida.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lblBienvenida.Location = new System.Drawing.Point(339, 25);
-            this.lblBienvenida.Name = "lblBienvenida";
-            this.lblBienvenida.Size = new System.Drawing.Size(306, 54);
-            this.lblBienvenida.TabIndex = 0;
-            this.lblBienvenida.Text = "¡Haz tu pedido!";
+            lblBienvenida.Anchor = AnchorStyles.None;
+            lblBienvenida.AutoSize = true;
+            lblBienvenida.Font = new Font("Century Gothic", 24F, FontStyle.Bold);
+            lblBienvenida.ForeColor = Color.SaddleBrown;
+            lblBienvenida.Location = new Point(292, 19);
+            lblBienvenida.Name = "lblBienvenida";
+            lblBienvenida.Size = new Size(251, 38);
+            lblBienvenida.TabIndex = 0;
+            lblBienvenida.Text = "¡Haz tu pedido!";
             // 
             // listaCategorias
             // 
-            this.listaCategorias.BackColor = System.Drawing.Color.Linen;
-            this.listaCategorias.Dock = System.Windows.Forms.DockStyle.Left;
-            this.listaCategorias.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listaCategorias.FormattingEnabled = true;
-            this.listaCategorias.ItemHeight = 28;
-            this.listaCategorias.Location = new System.Drawing.Point(0, 100);
-            this.listaCategorias.Name = "listaCategorias";
-            this.listaCategorias.Size = new System.Drawing.Size(200, 440);
-            this.listaCategorias.TabIndex = 1;
+            listaCategorias.BackColor = Color.Linen;
+            listaCategorias.Dock = DockStyle.Left;
+            listaCategorias.Font = new Font("Century Gothic", 12F);
+            listaCategorias.FormattingEnabled = true;
+            listaCategorias.ItemHeight = 21;
+            listaCategorias.Location = new Point(0, 75);
+            listaCategorias.Margin = new Padding(3, 2, 3, 2);
+            listaCategorias.Name = "listaCategorias";
+            listaCategorias.Size = new Size(176, 335);
+            listaCategorias.TabIndex = 1;
             // 
             // listaProductos
             // 
-            this.listaProductos.BackColor = System.Drawing.Color.SeaShell;
-            this.listaProductos.Dock = System.Windows.Forms.DockStyle.Left;
-            this.listaProductos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listaProductos.FormattingEnabled = true;
-            this.listaProductos.ItemHeight = 28;
-            this.listaProductos.Location = new System.Drawing.Point(200, 100);
-            this.listaProductos.Name = "listaProductos";
-            this.listaProductos.Size = new System.Drawing.Size(300, 440);
-            this.listaProductos.TabIndex = 2;
+            listaProductos.BackColor = Color.SeaShell;
+            listaProductos.Dock = DockStyle.Left;
+            listaProductos.Font = new Font("Century Gothic", 12F);
+            listaProductos.FormattingEnabled = true;
+            listaProductos.ItemHeight = 21;
+            listaProductos.Location = new Point(176, 75);
+            listaProductos.Margin = new Padding(3, 2, 3, 2);
+            listaProductos.Name = "listaProductos";
+            listaProductos.Size = new Size(263, 335);
+            listaProductos.TabIndex = 2;
             // 
             // listaPedido
             // 
-            this.listaPedido.BackColor = System.Drawing.Color.MintCream;
-            this.listaPedido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listaPedido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listaPedido.FormattingEnabled = true;
-            this.listaPedido.ItemHeight = 28;
-            this.listaPedido.Location = new System.Drawing.Point(500, 100);
-            this.listaPedido.Name = "listaPedido";
-            this.listaPedido.Size = new System.Drawing.Size(484, 390);
-            this.listaPedido.TabIndex = 3;
+            listaPedido.BackColor = Color.MintCream;
+            listaPedido.Dock = DockStyle.Fill;
+            listaPedido.Font = new Font("Century Gothic", 12F);
+            listaPedido.FormattingEnabled = true;
+            listaPedido.ItemHeight = 21;
+            listaPedido.Location = new Point(439, 75);
+            listaPedido.Margin = new Padding(3, 2, 3, 2);
+            listaPedido.Name = "listaPedido";
+            listaPedido.Size = new Size(412, 335);
+            listaPedido.TabIndex = 3;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnAgregar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.Location = new System.Drawing.Point(0, 540);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(984, 50);
-            this.btnAgregar.TabIndex = 4;
-            this.btnAgregar.Text = "Agregar al pedido";
-            this.btnAgregar.UseVisualStyleBackColor = false;
+            btnAgregar.BackColor = Color.ForestGreen;
+            btnAgregar.Dock = DockStyle.Bottom;
+            btnAgregar.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            btnAgregar.ForeColor = Color.White;
+            btnAgregar.Location = new Point(0, 410);
+            btnAgregar.Margin = new Padding(3, 2, 3, 2);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(851, 38);
+            btnAgregar.TabIndex = 4;
+            btnAgregar.Text = "Agregar al pedido";
+            btnAgregar.UseVisualStyleBackColor = false;
             // 
             // lblMontoTotal
             // 
-            this.lblMontoTotal.BackColor = System.Drawing.Color.LightYellow;
-            this.lblMontoTotal.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblMontoTotal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblMontoTotal.Location = new System.Drawing.Point(500, 490);
-            this.lblMontoTotal.Name = "lblMontoTotal";
-            this.lblMontoTotal.Size = new System.Drawing.Size(484, 50);
-            this.lblMontoTotal.TabIndex = 5;
-            this.lblMontoTotal.Text = "Monto Total: $0.00";
-            this.lblMontoTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblMontoTotal.BackColor = Color.LightYellow;
+            lblMontoTotal.Dock = DockStyle.Bottom;
+            lblMontoTotal.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblMontoTotal.Location = new Point(439, 372);
+            lblMontoTotal.Name = "lblMontoTotal";
+            lblMontoTotal.Size = new Size(412, 38);
+            lblMontoTotal.TabIndex = 5;
+            lblMontoTotal.Text = "Monto Total: $0.00";
+            lblMontoTotal.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.MistyRose;
+            panel1.Controls.Add(btCancelarPedido);
+            panel1.Controls.Add(btAceptarPedido);
+            panel1.Dock = DockStyle.Right;
+            panel1.Location = new Point(707, 75);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(144, 297);
+            panel1.TabIndex = 6;
+            // 
+            // btCancelarPedido
+            // 
+            btCancelarPedido.FlatStyle = FlatStyle.Flat;
+            btCancelarPedido.Location = new Point(16, 169);
+            btCancelarPedido.Name = "btCancelarPedido";
+            btCancelarPedido.Size = new Size(116, 23);
+            btCancelarPedido.TabIndex = 1;
+            btCancelarPedido.Text = "Cancelar Pedido";
+            btCancelarPedido.UseVisualStyleBackColor = true;
+            btCancelarPedido.Click += btCancelarPedido_Click;
+            // 
+            // btAceptarPedido
+            // 
+            btAceptarPedido.FlatStyle = FlatStyle.Flat;
+            btAceptarPedido.Location = new Point(16, 78);
+            btAceptarPedido.Name = "btAceptarPedido";
+            btAceptarPedido.Size = new Size(116, 23);
+            btAceptarPedido.TabIndex = 0;
+            btAceptarPedido.Text = "Aceptar pedido";
+            btAceptarPedido.UseVisualStyleBackColor = true;
+            btAceptarPedido.Click += btAceptarPedido_Click;
             // 
             // FormPedidos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(984, 590);
-            this.Controls.Add(this.lblMontoTotal);
-            this.Controls.Add(this.listaPedido);
-            this.Controls.Add(this.listaProductos);
-            this.Controls.Add(this.listaCategorias);
-            this.Controls.Add(this.panelBienvenida);
-            this.Controls.Add(this.btnAgregar);
-            this.Name = "FormPedidos";
-            this.Text = "Menú del Restaurante";
-            this.Load += new System.EventHandler(this.FormPedidos_Load);
-            this.panelBienvenida.ResumeLayout(false);
-            this.panelBienvenida.PerformLayout();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(851, 448);
+            Controls.Add(panel1);
+            Controls.Add(lblMontoTotal);
+            Controls.Add(listaPedido);
+            Controls.Add(listaProductos);
+            Controls.Add(listaCategorias);
+            Controls.Add(panelBienvenida);
+            Controls.Add(btnAgregar);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "FormPedidos";
+            Text = "Menú del Restaurante";
+            Load += FormPedidos_Load;
+            panelBienvenida.ResumeLayout(false);
+            panelBienvenida.PerformLayout();
+            panel1.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
@@ -150,5 +195,8 @@
         private System.Windows.Forms.ListBox listaPedido;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label lblMontoTotal;
+        private Panel panel1;
+        private Button btCancelarPedido;
+        private Button btAceptarPedido;
     }
 }

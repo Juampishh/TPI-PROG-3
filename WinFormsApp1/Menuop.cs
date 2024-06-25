@@ -8,6 +8,7 @@ namespace WinFormsApp1
     {
         private List<ControlState> estadoControles;
         private const string archivo = "Controles.json";
+        
         public Menuop()
         {
             InitializeComponent();
