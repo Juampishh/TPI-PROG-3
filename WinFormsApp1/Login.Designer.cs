@@ -86,6 +86,7 @@
             Contraseña.Size = new Size(295, 36);
             Contraseña.TabIndex = 7;
             Contraseña.Text = "Contraseña";
+            Contraseña.UseSystemPasswordChar = true;
             Contraseña.MouseEnter += Contraseña_MouseEnter;
             Contraseña.MouseLeave += Contraseña_MouseLeave;
             // 

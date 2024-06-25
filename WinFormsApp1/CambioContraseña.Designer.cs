@@ -42,6 +42,7 @@
             txtContraseñaActual.Name = "txtContraseñaActual";
             txtContraseñaActual.Size = new Size(300, 32);
             txtContraseñaActual.TabIndex = 1;
+            txtContraseñaActual.UseSystemPasswordChar = true;
             // 
             // txtNuevaContraseña
             // 
@@ -51,6 +52,7 @@
             txtNuevaContraseña.Name = "txtNuevaContraseña";
             txtNuevaContraseña.Size = new Size(300, 32);
             txtNuevaContraseña.TabIndex = 2;
+            txtNuevaContraseña.UseSystemPasswordChar = true;
             // 
             // txtConfirmarContraseña
             // 
@@ -60,6 +62,7 @@
             txtConfirmarContraseña.Name = "txtConfirmarContraseña";
             txtConfirmarContraseña.Size = new Size(300, 32);
             txtConfirmarContraseña.TabIndex = 3;
+            txtConfirmarContraseña.UseSystemPasswordChar = true;
             // 
             // btnCambiarContraseña
             // 
@@ -96,7 +99,6 @@
             Controls.Add(txtConfirmarContraseña);
             Controls.Add(btnCambiarContraseña);
             Controls.Add(btnCancelar);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(3, 4, 3, 4);
             Name = "CambioContraseña";
             Opacity = 0.9D;
