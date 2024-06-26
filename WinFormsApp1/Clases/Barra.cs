@@ -21,7 +21,7 @@ namespace WinFormsApp1.Clases
             //System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Width = 150;
             this.Height = 150;
-            this.BackgroundImage = (Image)resources.GetObject("btnBarra.BackgroundImage");
+            this.BackgroundImage = Image.FromFile("Resources/Barra.png");
             this.BackgroundImageLayout = ImageLayout.Stretch;
             //this.BackgroundImage = (Image)resources.GetObject("btnBaño.BackgroundImage");
             this.BackgroundImageLayout = ImageLayout.Stretch;

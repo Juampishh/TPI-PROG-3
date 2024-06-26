@@ -162,3 +162,46 @@ C:\Users\celes\OneDrive\Escritorio\TPI_FINAL\WinFormsApp1\obj\Debug\net8.0-windo
 C:\Users\celes\OneDrive\Escritorio\TPI_FINAL\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
 C:\Users\celes\OneDrive\Escritorio\TPI_FINAL\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\Users\celes\OneDrive\Escritorio\TPI_FINAL\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\baño1.jpg
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-amarillo.png
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-rojo.png
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-2-verde.png
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-amarillo.png
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-Rojo.png
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-4-verde.png
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-amarillo.png
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-rojo.png
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Mesa-6-verde.png
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\OIG1.jpeg
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\previsualizacion.jpeg
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.CambioContraseña.resources
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.ElegirMesa.resources
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.FormAgregarMozo.resources
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.FormPedidos.resources
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.FormSeleccionarMozo.resources
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.FormVerPedidos.resources
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Login.resources
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Menuop.resources
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.PrevisualizacionForm.resources
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinForms.E4050A35.Up2Date
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Barra.png
