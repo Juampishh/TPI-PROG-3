@@ -20,8 +20,8 @@ namespace WinFormsApp1
         {
             InitializeComponent();
 
-
             this.estadoControles = estadoControles; // Recibe los controles de la lista
+            CargarControles();
             mozos = new List<Mozo>();
             RefrescarListMozos();
 

@@ -20,6 +20,7 @@ namespace WinFormsApp1
             estadoControles = new List<ControlState>();
             formDiseño= new Form1(ref estadoControles, archivo);
             formPrevisualizacion = new PrevisualizacionForm(ref estadoControles);
+            CargarControlesDesdeArchivo();
         }
 
         private void CargarControlesDesdeArchivo()
@@ -35,12 +36,16 @@ namespace WinFormsApp1
             }
         }
 
+        private void GuardarControlesEnArchivo()
+        {
+            string jsonString = JsonSerializer.Serialize(estadoControles, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(archivo, jsonString);
+        }
+
         public void ActualizarEstadoControles(List<ControlState> nuevosControles)
         {
             estadoControles = nuevosControles;
-            string jsonString = JsonSerializer.Serialize(estadoControles, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(archivo, jsonString);
-
+            GuardarControlesEnArchivo();    
             formDiseño.ActualizarControles(estadoControles);
             formPrevisualizacion.ActualizarControles(estadoControles);
         }
