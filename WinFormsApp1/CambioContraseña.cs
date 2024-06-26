@@ -10,14 +10,15 @@ namespace WinFormsApp1
     {
         private const string CredentialsFilePath = "credentials.json";
         private Credentials credentials;
-        
+
 
         public CambioContraseña()
         {
             InitializeComponent();
             ConfigureForm();
             LoadCredentials();
-            
+           
+
         }
 
         private void ConfigureForm()
@@ -33,6 +34,7 @@ namespace WinFormsApp1
             btnCambiarContraseña.Click += BtnCambiarContraseña_Click;
             btnCancelar.Click += BtnCancelar_Click;
         }
+
 
         private void LoadCredentials()
         {
@@ -54,7 +56,7 @@ namespace WinFormsApp1
             File.WriteAllText(CredentialsFilePath, json);
         }
 
-        // (Los métodos de TextBox_Enter, TextBox_Leave, etc. permanecen iguales)
+
 
         private void BtnCambiarContraseña_Click(object sender, EventArgs e)
         {
@@ -64,7 +66,7 @@ namespace WinFormsApp1
                 {
                     MessageBox.Show("Contraseña cambiada con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     DialogResult = DialogResult.OK;
-                    
+
                 }
                 else
                 {
@@ -122,7 +124,7 @@ namespace WinFormsApp1
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
-            
+
         }
 
         private void CambioContraseña_Load(object sender, EventArgs e)
@@ -132,18 +134,22 @@ namespace WinFormsApp1
         private void SetupTextBox(TextBox textBox, string placeholderText)
         {
             textBox.Text = placeholderText;
-            textBox.ForeColor = Color.Silver;
-            textBox.MouseEnter += TextBox_MouseEnter;
-            textBox.MouseLeave += TextBox_MouseLeave;
+            textBox.ForeColor = Color.Gray;
+            textBox.Enter += TextBox_Enter;
+            textBox.Leave += TextBox_Leave;
             textBox.Tag = placeholderText;
 
             if (placeholderText.Contains("Contraseña"))
             {
                 textBox.UseSystemPasswordChar = false;
             }
+            if (placeholderText.Contains("Nueva contraseña") || placeholderText.Contains("Confirmar nueva contraseña"))
+            {
+                textBox.UseSystemPasswordChar = false;
+            }
         }
 
-        private void TextBox_MouseEnter(object sender, EventArgs e)
+        private void TextBox_Enter(object sender, EventArgs e)
         {
             TextBox textBox = (TextBox)sender;
             if (textBox.Text == textBox.Tag.ToString())
@@ -154,17 +160,25 @@ namespace WinFormsApp1
                 {
                     textBox.UseSystemPasswordChar = true;
                 }
+                if (textBox.Tag.ToString().Contains("Nueva contraseña") || textBox.Tag.ToString().Contains("Confirmar nueva contraseña"))
+                {
+                    textBox.UseSystemPasswordChar = true;
+                }
             }
         }
 
-        private void TextBox_MouseLeave(object sender, EventArgs e)
+        private void TextBox_Leave(object sender, EventArgs e)
         {
             TextBox textBox = (TextBox)sender;
             if (string.IsNullOrWhiteSpace(textBox.Text))
             {
                 textBox.Text = textBox.Tag.ToString();
-                textBox.ForeColor = Color.Silver;
+                textBox.ForeColor = Color.Gray;
                 if (textBox.Tag.ToString().Contains("Contraseña"))
+                {
+                    textBox.UseSystemPasswordChar = false;
+                }
+                if (textBox.Tag.ToString().Contains("Nueva contraseña") || textBox.Tag.ToString().Contains("Confirmar nueva contraseña"))
                 {
                     textBox.UseSystemPasswordChar = false;
                 }

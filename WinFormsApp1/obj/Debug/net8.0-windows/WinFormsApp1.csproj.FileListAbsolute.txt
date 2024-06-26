@@ -206,3 +206,6 @@ C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\Win
 C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
 C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Barra.png
 C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Barra.png
+C:\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\Barra.png
+C:\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.FormAgregarMozo.resources
+C:\TPI-PROG-3\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.FormSeleccionarMozo.resources
