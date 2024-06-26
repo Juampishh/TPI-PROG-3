@@ -116,8 +116,8 @@ namespace WinFormsApp1
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             CambioContraseña contraseñanueva= new CambioContraseña();
-            contraseñanueva.Show();
-            this.Hide();
+            contraseñanueva.ShowDialog();
+            
         }
     }
 
