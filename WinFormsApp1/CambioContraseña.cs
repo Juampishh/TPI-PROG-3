@@ -10,12 +10,14 @@ namespace WinFormsApp1
     {
         private const string CredentialsFilePath = "credentials.json";
         private Credentials credentials;
+        
 
         public CambioContraseña()
         {
             InitializeComponent();
             ConfigureForm();
             LoadCredentials();
+            
         }
 
         private void ConfigureForm()
@@ -61,10 +63,8 @@ namespace WinFormsApp1
                 if (ChangePassword())
                 {
                     MessageBox.Show("Contraseña cambiada con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
-                    // Volver al formulario de Login
-                    Login loginForm = new Login();
-                    loginForm.Show();
+                    DialogResult = DialogResult.OK;
+                    
                 }
                 else
                 {
@@ -121,10 +121,8 @@ namespace WinFormsApp1
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
-            // Volver al formulario de Login
-            Login loginForm = new Login();
-            loginForm.Show();
+            DialogResult = DialogResult.Cancel;
+            
         }
 
         private void CambioContraseña_Load(object sender, EventArgs e)
@@ -171,6 +169,11 @@ namespace WinFormsApp1
                     textBox.UseSystemPasswordChar = false;
                 }
             }
+        }
+
+        private void CambioContraseña_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult = DialogResult.Cancel;
         }
     }
 }

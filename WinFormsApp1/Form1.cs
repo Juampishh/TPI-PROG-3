@@ -320,23 +320,20 @@ namespace WinFormsApp1
         {
             if (!guardado)
             {
-                var result = MessageBox.Show("Restaurante no guardado, ¿realmente desea salir?", "Confirmación",
-                    MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+                DialogResult result = MessageBox.Show("Restaurante no guardado, ¿realmente desea salir?", "Confirmación",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-                if (result == DialogResult.Yes)
+                switch (result)
                 {
-                    // Código para guardar antes de salir
-                    // Puedes llamar aquí a tu método de guardado
-
-                    e.Cancel = false; // Permite cerrar el formulario
-                }
-                else if (result == DialogResult.No)
-                {
-                    e.Cancel = false; // Permite cerrar el formulario sin guardar
-                }
-                else
-                {
-                    e.Cancel = true; // Cancela el cierre del formulario
+                    case DialogResult.Yes:
+                        // Código para guardar antes de salir
+                        // Puedes llamar aquí a tu método de guardado
+                        e.Cancel = false; // Permite cerrar el formulario
+                        break;
+                    case DialogResult.No:
+                        e.Cancel = true; // Permite cerrar el formulario sin guardar
+                        break;
+                   
                 }
             }
         }
