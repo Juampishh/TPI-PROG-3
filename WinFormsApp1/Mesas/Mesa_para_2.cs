@@ -15,6 +15,7 @@ namespace WinFormsApp1.Mesas
         public int mesaNumber = 1; // Número de mesa inicial
         public List<Pedidos> pedidos;
         public decimal montoFinal;
+        public string color;
 
         public Mesa_para_2()
         {
@@ -27,6 +28,7 @@ namespace WinFormsApp1.Mesas
             this.ContextMenuStrip = new ContextMenuStrip();
             this.pedidos = new List<Pedidos>();
             this.montoFinal = 0;
+            this.color = "Libre";
             ModoEdicion();
             
 
@@ -54,8 +56,9 @@ namespace WinFormsApp1.Mesas
 
         //-----------------------------------------------------------------------------------
         //Metodo para elegir el estado de la mesa
-        private void CambiarColorMesa(string color)
+        public void CambiarColorMesa(string color)
         {
+            this.color = color;
             switch (color)
             {
                 case "Libre":

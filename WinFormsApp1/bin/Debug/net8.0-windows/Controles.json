@@ -1,74 +1,35 @@
 [
   {
-    "Tipo": "Mesa_para_2",
-    "X": 260,
-    "Y": 275,
+    "Tipo": "Mesa_para_4",
+    "X": 497,
+    "Y": 249,
     "Alto": 0,
     "Ancho": 0,
-    "ColorFondo": null
+    "Color": "Libre",
+    "Numero": 1,
+    "Monto": 0,
+    "Pedidos": []
   },
   {
     "Tipo": "Pared",
-    "X": 157,
-    "Y": 373,
-    "Alto": 16,
-    "Ancho": 498,
-    "ColorFondo": "Red"
+    "X": 765,
+    "Y": 83,
+    "Alto": 63,
+    "Ancho": 373,
+    "Color": "ff0000a0",
+    "Numero": 0,
+    "Monto": 0,
+    "Pedidos": null
   },
   {
     "Tipo": "Mesa_para_4",
-    "X": 555,
-    "Y": 272,
+    "X": 934,
+    "Y": 291,
     "Alto": 0,
     "Ancho": 0,
-    "ColorFondo": null
-  },
-  {
-    "Tipo": "Pared",
-    "X": 654,
-    "Y": 15,
-    "Alto": 375,
-    "Ancho": 30,
-    "ColorFondo": "Black"
-  },
-  {
-    "Tipo": "Ba\u00F1o",
-    "X": 686,
-    "Y": 38,
-    "Alto": 150,
-    "Ancho": 150,
-    "ColorFondo": null
-  },
-  {
-    "Tipo": "Mesa_para_6",
-    "X": 360,
-    "Y": 273,
-    "Alto": 0,
-    "Ancho": 0,
-    "ColorFondo": null
-  },
-  {
-    "Tipo": "Mesa_para_2",
-    "X": 459,
-    "Y": 275,
-    "Alto": 0,
-    "Ancho": 0,
-    "ColorFondo": null
-  },
-  {
-    "Tipo": "Barra",
-    "X": 297,
-    "Y": 181,
-    "Alto": 26,
-    "Ancho": 248,
-    "ColorFondo": null
-  },
-  {
-    "Tipo": "Mesa_para_2",
-    "X": 181,
-    "Y": 278,
-    "Alto": 0,
-    "Ancho": 0,
-    "ColorFondo": null
+    "Color": "Reservado",
+    "Numero": 89,
+    "Monto": 0,
+    "Pedidos": []
   }
 ]

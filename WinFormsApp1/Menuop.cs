@@ -18,20 +18,31 @@ namespace WinFormsApp1
             btnEdicion.Visible = false;
             btnPrevisualizacion.Visible = false;
             estadoControles = new List<ControlState>();
-            CargarControles();
             formDiseño= new Form1(ref estadoControles, archivo);
             formPrevisualizacion = new PrevisualizacionForm(ref estadoControles);
         }
 
-        private void CargarControles()
+        private void CargarControlesDesdeArchivo()
         {
-            if (estadoControles == null || estadoControles.Count == 0)
+            if (File.Exists(archivo))
             {
-                if (!File.Exists(archivo)) return;
                 string jsonString = File.ReadAllText(archivo);
                 estadoControles = JsonSerializer.Deserialize<List<ControlState>>(jsonString);
             }
+            else
+            {
+                estadoControles = new List<ControlState>();
+            }
+        }
 
+        public void ActualizarEstadoControles(List<ControlState> nuevosControles)
+        {
+            estadoControles = nuevosControles;
+            string jsonString = JsonSerializer.Serialize(estadoControles, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(archivo, jsonString);
+
+            formDiseño.ActualizarControles(estadoControles);
+            formPrevisualizacion.ActualizarControles(estadoControles);
         }
 
         private void panelEdicion_MouseEnter(object sender, EventArgs e)
@@ -77,7 +88,8 @@ namespace WinFormsApp1
 
         private void ingresoPrev_Click(object sender, EventArgs e)
         {
-
+            formPrevisualizacion.Owner = this;
+            formPrevisualizacion.ActualizarControles(estadoControles);
             formPrevisualizacion.ShowDialog();
             
         }
@@ -94,7 +106,8 @@ namespace WinFormsApp1
 
         private void Edicion_Click(object sender, EventArgs e)
         {
-            
+            formDiseño.Owner = this;
+            formDiseño.ActualizarControles(estadoControles);
             formDiseño.ShowDialog();
             
         }
