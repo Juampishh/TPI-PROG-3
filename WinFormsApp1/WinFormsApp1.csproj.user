@@ -19,7 +19,13 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormAgregarMozo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormSeleccionarMozo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormVerPedidos.cs">

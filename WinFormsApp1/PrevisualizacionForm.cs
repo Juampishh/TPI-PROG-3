@@ -15,15 +15,43 @@ namespace WinFormsApp1
     public partial class PrevisualizacionForm : Form
     {
         private List<ControlState> estadoControles;
+        public List<Mozo> mozos;
         public PrevisualizacionForm(ref List<ControlState> estadoControles)
         {
             InitializeComponent();
 
 
             this.estadoControles = estadoControles; // Recibe los controles de la lista
-
+            mozos = new List<Mozo>();
+            mozos.Add(new Mozo("Pedro"));
+            mozos.Add(new Mozo("Juancito"));
+            RefrescarListMozos();
             CargarControles();
 
+        }
+        
+        private void agregarMozo_Click(object sender, EventArgs e)
+        {
+            AgregarMozo();
+        }
+        private void AgregarMozo()
+        {
+            FormAgregarMozo formAgregarMozo = new FormAgregarMozo();
+            DialogResult dialogResult = formAgregarMozo.ShowDialog();
+
+            if (dialogResult == DialogResult.OK)
+            {
+                mozos.Add(new Mozo(formAgregarMozo.tbNombre.Text));
+                RefrescarListMozos();
+            }
+            
+            
+        }
+        private void RefrescarListMozos()
+        {
+            listMozos.DataSource = null;
+            listMozos.DataSource = mozos;
+            
         }
         private void CargarControles()
         {
@@ -102,9 +130,10 @@ namespace WinFormsApp1
 
         private void PrevisualizacionForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-           // Menuop menuop = new Menuop();
-            //menuop.Show();
+
             this.Hide();
         }
+
+        
     }
 }

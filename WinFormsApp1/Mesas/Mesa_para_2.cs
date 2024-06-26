@@ -175,8 +175,14 @@ namespace WinFormsApp1.Mesas
 
         }
         //-----------------------------------------------------------------------------------
+        public void SeleccionarMozo(object sender, EventArgs e) 
+        {
 
 
+
+
+        }
+        //-----------------------------------------------------------------------------------
         public void ModoEdicion()
         {
             this.ContextMenuStrip.Items.Clear();
@@ -213,6 +219,9 @@ namespace WinFormsApp1.Mesas
             CambiarColor.DropDownItems.Add(colorRojoItem);
             CambiarColor.DropDownItems.Add(colorAmarilloItem);
             this.ContextMenuStrip.Items.Add(CambiarColor);
+
+            //Agregar Mozo
+            //this.ContextMenuStrip.Items.Add("Asignar mozo").Click+= new EventHandler()
 
         }
     }

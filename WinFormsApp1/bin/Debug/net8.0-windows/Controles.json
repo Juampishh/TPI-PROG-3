@@ -11,8 +11,8 @@
     "Tipo": "Pared",
     "X": 157,
     "Y": 373,
-    "Alto": 21,
-    "Ancho": 499,
+    "Alto": 16,
+    "Ancho": 498,
     "ColorFondo": "Red"
   },
   {
@@ -61,6 +61,14 @@
     "Y": 181,
     "Alto": 26,
     "Ancho": 248,
+    "ColorFondo": null
+  },
+  {
+    "Tipo": "Mesa_para_2",
+    "X": 181,
+    "Y": 278,
+    "Alto": 0,
+    "Ancho": 0,
     "ColorFondo": null
   }
 ]

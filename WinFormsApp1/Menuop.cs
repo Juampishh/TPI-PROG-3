@@ -10,7 +10,7 @@ namespace WinFormsApp1
         private List<ControlState> estadoControles;
         private const string archivo = "Controles.json";
         public Form1 formDiseño;
-        PrevisualizacionForm formPrevisualizacion;
+        public PrevisualizacionForm formPrevisualizacion;
 
         public Menuop()
         {
@@ -79,7 +79,7 @@ namespace WinFormsApp1
         {
 
             formPrevisualizacion.ShowDialog();
-            //this.Hide();
+            
         }
 
         private void Menuop_Load(object sender, EventArgs e)
@@ -96,7 +96,7 @@ namespace WinFormsApp1
         {
             
             formDiseño.ShowDialog();
-            //this.Hide();
+            
         }
 
         private void Menuop_FormClosed(object sender, FormClosedEventArgs e)

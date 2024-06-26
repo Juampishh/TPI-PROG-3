@@ -118,3 +118,5 @@ C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\bin\Debug\net8.0-wind
 C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\bin\Debug\net8.0-windows\Resources\previsualizacion.jpeg
 C:\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\OIG1.jpeg
 C:\TPI-PROG-3\WinFormsApp1\bin\Debug\net8.0-windows\Resources\previsualizacion.jpeg
+C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.FormAgregarMozo.resources
+C:\Users\Tomi\Desktop\Repositorios PROG 3 TPI\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.FormSeleccionarMozo.resources

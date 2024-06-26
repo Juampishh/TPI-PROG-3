@@ -12,7 +12,7 @@ namespace WinFormsApp1
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Login login = new Login();
-            Application.Run(login);
+            Application.Run(new Menuop());
         }
     }
 }

@@ -182,7 +182,7 @@ namespace WinFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-        
+
         }
 
         private void btnAddPared_Click(object sender, EventArgs e)
@@ -230,28 +230,6 @@ namespace WinFormsApp1
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
-            /*if (e.CloseReason == CloseReason.UserClosing)
-            {
-                // Mostrar un mensaje de confirmación
-                DialogResult result = MessageBox.Show(
-                    "¿Está seguro de que desea salir? Sus cambios no están guardados.",
-                    "Confirmar salida",
-                    MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Warning);
-
-                if (result == DialogResult.Yes)
-                {
-                    // El usuario confirmó que quiere salir
-                    Menuop menuop = new Menuop();
-                    menuop.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    // El usuario decidió no salir
-                    e.Cancel = true;
-                }
-            }*/
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
