@@ -118,10 +118,6 @@ namespace WinFormsApp1
         public void CargarControles()
         {
 
-            if (!File.Exists(archivo)) return;
-            string jsonString = File.ReadAllText(archivo);
-            estadoControles = JsonSerializer.Deserialize<List<ControlState>>(jsonString);
-
             panelPlano.Controls.Clear();
 
             foreach (ControlState estado in estadoControles)
@@ -258,6 +254,7 @@ namespace WinFormsApp1
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             GuardarControles();
+            MessageBox.Show("Cambios guardados correctamente.");
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
