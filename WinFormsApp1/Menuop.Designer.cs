@@ -141,6 +141,8 @@
             Controls.Add(labelEdicion);
             Controls.Add(panelEdicion);
             Margin = new Padding(3, 2, 3, 2);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Menuop";
             Opacity = 0.9D;
             StartPosition = FormStartPosition.CenterScreen;
