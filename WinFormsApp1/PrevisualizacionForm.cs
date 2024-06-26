@@ -24,7 +24,6 @@ namespace WinFormsApp1
             this.estadoControles = estadoControles; // Recibe los controles de la lista
             mozos = new List<Mozo>();
             RefrescarListMozos();
-            CargarControles();
 
         }
 
@@ -51,7 +50,12 @@ namespace WinFormsApp1
             listMozos.DataSource = mozos;
 
         }
-        private void CargarControles()
+        public void ActualizarControles(List<ControlState> nuevosControles)
+        {
+            estadoControles = new List<ControlState>(nuevosControles);
+            CargarControles();
+        }
+        public void CargarControles()
         {
             panelPlano.Controls.Clear();
 
@@ -60,34 +64,50 @@ namespace WinFormsApp1
                 Control control = null;
                 if (estado.Tipo == nameof(Pared))
                 {
-                    control = new Pared
-                    {
-                        Location = new Point(estado.X, estado.Y),
-                        Width = estado.Ancho,
-                        Height = estado.Alto,
-                        BackColor = Color.FromName(estado.ColorFondo)
-                    };
+                    control = new Pared();
+                    control.Location = new Point(estado.X, estado.Y);
+                    control.Width = estado.Ancho;
+                    control.Height = estado.Alto;
+                    control.BackColor = Color.FromName(estado.Color);
+
+
                 }
                 else if (estado.Tipo == nameof(Mesa_para_2))
                 {
-                    control = new Mesa_para_2
-                    {
-                        Location = new Point(estado.X, estado.Y)
-                    };
+                    Mesa_para_2 mesa = new Mesa_para_2();
+
+                    mesa.Location = new Point(estado.X, estado.Y);
+                    mesa.CambiarColorMesa(estado.Color);
+                    mesa.mesaNumber = estado.Numero;
+                    mesa.pedidos = estado.Pedidos;
+                    mesa.montoFinal = estado.Monto;
+
+                    panelPlano.Controls.Add(mesa);
+
+
                 }
                 else if (estado.Tipo == nameof(Mesa_para_4))
                 {
-                    control = new Mesa_para_4
-                    {
-                        Location = new Point(estado.X, estado.Y)
-                    };
+                    Mesa_para_4 mesa = new Mesa_para_4();
+                    mesa.Location = new Point(estado.X, estado.Y);
+                    mesa.CambiarColorMesa(estado.Color);
+                    mesa.mesaNumber = estado.Numero;
+                    mesa.pedidos = estado.Pedidos;
+                    mesa.montoFinal = estado.Monto;
+
+                    panelPlano.Controls.Add(mesa);
+
                 }
                 else if (estado.Tipo == nameof(Mesa_para_6))
                 {
-                    control = new Mesa_para_6
-                    {
-                        Location = new Point(estado.X, estado.Y)
-                    };
+                    Mesa_para_6 mesa = new Mesa_para_6();
+                    mesa.Location = new Point(estado.X, estado.Y);
+                    mesa.CambiarColorMesa(estado.Color);
+                    mesa.mesaNumber = estado.Numero;
+                    mesa.pedidos = estado.Pedidos;
+                    mesa.montoFinal = estado.Monto;
+
+                    panelPlano.Controls.Add(mesa);
                 }
                 else if (estado.Tipo == nameof(Baño))
                 {
@@ -108,7 +128,9 @@ namespace WinFormsApp1
                 if (control != null)
                 {
                     panelPlano.Controls.Add(control);
+
                 }
+
             }
 
             foreach (Control control in panelPlano.Controls)
@@ -120,9 +142,50 @@ namespace WinFormsApp1
             }
         }
 
+        private void GuardarControles()
+        {
+            List<ControlState> nuevosControles = new List<ControlState>();
+            foreach (Control control in panelPlano.Controls)
+            {
+                if (control is Pared pared)
+                {
+                    ControlState estado = ControlState.SerilizarPared(pared);
+                    nuevosControles.Add(estado);
+                }
+                else if (control is Mesa_para_2 mesa2)
+                {
+                    ControlState estado = ControlState.SerializarMesa2(mesa2);
+                    nuevosControles.Add(estado);
+                }
+                else if (control is Mesa_para_4 mesa4)
+                {
+                    ControlState estado = ControlState.SerializarMesa4(mesa4);
+                    nuevosControles.Add(estado);
+                }
+                else if (control is Mesa_para_6 mesa6)
+                {
+                    ControlState estado = ControlState.SerializarMesa6(mesa6);
+                    nuevosControles.Add(estado);
+                }
+                else if (control is Barra barra)
+                {
+                    ControlState estado = ControlState.SerilizarBarra(barra);
+                    nuevosControles.Add(estado);
+                }
+                else if (control is Baño baño)
+                {
+                    ControlState estado = ControlState.SerilizarBaño(baño);
+                    nuevosControles.Add(estado);
+                }
+            }
+
+            estadoControles = nuevosControles;
+            ((Menuop)this.Owner).ActualizarEstadoControles(estadoControles);
+        }
 
         private void VolverButtom_Click(object sender, EventArgs e)
         {
+            GuardarControles();
             this.Hide();
         }
 

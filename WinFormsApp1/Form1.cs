@@ -28,7 +28,7 @@ namespace WinFormsApp1
             btnBarra.Visible = true;
             this.estadoControles = estadoControles; //recibe los controles de la lista
             this.archivo = archivo;
-            CargarControles();
+            
         }
 
         private void AgregarMesaButton_Click(object sender, EventArgs e)
@@ -64,60 +64,65 @@ namespace WinFormsApp1
             }
 
         }
+        //METODO PARA ACTUALIZAR CONTROLES
+
+        public void ActualizarControles(List<ControlState> nuevosControles)
+        {
+            estadoControles = new List<ControlState>(nuevosControles);
+            CargarControles();
+        }
 
         //Metodo para serializar los controles
         private void GuardarControles()
         {
-            estadoControles.Clear();
+            List<ControlState> nuevosControles = new List<ControlState>();
             foreach (Control control in panelPlano.Controls)
             {
                 if (control is Pared pared)
                 {
-                    ControlState estado = new ControlState(pared.GetType().Name,
-                        pared.Location.X,
-                        pared.Location.Y,
-                        pared.Height,
-                        pared.Width,
-                        pared.BackColor.Name);
-                    estadoControles.Add(estado);
+                    ControlState estado = ControlState.SerilizarPared(pared);
+                    nuevosControles.Add(estado);
                 }
-                else if (control is Mesa_para_2 || control is Mesa_para_4 || control is Mesa_para_6)
+                else if (control is Mesa_para_2 mesa2)
                 {
-                    ControlState estado = new ControlState(control.GetType().Name,
-                        control.Location.X,
-                        control.Location.Y);
-                    estadoControles.Add(estado);
+                    ControlState estado = ControlState.SerializarMesa2(mesa2);
+                    nuevosControles.Add(estado);
                 }
-                else if (control is Barra || control is Baño)
+                else if (control is Mesa_para_4 mesa4)
                 {
-                    ControlState estado = new ControlState(control.GetType().Name,
-                        control.Location.X,
-                        control.Location.Y,
-                        control.Height,
-                        control.Width);
-                    estadoControles.Add(estado);
+                    ControlState estado = ControlState.SerializarMesa4(mesa4);
+                    nuevosControles.Add(estado);
                 }
-
+                else if (control is Mesa_para_6 mesa6)
+                {
+                    ControlState estado = ControlState.SerializarMesa6(mesa6);
+                    nuevosControles.Add(estado);
+                }
+                else if (control is Barra barra)
+                {
+                    ControlState estado = ControlState.SerilizarBarra(barra);
+                    nuevosControles.Add(estado);
+                }
+                else if (control is Baño baño)
+                {
+                    ControlState estado = ControlState.SerilizarBaño(baño);
+                    nuevosControles.Add(estado);
+                }
             }
 
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            string jsonString = JsonSerializer.Serialize(estadoControles, options);
-            File.WriteAllText(archivo, jsonString);
+            estadoControles = nuevosControles;
+            ((Menuop)this.Owner).ActualizarEstadoControles(estadoControles);
         }
 
         //Metodo para deserializar los controles
-        private void CargarControles()
+        public void CargarControles()
         {
-            if (estadoControles == null || estadoControles.Count == 0)
-            {
-                if (!File.Exists(archivo)) return;
-                string jsonString = File.ReadAllText(archivo);
-                estadoControles = JsonSerializer.Deserialize<List<ControlState>>(jsonString);
-            }
 
+            if (!File.Exists(archivo)) return;
+            string jsonString = File.ReadAllText(archivo);
+            estadoControles = JsonSerializer.Deserialize<List<ControlState>>(jsonString);
 
             panelPlano.Controls.Clear();
-
 
             foreach (ControlState estado in estadoControles)
             {
@@ -128,24 +133,42 @@ namespace WinFormsApp1
                     control.Location = new Point(estado.X, estado.Y);
                     control.Width = estado.Ancho;
                     control.Height = estado.Alto;
-                    control.BackColor = Color.FromName(estado.ColorFondo);
+                    control.BackColor = Color.FromName(estado.Color);
 
 
                 }
                 else if (estado.Tipo == nameof(Mesa_para_2))
                 {
-                    control = new Mesa_para_2();
-                    control.Location = new Point(estado.X, estado.Y);
+                    Mesa_para_2 mesa = new Mesa_para_2();
+
+                    mesa.Location = new Point(estado.X, estado.Y);
+                    mesa.CambiarColorMesa(estado.Color);
+                    mesa.mesaNumber = estado.Numero;
+                    mesa.pedidos = estado.Pedidos;
+                    mesa.montoFinal = estado.Monto;
+                    control = mesa;
+
                 }
                 else if (estado.Tipo == nameof(Mesa_para_4))
                 {
-                    control = new Mesa_para_4();
-                    control.Location = new Point(estado.X, estado.Y);
+                    Mesa_para_4 mesa = new Mesa_para_4();
+                    mesa.Location = new Point(estado.X, estado.Y);
+                    mesa.CambiarColorMesa(estado.Color);
+                    mesa.mesaNumber = estado.Numero;
+                    mesa.pedidos = estado.Pedidos;
+                    mesa.montoFinal = estado.Monto;
+                    control = mesa;
+
                 }
                 else if (estado.Tipo == nameof(Mesa_para_6))
                 {
-                    control = new Mesa_para_6();
-                    control.Location = new Point(estado.X, estado.Y);
+                    Mesa_para_6 mesa = new Mesa_para_6();
+                    mesa.Location = new Point(estado.X, estado.Y);
+                    mesa.CambiarColorMesa(estado.Color);
+                    mesa.mesaNumber = estado.Numero;
+                    mesa.pedidos = estado.Pedidos;
+                    mesa.montoFinal = estado.Monto;
+                    control = mesa;
                 }
                 else if (estado.Tipo == nameof(Baño))
                 {

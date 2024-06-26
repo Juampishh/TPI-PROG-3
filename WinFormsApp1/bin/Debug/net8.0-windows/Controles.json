@@ -1,106 +1,53 @@
 [
   {
-    "Tipo": "Mesa_para_2",
-    "X": 260,
-    "Y": 275,
-    "Alto": 0,
-    "Ancho": 0,
-    "ColorFondo": null
+    "Tipo": "Pared",
+    "X": 262,
+    "Y": 172,
+    "Alto": 36,
+    "Ancho": 241,
+    "Color": "Black",
+    "Numero": 0,
+    "Monto": 0,
+    "Pedidos": null
   },
   {
     "Tipo": "Pared",
-    "X": 157,
-    "Y": 373,
-    "Alto": 16,
-    "Ancho": 498,
-    "ColorFondo": "Red"
-  },
-  {
-    "Tipo": "Mesa_para_4",
-    "X": 555,
-    "Y": 272,
-    "Alto": 0,
-    "Ancho": 0,
-    "ColorFondo": null
-  },
-  {
-    "Tipo": "Pared",
-    "X": 654,
-    "Y": 15,
-    "Alto": 375,
+    "X": 1025,
+    "Y": 302,
+    "Alto": 100,
     "Ancho": 30,
-    "ColorFondo": "Black"
-  },
-  {
-    "Tipo": "Ba\u00F1o",
-    "X": 686,
-    "Y": 38,
-    "Alto": 150,
-    "Ancho": 150,
-    "ColorFondo": null
+    "Color": "Black",
+    "Numero": 0,
+    "Monto": 0,
+    "Pedidos": null
   },
   {
     "Tipo": "Mesa_para_6",
-    "X": 360,
-    "Y": 273,
+    "X": 791,
+    "Y": 313,
     "Alto": 0,
     "Ancho": 0,
-    "ColorFondo": null
-  },
-  {
-    "Tipo": "Mesa_para_2",
-    "X": 459,
-    "Y": 275,
-    "Alto": 0,
-    "Ancho": 0,
-    "ColorFondo": null
-  },
-  {
-    "Tipo": "Barra",
-    "X": 297,
-    "Y": 181,
-    "Alto": 26,
-    "Ancho": 248,
-    "ColorFondo": null
-  },
-  {
-    "Tipo": "Mesa_para_2",
-    "X": 181,
-    "Y": 278,
-    "Alto": 0,
-    "Ancho": 0,
-    "ColorFondo": null
-  },
-  {
-    "Tipo": "Mesa_para_4",
-    "X": 26,
-    "Y": 262,
-    "Alto": 0,
-    "Ancho": 0,
-    "ColorFondo": null
+    "Color": "Ocupado",
+    "Numero": 23,
+    "Monto": 15.99,
+    "Pedidos": [
+      {
+        "Producto": "Pollo a la parrilla",
+        "Cantidad": 1,
+        "PrecioUnitario": 15.99,
+        "Categoria": "Platos principales"
+      }
+    ]
   },
   {
     "Tipo": "Ba\u00F1o",
-    "X": 802,
-    "Y": 272,
+    "X": 777,
+    "Y": 59,
     "Alto": 150,
     "Ancho": 150,
-    "ColorFondo": null
-  },
-  {
-    "Tipo": "Barra",
-    "X": 330,
-    "Y": 11,
-    "Alto": 150,
-    "Ancho": 150,
-    "ColorFondo": null
-  },
-  {
-    "Tipo": "Pared",
-    "X": 130,
-    "Y": 373,
-    "Alto": 100,
-    "Ancho": 30,
-    "ColorFondo": "Black"
+    "Color": null,
+    "Numero": 0,
+    "Monto": 0,
+    "Pedidos": null
   }
 ]
