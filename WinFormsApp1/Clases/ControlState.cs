@@ -16,6 +16,7 @@ namespace WinFormsApp1.Clases
         public int Ancho { get; set; }
         public string Color { get; set; }
         public int Numero { get; set; }
+        public int ColorFondoArgb { get; set; }
 
         public decimal Monto { get; set; }
         public List<Pedidos> Pedidos { get; set; }
@@ -79,7 +80,7 @@ namespace WinFormsApp1.Clases
             estado.Y = pared.Location.Y;
             estado.Alto = pared.Height;
             estado.Ancho = pared.Width;
-            estado.Color = pared.BackColor.Name;
+            estado.ColorFondoArgb = pared.BackColor.ToArgb();
 
             return estado;
         }

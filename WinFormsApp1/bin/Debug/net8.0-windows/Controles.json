@@ -1,67 +1,25 @@
 [
   {
     "Tipo": "Mesa_para_4",
-    "X": 666,
-    "Y": 399,
+    "X": 714,
+    "Y": 297,
     "Alto": 0,
     "Ancho": 0,
     "Color": "Libre",
     "Numero": 1,
-    "Monto": 0,
-    "Pedidos": []
-  },
-  {
-    "Tipo": "Mesa_para_2",
-    "X": 828,
-    "Y": 278,
-    "Alto": 0,
-    "Ancho": 0,
-    "Color": "Libre",
-    "Numero": 1,
+    "ColorFondoArgb": 0,
     "Monto": 0,
     "Pedidos": []
   },
   {
     "Tipo": "Pared",
-    "X": 669,
-    "Y": 154,
+    "X": 365,
+    "Y": 236,
     "Alto": 100,
     "Ancho": 30,
-    "Color": "ff8080ff",
-    "Numero": 0,
-    "Monto": 0,
-    "Pedidos": null
-  },
-  {
-    "Tipo": "Pared",
-    "X": 742,
-    "Y": 155,
-    "Alto": 100,
-    "Ancho": 30,
-    "Color": "ff800040",
-    "Numero": 0,
-    "Monto": 0,
-    "Pedidos": null
-  },
-  {
-    "Tipo": "Ba\u00F1o",
-    "X": 503,
-    "Y": -11,
-    "Alto": 150,
-    "Ancho": 150,
     "Color": null,
     "Numero": 0,
-    "Monto": 0,
-    "Pedidos": null
-  },
-  {
-    "Tipo": "Barra",
-    "X": 394,
-    "Y": 196,
-    "Alto": 150,
-    "Ancho": 150,
-    "Color": null,
-    "Numero": 0,
+    "ColorFondoArgb": -256,
     "Monto": 0,
     "Pedidos": null
   }

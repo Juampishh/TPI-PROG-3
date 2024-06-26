@@ -128,7 +128,7 @@ namespace WinFormsApp1
                     control.Location = new Point(estado.X, estado.Y);
                     control.Width = estado.Ancho;
                     control.Height = estado.Alto;
-                    control.BackColor = Color.FromName(estado.Color);
+                    control.BackColor = Color.FromArgb(estado.ColorFondoArgb);
 
 
                 }
