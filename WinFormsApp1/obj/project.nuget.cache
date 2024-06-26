@@ -1,10 +1,18 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "0kpNUfZl+t0CT5vRxWOrYIxz/JSAFrUpFUDbok0e6xbro+k9u5qT0T6U33qlCGP6DZyDKw/FQl/9jYHjCca5jg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Juan Pablo\\Desktop\\TPI-PROG-3\\WinFormsApp1\\WinFormsApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Juan Pablo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+=======
   "dgSpecHash": "y1uUFvWg/A8=",
   "success": true,
   "projectFilePath": "C:\\TPI-PROG-3\\WinFormsApp1\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lauta\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+>>>>>>> 05b2353c009befae8e545cffb5110f22c2cec874
   ],
   "logs": []
 }

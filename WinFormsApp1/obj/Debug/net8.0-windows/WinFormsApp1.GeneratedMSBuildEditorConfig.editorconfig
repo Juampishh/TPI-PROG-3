@@ -14,6 +14,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WinFormsApp1
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\Juan Pablo\Desktop\TPI-PROG-3\WinFormsApp1\
+=======
 build_property.ProjectDir = C:\TPI-PROG-3\WinFormsApp1\
+>>>>>>> 05b2353c009befae8e545cffb5110f22c2cec874
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
