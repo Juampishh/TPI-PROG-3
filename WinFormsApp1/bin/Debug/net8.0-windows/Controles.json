@@ -23,11 +23,44 @@
   },
   {
     "Tipo": "Pared",
-    "X": 510,
-    "Y": 266,
+    "X": 669,
+    "Y": 154,
     "Alto": 100,
     "Ancho": 30,
     "Color": "ff8080ff",
+    "Numero": 0,
+    "Monto": 0,
+    "Pedidos": null
+  },
+  {
+    "Tipo": "Pared",
+    "X": 742,
+    "Y": 155,
+    "Alto": 100,
+    "Ancho": 30,
+    "Color": "ff800040",
+    "Numero": 0,
+    "Monto": 0,
+    "Pedidos": null
+  },
+  {
+    "Tipo": "Ba\u00F1o",
+    "X": 503,
+    "Y": -11,
+    "Alto": 150,
+    "Ancho": 150,
+    "Color": null,
+    "Numero": 0,
+    "Monto": 0,
+    "Pedidos": null
+  },
+  {
+    "Tipo": "Barra",
+    "X": 394,
+    "Y": 196,
+    "Alto": 150,
+    "Ancho": 150,
+    "Color": null,
     "Numero": 0,
     "Monto": 0,
     "Pedidos": null

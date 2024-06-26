@@ -23,7 +23,6 @@ namespace WinFormsApp1
             btnSalir.Click += new EventHandler(btnSalir_Click);
             agregarMesaButton.Visible = true;
             btnAddPared.Visible = true;
-            this.FormClosing += new FormClosingEventHandler(Form1_FormClosing);
             btnBaño.Visible = true;
             btnBarra.Visible = true;
             this.estadoControles = estadoControles; //recibe los controles de la lista
@@ -241,15 +240,27 @@ namespace WinFormsApp1
         //Evento que permite volver en la aplicacion
         private void VolverButtom_Click(object sender, EventArgs e)
         {
+            if (!guardado)
+            {
+                DialogResult result = MessageBox.Show("Restaurante no guardado, ¿realmente desea salir?", "Confirmación",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            this.Hide();
+                if (result == DialogResult.Yes)
+                {
+                    this.Hide();// Permite cerrar el formulario
+                    
+                }
+
+            }
+            else
+            {
+                this.Hide();
+            }
+                
         }
 
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            this.Hide();
-        }
+        
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -323,18 +334,16 @@ namespace WinFormsApp1
                 DialogResult result = MessageBox.Show("Restaurante no guardado, ¿realmente desea salir?", "Confirmación",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-                switch (result)
+                if (result == DialogResult.Yes)
                 {
-                    case DialogResult.Yes:
-                        // Código para guardar antes de salir
-                        // Puedes llamar aquí a tu método de guardado
-                        e.Cancel = false; // Permite cerrar el formulario
-                        break;
-                    case DialogResult.No:
-                        e.Cancel = true; // Permite cerrar el formulario sin guardar
-                        break;
-                   
+                    this.Hide();// Permite cerrar el formulario
+
                 }
+                else
+                {
+                    e.Cancel = true;
+                }
+
             }
         }
 
