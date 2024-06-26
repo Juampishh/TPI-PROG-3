@@ -220,8 +220,7 @@ namespace WinFormsApp1.Mesas
             CambiarColor.DropDownItems.Add(colorAmarilloItem);
             this.ContextMenuStrip.Items.Add(CambiarColor);
 
-            //Agregar Mozo
-            //this.ContextMenuStrip.Items.Add("Asignar mozo").Click+= new EventHandler()
+            
 
         }
     }

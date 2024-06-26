@@ -70,5 +70,37 @@
     "Alto": 0,
     "Ancho": 0,
     "ColorFondo": null
+  },
+  {
+    "Tipo": "Mesa_para_4",
+    "X": 26,
+    "Y": 262,
+    "Alto": 0,
+    "Ancho": 0,
+    "ColorFondo": null
+  },
+  {
+    "Tipo": "Ba\u00F1o",
+    "X": 802,
+    "Y": 272,
+    "Alto": 150,
+    "Ancho": 150,
+    "ColorFondo": null
+  },
+  {
+    "Tipo": "Barra",
+    "X": 330,
+    "Y": 11,
+    "Alto": 150,
+    "Ancho": 150,
+    "ColorFondo": null
+  },
+  {
+    "Tipo": "Pared",
+    "X": 130,
+    "Y": 373,
+    "Alto": 100,
+    "Ancho": 30,
+    "ColorFondo": "Black"
   }
 ]

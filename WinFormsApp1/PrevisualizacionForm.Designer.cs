@@ -38,11 +38,15 @@
             listMozos = new ListBox();
             panelPlano = new Panel();
             panel4 = new Panel();
+            panel5 = new Panel();
+            btAsignarMozo = new Button();
+            btEliminarMozo = new Button();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
             panel4.SuspendLayout();
+            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // panel2
@@ -77,17 +81,18 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(btEliminarMozo);
             panel1.Controls.Add(agregarMozo);
             panel1.Controls.Add(VolverButtom);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(120, 91);
+            panel1.Size = new Size(120, 117);
             panel1.TabIndex = 9;
             // 
             // agregarMozo
             // 
-            agregarMozo.Location = new Point(6, 53);
+            agregarMozo.Location = new Point(6, 51);
             agregarMozo.Name = "agregarMozo";
             agregarMozo.Size = new Size(111, 23);
             agregarMozo.TabIndex = 8;
@@ -131,12 +136,44 @@
             // panel4
             // 
             panel4.BackColor = Color.DarkGray;
+            panel4.Controls.Add(panel5);
             panel4.Controls.Add(listMozos);
             panel4.Dock = DockStyle.Bottom;
             panel4.Location = new Point(0, 511);
             panel4.Name = "panel4";
             panel4.Size = new Size(952, 100);
             panel4.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.MistyRose;
+            panel5.Controls.Add(btAsignarMozo);
+            panel5.Dock = DockStyle.Right;
+            panel5.Location = new Point(736, 0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(216, 100);
+            panel5.TabIndex = 12;
+            // 
+            // btAsignarMozo
+            // 
+            btAsignarMozo.FlatStyle = FlatStyle.Flat;
+            btAsignarMozo.Location = new Point(35, 15);
+            btAsignarMozo.Name = "btAsignarMozo";
+            btAsignarMozo.Size = new Size(147, 73);
+            btAsignarMozo.TabIndex = 0;
+            btAsignarMozo.Text = "Asignar mesa al mozo";
+            btAsignarMozo.UseVisualStyleBackColor = true;
+            btAsignarMozo.Click += btAsignarMozo_Click;
+            // 
+            // btEliminarMozo
+            // 
+            btEliminarMozo.Location = new Point(6, 91);
+            btEliminarMozo.Name = "btEliminarMozo";
+            btEliminarMozo.Size = new Size(111, 23);
+            btEliminarMozo.TabIndex = 9;
+            btEliminarMozo.Text = "Eliminar mozo";
+            btEliminarMozo.UseVisualStyleBackColor = true;
+            btEliminarMozo.Click += btEliminarMozo_Click;
             // 
             // PrevisualizacionForm
             // 
@@ -155,6 +192,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel1.ResumeLayout(false);
             panel4.ResumeLayout(false);
+            panel5.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -168,5 +206,8 @@
         private Panel panel3;
         private Panel panel1;
         private Panel panel4;
+        private Panel panel5;
+        private Button btAsignarMozo;
+        private Button btEliminarMozo;
     }
 }

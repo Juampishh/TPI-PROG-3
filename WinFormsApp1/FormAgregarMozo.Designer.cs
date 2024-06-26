@@ -100,6 +100,11 @@
             Controls.Add(btCancelar);
             Controls.Add(btAceptar);
             Controls.Add(lblCrearMozo);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MaximumSize = new Size(534, 277);
+            MinimizeBox = false;
+            MinimumSize = new Size(534, 277);
             Name = "FormAgregarMozo";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormAgregarMozo";

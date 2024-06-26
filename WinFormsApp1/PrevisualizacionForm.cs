@@ -23,13 +23,11 @@ namespace WinFormsApp1
 
             this.estadoControles = estadoControles; // Recibe los controles de la lista
             mozos = new List<Mozo>();
-            mozos.Add(new Mozo("Pedro"));
-            mozos.Add(new Mozo("Juancito"));
             RefrescarListMozos();
             CargarControles();
 
         }
-        
+
         private void agregarMozo_Click(object sender, EventArgs e)
         {
             AgregarMozo();
@@ -44,14 +42,14 @@ namespace WinFormsApp1
                 mozos.Add(new Mozo(formAgregarMozo.tbNombre.Text));
                 RefrescarListMozos();
             }
-            
-            
+
+
         }
         private void RefrescarListMozos()
         {
             listMozos.DataSource = null;
             listMozos.DataSource = mozos;
-            
+
         }
         private void CargarControles()
         {
@@ -134,6 +132,41 @@ namespace WinFormsApp1
             this.Hide();
         }
 
-        
+        private void btAsignarMozo_Click(object sender, EventArgs e)
+        {
+            if (mozos.Count > 0)
+            {
+                FormSeleccionarMozo formSeleccionarMozo = new FormSeleccionarMozo(mozos);
+                DialogResult dialogResult = formSeleccionarMozo.ShowDialog();
+                if (dialogResult == DialogResult.OK)
+                {
+                    mozos = formSeleccionarMozo.mozos;
+                    RefrescarListMozos();
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("No hay mozos disponibles");
+            }
+        }
+
+        private void btEliminarMozo_Click(object sender, EventArgs e)
+        {
+            if (listMozos.SelectedItems != null)
+            {
+                Mozo mozoAux = (Mozo)listMozos.SelectedItem;
+
+                foreach (Mozo mozo in mozos)
+                {
+                    if (mozo.Nombre == mozoAux.Nombre)
+                    {
+                        mozos.Remove(mozo);
+                        RefrescarListMozos();
+                        return;
+                    }
+                }
+            }
+        }
     }
 }

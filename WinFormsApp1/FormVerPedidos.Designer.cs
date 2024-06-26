@@ -30,7 +30,6 @@
         {
             panel1 = new Panel();
             label5 = new Label();
-            label4 = new Label();
             label3 = new Label();
             btCancelar = new Button();
             btSalir = new Button();
@@ -51,7 +50,6 @@
             // 
             panel1.BackColor = Color.DarkSalmon;
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(btCancelar);
             panel1.Controls.Add(btSalir);
@@ -73,25 +71,13 @@
             label5.TabIndex = 4;
             label5.Text = "Fecha:";
             // 
-            // label4
-            // 
-            label4.Anchor = AnchorStyles.None;
-            label4.AutoSize = true;
-            label4.Font = new Font("Century Gothic", 12F, FontStyle.Bold | FontStyle.Underline);
-            label4.ForeColor = Color.SaddleBrown;
-            label4.Location = new Point(6, 190);
-            label4.Name = "label4";
-            label4.Size = new Size(54, 19);
-            label4.TabIndex = 3;
-            label4.Text = "Mozo:";
-            // 
             // label3
             // 
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 12F, FontStyle.Bold | FontStyle.Underline);
             label3.ForeColor = Color.SaddleBrown;
-            label3.Location = new Point(6, 148);
+            label3.Location = new Point(3, 190);
             label3.Name = "label3";
             label3.Size = new Size(76, 19);
             label3.TabIndex = 2;
@@ -204,6 +190,8 @@
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "FormVerPedidos";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormVerPedidos";
@@ -230,7 +218,6 @@
         public ListBox listBox1;
         public Label label2;
         public Label label5;
-        public Label label4;
         public Label label3;
     }
 }
