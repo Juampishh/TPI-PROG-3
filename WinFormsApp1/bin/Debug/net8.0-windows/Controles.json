@@ -1,35 +1,53 @@
 [
   {
-    "Tipo": "Mesa_para_4",
-    "X": 497,
-    "Y": 249,
-    "Alto": 0,
-    "Ancho": 0,
-    "Color": "Libre",
-    "Numero": 1,
-    "Monto": 0,
-    "Pedidos": []
-  },
-  {
     "Tipo": "Pared",
-    "X": 765,
-    "Y": 83,
-    "Alto": 63,
-    "Ancho": 373,
-    "Color": "ff0000a0",
+    "X": 262,
+    "Y": 172,
+    "Alto": 36,
+    "Ancho": 241,
+    "Color": "Black",
     "Numero": 0,
     "Monto": 0,
     "Pedidos": null
   },
   {
-    "Tipo": "Mesa_para_4",
-    "X": 934,
-    "Y": 291,
+    "Tipo": "Pared",
+    "X": 1025,
+    "Y": 302,
+    "Alto": 100,
+    "Ancho": 30,
+    "Color": "Black",
+    "Numero": 0,
+    "Monto": 0,
+    "Pedidos": null
+  },
+  {
+    "Tipo": "Mesa_para_6",
+    "X": 791,
+    "Y": 313,
     "Alto": 0,
     "Ancho": 0,
-    "Color": "Reservado",
-    "Numero": 89,
+    "Color": "Ocupado",
+    "Numero": 23,
+    "Monto": 15.99,
+    "Pedidos": [
+      {
+        "Producto": "Pollo a la parrilla",
+        "Cantidad": 1,
+        "PrecioUnitario": 15.99,
+        "Categoria": "Platos principales"
+      }
+    ]
+  },
+  {
+    "Tipo": "Ba\u00F1o",
+    "X": 777,
+    "Y": 59,
+    "Alto": 150,
+    "Ancho": 150,
+    "Color": null,
+    "Numero": 0,
     "Monto": 0,
-    "Pedidos": []
+    "Pedidos": null
   }
 ]
