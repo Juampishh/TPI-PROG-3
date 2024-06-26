@@ -150,6 +150,7 @@ namespace WinFormsApp1.Mesas
             {
                 pedidos = formPedidos.pedidoActual;
                 montoFinal = formPedidos.montoTotal;
+                CambiarColorMesa("Ocupado");
             }
         }
 
@@ -175,12 +176,17 @@ namespace WinFormsApp1.Mesas
             }
             formVerPedido.label2.Text = $"${montoFinal:F2}";
             formVerPedido.label3.Text += $"{mesaNumber}";
-            //formVerPedido.label4.Text += $"{Mozo.nombre}";
             formVerPedido.label5.Text += $" {DateTime.Now.ToString("dd/MM/yy")}";
 
             DialogResult dialogResult = formVerPedido.ShowDialog();
             if (dialogResult == DialogResult.Cancel)
             {
+                montoFinal = 0;
+                pedidos.Clear();
+            }
+            else if(dialogResult == DialogResult.Yes) 
+            {
+                CambiarColorMesa("Libre");
                 montoFinal = 0;
                 pedidos.Clear();
             }

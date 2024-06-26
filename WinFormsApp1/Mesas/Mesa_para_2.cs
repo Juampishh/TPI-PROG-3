@@ -144,6 +144,7 @@ namespace WinFormsApp1.Mesas
             {
                 pedidos = formPedidos.pedidoActual;
                 montoFinal = formPedidos.montoTotal;
+                CambiarColorMesa("Ocupado");
             }
         }
 
@@ -151,15 +152,17 @@ namespace WinFormsApp1.Mesas
 
         public void verPedidos(object sender, EventArgs e)
         {
-            
+
             FormVerPedidos formVerPedido = new FormVerPedidos();
-            
+
             formVerPedido.listBox1.Items.Clear();
-            foreach (Pedidos p in pedidos) { 
-                if (pedidos.Count >0)
+            foreach (Pedidos p in pedidos)
+            {
+                if (pedidos.Count > 0)
                 {
-                    formVerPedido.listBox1.Items.Add($"{p.Producto} x{p.Cantidad} - ${p.PrecioUnitario * p.Cantidad}");   
-                }else
+                    formVerPedido.listBox1.Items.Add($"{p.Producto} x{p.Cantidad} - ${p.PrecioUnitario * p.Cantidad}");
+                }
+                else
                 {
                     formVerPedido.listBox1.Text = "";
                     break;
@@ -167,11 +170,17 @@ namespace WinFormsApp1.Mesas
             }
             formVerPedido.label2.Text = $"${montoFinal:F2}";
             formVerPedido.label3.Text += $"{mesaNumber}";
-            //formVerPedido.label4.Text += $"{Mozo.nombre}";
             formVerPedido.label5.Text += $" {DateTime.Now.ToString("dd/MM/yy")}";
-            
+
             DialogResult dialogResult = formVerPedido.ShowDialog();
-            if (dialogResult == DialogResult.Cancel) {
+            if (dialogResult == DialogResult.Cancel)
+            {
+                montoFinal = 0;
+                pedidos.Clear();
+            }
+            else if (dialogResult == DialogResult.Yes)
+            {
+                CambiarColorMesa("Libre");
                 montoFinal = 0;
                 pedidos.Clear();
             }

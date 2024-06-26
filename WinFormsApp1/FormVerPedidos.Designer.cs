@@ -40,6 +40,7 @@
             label1 = new Label();
             panel4 = new Panel();
             listBox1 = new ListBox();
+            btPagar = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -128,6 +129,7 @@
             // 
             // panel3
             // 
+            panel3.Controls.Add(btPagar);
             panel3.Controls.Add(label2);
             panel3.Controls.Add(label1);
             panel3.Dock = DockStyle.Bottom;
@@ -180,6 +182,20 @@
             listBox1.Size = new Size(600, 313);
             listBox1.TabIndex = 0;
             // 
+            // btPagar
+            // 
+            btPagar.BackColor = Color.ForestGreen;
+            btPagar.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            btPagar.ForeColor = Color.White;
+            btPagar.Location = new Point(388, 12);
+            btPagar.Margin = new Padding(3, 2, 3, 2);
+            btPagar.Name = "btPagar";
+            btPagar.Size = new Size(192, 38);
+            btPagar.TabIndex = 5;
+            btPagar.Text = "Pagar";
+            btPagar.UseVisualStyleBackColor = false;
+            btPagar.Click += btPagar_Click;
+            // 
             // FormVerPedidos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -219,5 +235,6 @@
         public Label label2;
         public Label label5;
         public Label label3;
+        private Button btPagar;
     }
 }

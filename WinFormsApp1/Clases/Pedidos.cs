@@ -10,6 +10,7 @@ namespace WinFormsApp1.Clases
         public int Cantidad { get; set; }
         public decimal PrecioUnitario { get; set; }
         public string Categoria { get; set; }
+        public bool Pagado {  get; set; }
 
         public Pedidos(string producto, int cantidad, decimal precioUnitario, string categoria)
         {

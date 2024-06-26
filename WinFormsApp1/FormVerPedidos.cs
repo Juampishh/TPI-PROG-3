@@ -29,5 +29,10 @@ namespace WinFormsApp1
             listBox1.Items.Clear();
             label2.Text = $"$0.00";
         }
+
+        private void btPagar_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.Yes;
+        }
     }
 }
