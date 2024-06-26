@@ -32,28 +32,30 @@
             btAceptar = new Button();
             btCancelar = new Button();
             tbNombre = new TextBox();
-            label1 = new Label();
             SuspendLayout();
             // 
             // lblCrearMozo
             // 
             lblCrearMozo.Anchor = AnchorStyles.None;
             lblCrearMozo.AutoSize = true;
-            lblCrearMozo.Font = new Font("Century Gothic", 24F, FontStyle.Bold | FontStyle.Underline);
-            lblCrearMozo.ForeColor = Color.SaddleBrown;
-            lblCrearMozo.Location = new Point(12, 22);
+            lblCrearMozo.Font = new Font("Century Gothic", 22.2F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
+            lblCrearMozo.ForeColor = Color.Snow;
+            lblCrearMozo.Location = new Point(37, 57);
             lblCrearMozo.Name = "lblCrearMozo";
-            lblCrearMozo.Size = new Size(205, 38);
+            lblCrearMozo.Size = new Size(238, 44);
             lblCrearMozo.TabIndex = 2;
             lblCrearMozo.Text = "Crear Mozo:";
             // 
             // btAceptar
             // 
-            btAceptar.BackColor = Color.LightSalmon;
+            btAceptar.BackColor = Color.DimGray;
             btAceptar.FlatStyle = FlatStyle.Popup;
-            btAceptar.Location = new Point(282, 200);
+            btAceptar.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btAceptar.ForeColor = Color.Snow;
+            btAceptar.Location = new Point(304, 222);
+            btAceptar.Margin = new Padding(3, 4, 3, 4);
             btAceptar.Name = "btAceptar";
-            btAceptar.Size = new Size(97, 23);
+            btAceptar.Size = new Size(111, 31);
             btAceptar.TabIndex = 3;
             btAceptar.Text = "Crear Mozo";
             btAceptar.UseVisualStyleBackColor = false;
@@ -61,11 +63,14 @@
             // 
             // btCancelar
             // 
-            btCancelar.BackColor = Color.LightSalmon;
+            btCancelar.BackColor = Color.DimGray;
             btCancelar.FlatStyle = FlatStyle.Popup;
-            btCancelar.Location = new Point(397, 200);
+            btCancelar.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btCancelar.ForeColor = Color.Snow;
+            btCancelar.Location = new Point(435, 222);
+            btCancelar.Margin = new Padding(3, 4, 3, 4);
             btCancelar.Name = "btCancelar";
-            btCancelar.Size = new Size(97, 23);
+            btCancelar.Size = new Size(111, 31);
             btCancelar.TabIndex = 4;
             btCancelar.Text = "Cancelar";
             btCancelar.UseVisualStyleBackColor = false;
@@ -73,41 +78,33 @@
             // 
             // tbNombre
             // 
-            tbNombre.Location = new Point(220, 122);
+            tbNombre.Location = new Point(37, 133);
+            tbNombre.Margin = new Padding(3, 4, 3, 4);
             tbNombre.Name = "tbNombre";
-            tbNombre.Size = new Size(262, 23);
+            tbNombre.Size = new Size(509, 27);
             tbNombre.TabIndex = 5;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Calibri", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Sienna;
-            label1.Location = new Point(12, 122);
-            label1.Name = "label1";
-            label1.Size = new Size(202, 19);
-            label1.TabIndex = 6;
-            label1.Text = "Ingrese el nombre del mozo:";
             // 
             // FormAgregarMozo
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.PeachPuff;
-            ClientSize = new Size(518, 238);
-            Controls.Add(label1);
+            BackColor = Color.Brown;
+            ClientSize = new Size(590, 307);
             Controls.Add(tbNombre);
             Controls.Add(btCancelar);
             Controls.Add(btAceptar);
             Controls.Add(lblCrearMozo);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
-            MaximumSize = new Size(534, 277);
+            MaximumSize = new Size(608, 354);
             MinimizeBox = false;
-            MinimumSize = new Size(534, 277);
+            MinimumSize = new Size(608, 354);
             Name = "FormAgregarMozo";
+            Opacity = 0.9D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormAgregarMozo";
+            Load += FormAgregarMozo_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -117,7 +114,6 @@
         private Label lblCrearMozo;
         private Button btAceptar;
         private Button btCancelar;
-        private Label label1;
         public TextBox tbNombre;
     }
 }
