@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsApp1.Clases;
 using WinFormsApp1.Mesas;
-
+using System.Xml.Serialization;
+using System.IO;
 namespace WinFormsApp1
 {
     public partial class PrevisualizacionForm : Form
@@ -19,15 +20,36 @@ namespace WinFormsApp1
         public PrevisualizacionForm(ref List<ControlState> estadoControles)
         {
             InitializeComponent();
-
             this.estadoControles = estadoControles; // Recibe los controles de la lista
             CargarControles();
-            mozos = new List<Mozo>();
-            RefrescarListMozos();
 
+            CargarMozos(); // Cargar mozos desde el archivo
+            RefrescarListMozos();
+        }
+        public void GuardarMozos()
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Mozo>));
+            using (StreamWriter writer = new StreamWriter("mozos.xml"))
+            {
+                serializer.Serialize(writer, mozos);
+            }
+        }
+        public void CargarMozos()
+        {
+            if (File.Exists("mozos.xml"))
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Mozo>));
+                using (StreamReader reader = new StreamReader("mozos.xml"))
+                {
+                    mozos = (List<Mozo>)serializer.Deserialize(reader);
+                }
+            }
+            else
+            {
+                mozos = new List<Mozo>();
+            }
         }
 
-       
         public void ActualizarControles(List<ControlState> nuevosControles)
         {
             estadoControles = new List<ControlState>(nuevosControles);
@@ -170,7 +192,7 @@ namespace WinFormsApp1
         //EVENTO PARA CONTROLAR EL CERRADO DEL FORMULARIO
         private void PrevisualizacionForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            GuardarMozos(); // Guardar mozos en el archivo
             this.Hide();
         }
 
