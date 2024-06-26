@@ -187,13 +187,7 @@ namespace WinFormsApp1.Mesas
 
         }
         //-----------------------------------------------------------------------------------
-        public void SeleccionarMozo(object sender, EventArgs e) 
-        {
-
-
-
-
-        }
+        
         //-----------------------------------------------------------------------------------
         public void ModoEdicion()
         {

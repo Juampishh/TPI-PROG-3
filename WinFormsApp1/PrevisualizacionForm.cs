@@ -27,29 +27,7 @@ namespace WinFormsApp1
 
         }
 
-        private void agregarMozo_Click(object sender, EventArgs e)
-        {
-            AgregarMozo();
-        }
-        private void AgregarMozo()
-        {
-            FormAgregarMozo formAgregarMozo = new FormAgregarMozo();
-            DialogResult dialogResult = formAgregarMozo.ShowDialog();
-
-            if (dialogResult == DialogResult.OK)
-            {
-                mozos.Add(new Mozo(formAgregarMozo.tbNombre.Text));
-                RefrescarListMozos();
-            }
-
-
-        }
-        private void RefrescarListMozos()
-        {
-            listMozos.DataSource = null;
-            listMozos.DataSource = mozos;
-
-        }
+       
         public void ActualizarControles(List<ControlState> nuevosControles)
         {
             estadoControles = new List<ControlState>(nuevosControles);
@@ -183,18 +161,51 @@ namespace WinFormsApp1
             ((Menuop)this.Owner).ActualizarEstadoControles(estadoControles);
         }
 
+        //EVENTO PARA VOLVER AL MENU DE OPCIONES
         private void VolverButtom_Click(object sender, EventArgs e)
         {
             GuardarControles();
             this.Hide();
         }
-
+        //EVENTO PARA CONTROLAR EL CERRADO DEL FORMULARIO
         private void PrevisualizacionForm_FormClosing(object sender, FormClosingEventArgs e)
         {
 
             this.Hide();
         }
 
+        //--------------------------------------------------------------------------------------
+        //MOZOS
+        //EVENTO DEL BUTTON AGREGAR MOZO
+        private void agregarMozo_Click(object sender, EventArgs e)
+        {
+            AgregarMozo();
+        }
+
+        //METODO DE AGREGAR MOZO
+        private void AgregarMozo()
+        {
+            FormAgregarMozo formAgregarMozo = new FormAgregarMozo();
+            DialogResult dialogResult = formAgregarMozo.ShowDialog();
+
+            if (dialogResult == DialogResult.OK)
+            {
+                mozos.Add(new Mozo(formAgregarMozo.tbNombre.Text));
+                RefrescarListMozos();
+            }
+
+
+        }
+
+        //METODO ACTUALIZAR LISTA DE MOZOS
+        private void RefrescarListMozos()
+        {
+            listMozos.DataSource = null;
+            listMozos.DataSource = mozos;
+
+        }
+
+        //EVENTO DEL BOTON DE ASIGNAR MOZO
         private void btAsignarMozo_Click(object sender, EventArgs e)
         {
             if (mozos.Count > 0)
@@ -214,21 +225,36 @@ namespace WinFormsApp1
             }
         }
 
+        //EVENTO DEL BUTTON DE ELIMINAR MOZO
         private void btEliminarMozo_Click(object sender, EventArgs e)
         {
-            if (listMozos.SelectedItems != null)
+            try
             {
+                if (listMozos.SelectedItem == null)
+                {
+                    MessageBox.Show("ERROR, primero seleccione un mozo");
+                    return;
+                }
+
                 Mozo mozoAux = (Mozo)listMozos.SelectedItem;
 
-                foreach (Mozo mozo in mozos)
+                foreach (Mozo mozo in mozos.ToList()) // Convertir a lista temporal para evitar modificación durante la iteración
                 {
                     if (mozo.Nombre == mozoAux.Nombre)
                     {
                         mozos.Remove(mozo);
                         RefrescarListMozos();
+                        MessageBox.Show("Mozo eliminado correctamente");
                         return;
                     }
                 }
+
+                // En caso de que no se encuentre el mozo, aunque esto no debería suceder
+                MessageBox.Show("ERROR, el mozo no fue encontrado en la lista");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Se produjo un error: {ex.Message}");
             }
         }
     }
