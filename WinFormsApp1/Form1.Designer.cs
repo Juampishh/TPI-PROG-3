@@ -165,7 +165,6 @@
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
-           
             // 
             // VolverButtom
             // 
@@ -197,6 +196,7 @@
             // 
             // panelPlano
             // 
+            panelPlano.AutoScroll = true;
             panelPlano.BackColor = Color.Snow;
             panelPlano.BorderStyle = BorderStyle.FixedSingle;
             panelPlano.Dock = DockStyle.Fill;

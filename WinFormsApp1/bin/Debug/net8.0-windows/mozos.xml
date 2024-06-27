@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfMozo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfMozo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Mozo>
+    <Nombre>Gonzalo Villacorta</Nombre>
+    <mesas />
+  </Mozo>
+  <Mozo>
+    <Nombre>Ale Acosta</Nombre>
+    <mesas />
+  </Mozo>
+</ArrayOfMozo>

@@ -136,6 +136,8 @@
             // 
             // panelPlano
             // 
+            panelPlano.AutoScroll = true;
+            panelPlano.AutoSize = true;
             panelPlano.BackColor = Color.WhiteSmoke;
             panelPlano.BorderStyle = BorderStyle.FixedSingle;
             panelPlano.Dock = DockStyle.Fill;
@@ -195,6 +197,7 @@
             panel4.ResumeLayout(false);
             panel5.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
