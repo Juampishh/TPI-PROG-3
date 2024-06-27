@@ -69,6 +69,7 @@ namespace WinFormsApp1
                     control.Width = estado.Ancho;
                     control.Height = estado.Alto;
                     control.BackColor = Color.FromArgb(estado.ColorFondoArgb);
+                    control.Text = estado.Texto;
 
 
                 }

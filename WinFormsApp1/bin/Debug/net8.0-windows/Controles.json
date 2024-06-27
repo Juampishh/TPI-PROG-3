@@ -8,6 +8,7 @@
     "Color": "Libre",
     "Numero": 1,
     "ColorFondoArgb": 0,
+    "Texto": null,
     "Monto": 0,
     "Pedidos": []
   },
@@ -20,6 +21,7 @@
     "Color": "Libre",
     "Numero": 1,
     "ColorFondoArgb": 0,
+    "Texto": null,
     "Monto": 0,
     "Pedidos": []
   },
@@ -32,6 +34,33 @@
     "Color": "Libre",
     "Numero": 1,
     "ColorFondoArgb": 0,
+    "Texto": null,
+    "Monto": 0,
+    "Pedidos": []
+  },
+  {
+    "Tipo": "Pared",
+    "X": 1224,
+    "Y": 25,
+    "Alto": 127,
+    "Ancho": 341,
+    "Color": null,
+    "Numero": 0,
+    "ColorFondoArgb": -4144960,
+    "Texto": "cocina",
+    "Monto": 0,
+    "Pedidos": []
+  },
+  {
+    "Tipo": "Pared",
+    "X": 582,
+    "Y": 308,
+    "Alto": 31,
+    "Ancho": 404,
+    "Color": null,
+    "Numero": 0,
+    "ColorFondoArgb": -16777216,
+    "Texto": "",
     "Monto": 0,
     "Pedidos": []
   }

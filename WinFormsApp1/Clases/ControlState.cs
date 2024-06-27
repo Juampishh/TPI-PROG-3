@@ -17,10 +17,9 @@ namespace WinFormsApp1.Clases
         public string Color { get; set; }
         public int Numero { get; set; }
         public int ColorFondoArgb { get; set; }
-
+        public string Texto {  get; set; }
         public decimal Monto { get; set; }
         public List<Pedidos> Pedidos { get; set; } = new List<Pedidos>();
-
         public ControlState() { }
 
         public static ControlState SerializarMesa2(Mesa_para_2 mesa2)
@@ -81,6 +80,7 @@ namespace WinFormsApp1.Clases
             estado.Alto = pared.Height;
             estado.Ancho = pared.Width;
             estado.ColorFondoArgb = pared.BackColor.ToArgb();
+            estado.Texto = pared.Text;
 
             return estado;
         }

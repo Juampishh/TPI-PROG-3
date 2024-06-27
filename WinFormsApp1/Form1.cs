@@ -12,7 +12,7 @@ namespace WinFormsApp1
         private bool isDragging = false;
         private Point startPoint = new Point(0, 0);
         private List<ControlState> estadoControles;
-        private bool guardado = false;
+       
         private string archivo;
 
         public Form1(ref List<ControlState> estadoControles, string archivo)
@@ -129,6 +129,7 @@ namespace WinFormsApp1
                     control.Width = estado.Ancho;
                     control.Height = estado.Alto;
                     control.BackColor = Color.FromArgb(estado.ColorFondoArgb);
+                    control.Text = estado.Texto;
 
 
                 }
@@ -242,23 +243,9 @@ namespace WinFormsApp1
         //Evento que permite volver en la aplicacion
         private void VolverButtom_Click(object sender, EventArgs e)
         {
-            if (!guardado)
-            {
-                DialogResult result = MessageBox.Show("Restaurante no guardado, ¿realmente desea salir?", "Confirmación",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-                if (result == DialogResult.Yes)
-                {
-                    this.Hide();// Permite cerrar el formulario
-                    
-                }
-
-            }
-            else
-            {
-                this.Hide();
-            }
-                
+           
+            this.Hide();
+            
         }
 
 
@@ -327,22 +314,7 @@ namespace WinFormsApp1
 
         private void Form1_FormClosing_1(object sender, FormClosingEventArgs e)
         {
-            if (!guardado)
-            {
-                DialogResult result = MessageBox.Show("Restaurante no guardado, ¿realmente desea salir?", "Confirmación",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-                if (result == DialogResult.Yes)
-                {
-                    this.Hide();// Permite cerrar el formulario
-
-                }
-                else
-                {
-                    e.Cancel = true;
-                }
-
-            }
+            this.Hide();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
