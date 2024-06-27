@@ -1,19 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfMozo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Mozo>
-    <Nombre>adsdas</Nombre>
-    <mesas>
-      <int>1</int>
-      <int>4</int>
-      <int>5</int>
-    </mesas>
-  </Mozo>
-  <Mozo>
-    <Nombre>fsdfsdf</Nombre>
-    <mesas>
-      <int>6</int>
-      <int>3</int>
-      <int>2</int>
-    </mesas>
-  </Mozo>
-</ArrayOfMozo>
+<ArrayOfMozo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
