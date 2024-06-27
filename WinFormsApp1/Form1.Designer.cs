@@ -35,16 +35,16 @@
             btnBaño = new Button();
             btnAddPared = new Button();
             agregarMesaButton = new Button();
+            pictureBox2 = new PictureBox();
             panel2 = new Panel();
             btnGuardar = new Button();
             VolverButtom = new Button();
             btnSalir = new Button();
             panelPlano = new Panel();
-            pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
-            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -60,6 +60,7 @@
             // 
             // tableLayoutPanel1
             // 
+            tableLayoutPanel1.BackColor = Color.SlateGray;
             tableLayoutPanel1.ColumnCount = 4;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
@@ -129,9 +130,21 @@
             agregarMesaButton.Text = "Agregar Mesa";
             agregarMesaButton.UseVisualStyleBackColor = true;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.SlateGray;
+            pictureBox2.Dock = DockStyle.Right;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(836, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(206, 115);
+            pictureBox2.TabIndex = 5;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
             // panel2
             // 
-            panel2.BackColor = Color.DarkGray;
+            panel2.BackColor = Color.SlateGray;
             panel2.Controls.Add(btnGuardar);
             panel2.Controls.Add(VolverButtom);
             panel2.Controls.Add(btnSalir);
@@ -153,7 +166,7 @@
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
-            btnGuardar.MouseClick += btnGuardar_MouseClick;
+           
             // 
             // VolverButtom
             // 
@@ -185,24 +198,13 @@
             // 
             // panelPlano
             // 
-            panelPlano.BackColor = Color.Bisque;
+            panelPlano.BackColor = Color.Snow;
             panelPlano.BorderStyle = BorderStyle.FixedSingle;
             panelPlano.Dock = DockStyle.Fill;
             panelPlano.Location = new Point(0, 0);
             panelPlano.Name = "panelPlano";
             panelPlano.Size = new Size(836, 447);
             panelPlano.TabIndex = 2;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Dock = DockStyle.Right;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(836, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(206, 115);
-            pictureBox2.TabIndex = 5;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
             // 
             // Form1
             // 
@@ -219,8 +221,8 @@
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 

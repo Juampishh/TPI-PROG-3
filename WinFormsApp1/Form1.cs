@@ -323,11 +323,7 @@ namespace WinFormsApp1
             agregrarBarra();
         }
 
-        private void btnGuardar_MouseClick(object sender, MouseEventArgs e)
-        {
-            MessageBox.Show("Restaurante Guardado");
-            guardado = true;
-        }
+       
 
         private void Form1_FormClosing_1(object sender, FormClosingEventArgs e)
         {
