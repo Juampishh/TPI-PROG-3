@@ -140,7 +140,6 @@
             pictureBox2.Size = new Size(206, 115);
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
             // 
             // panel2
             // 

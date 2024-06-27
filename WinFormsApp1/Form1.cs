@@ -30,39 +30,7 @@ namespace WinFormsApp1
             
         }
 
-        private void AgregarMesaButton_Click(object sender, EventArgs e)
-        {
-            ElegirMesa elegirMesa = new ElegirMesa();
-
-            if (elegirMesa.ShowDialog() == DialogResult.OK)
-            {
-                switch (elegirMesa.opcionElegida)
-                {
-                    case 2:
-                        Mesa_para_2 mesa_para_2 = new Mesa_para_2();
-                        mesa_para_2.Location = new Point(10, 10);
-                        panelPlano.Controls.Add(mesa_para_2);
-
-
-                        break;
-                    case 4:
-                        Mesa_para_4 mesa_para_4 = new Mesa_para_4();
-                        mesa_para_4.Location = new Point(10, 10);
-                        panelPlano.Controls.Add(mesa_para_4);
-
-
-                        break;
-                    case 6:
-                        Mesa_para_6 mesa_para_6 = new Mesa_para_6();
-                        mesa_para_6.Location = new Point(10, 10);
-                        panelPlano.Controls.Add(mesa_para_6);
-
-                        break;
-                    default: break;
-                }
-            }
-
-        }
+       
         //METODO PARA ACTUALIZAR CONTROLES
 
         public void ActualizarControles(List<ControlState> nuevosControles)
@@ -201,11 +169,42 @@ namespace WinFormsApp1
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-        }
+        //eventos para agragar los elementos
 
+        private void AgregarMesaButton_Click(object sender, EventArgs e)
+        {
+            ElegirMesa elegirMesa = new ElegirMesa();
+
+            if (elegirMesa.ShowDialog() == DialogResult.OK)
+            {
+                switch (elegirMesa.opcionElegida)
+                {
+                    case 2:
+                        Mesa_para_2 mesa_para_2 = new Mesa_para_2();
+                        mesa_para_2.Location = new Point(10, 10);
+                        panelPlano.Controls.Add(mesa_para_2);
+
+
+                        break;
+                    case 4:
+                        Mesa_para_4 mesa_para_4 = new Mesa_para_4();
+                        mesa_para_4.Location = new Point(10, 10);
+                        panelPlano.Controls.Add(mesa_para_4);
+
+
+                        break;
+                    case 6:
+                        Mesa_para_6 mesa_para_6 = new Mesa_para_6();
+                        mesa_para_6.Location = new Point(10, 10);
+                        panelPlano.Controls.Add(mesa_para_6);
+
+                        break;
+                    default: break;
+                }
+            }
+
+        }
+        
         private void btnAddPared_Click(object sender, EventArgs e)
         {
             agregarPared();
@@ -221,6 +220,35 @@ namespace WinFormsApp1
 
         }
 
+        private void btnBaño_Click(object sender, EventArgs e)
+        {
+            agregrarBaño();
+        }
+
+
+        private void agregrarBaño()
+        {
+            Baño nuevoBaño = new Baño();
+            nuevoBaño.Location = new Point(15, 15);
+            nuevoBaño.MouseDown += new MouseEventHandler(Baño_MouseDown);
+            panelPlano.Controls.Add(nuevoBaño);
+
+
+        }
+
+        private void btnBarra_Click(object sender, EventArgs e)
+        {
+            agregrarBarra();
+        }
+
+        private void agregrarBarra()
+        {
+            Barra nuevaBarra = new Barra();
+            nuevaBarra.Location = new Point(15, 15);
+            nuevaBarra.MouseDown += new MouseEventHandler(Barra_MouseDown);
+            panelPlano.Controls.Add(nuevaBarra);
+
+        }
         // Evento para mostrar el menú contextual al hacer clic derecho
         private void Pared_MouseDown(object sender, MouseEventArgs e)
         {
@@ -233,12 +261,12 @@ namespace WinFormsApp1
                 }
             }
         }
+
         // Evento para salir de la aplicación
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
 
         //Evento que permite volver en la aplicacion
         private void VolverButtom_Click(object sender, EventArgs e)
@@ -248,28 +276,12 @@ namespace WinFormsApp1
             
         }
 
-
-        
-
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             GuardarControles();
             MessageBox.Show("Cambios guardados correctamente.");
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-        private void agregrarBaño()
-        {
-            Baño nuevoBaño = new Baño();
-            nuevoBaño.Location = new Point(15, 15);
-            nuevoBaño.MouseDown += new MouseEventHandler(Baño_MouseDown);
-            panelPlano.Controls.Add(nuevoBaño);
-
-
-        }
+       
         private void Baño_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -281,19 +293,8 @@ namespace WinFormsApp1
                 }
             }
         }
-        private void btnBaño_Click(object sender, EventArgs e)
-        {
-            agregrarBaño();
-        }
-
-        private void agregrarBarra()
-        {
-            Barra nuevaBarra = new Barra();
-            nuevaBarra.Location = new Point(15, 15);
-            nuevaBarra.MouseDown += new MouseEventHandler(Barra_MouseDown);
-            panelPlano.Controls.Add(nuevaBarra);
-
-        }
+        
+        
         private void Barra_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -305,11 +306,7 @@ namespace WinFormsApp1
                 }
             }
         }
-        private void btnBarra_Click(object sender, EventArgs e)
-        {
-            agregrarBarra();
-        }
-
+       
        
 
         private void Form1_FormClosing_1(object sender, FormClosingEventArgs e)
@@ -317,7 +314,12 @@ namespace WinFormsApp1
             this.Hide();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
