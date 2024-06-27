@@ -33,6 +33,7 @@
             panel3 = new Panel();
             pictureBox2 = new PictureBox();
             panel1 = new Panel();
+            btEliminarMozo = new Button();
             agregarMozo = new Button();
             VolverButtom = new Button();
             listMozos = new ListBox();
@@ -40,7 +41,6 @@
             panel4 = new Panel();
             panel5 = new Panel();
             btAsignarMozo = new Button();
-            btEliminarMozo = new Button();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -51,7 +51,7 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.DarkGray;
+            panel2.BackColor = Color.SlateGray;
             panel2.Controls.Add(panel3);
             panel2.Controls.Add(panel1);
             panel2.Dock = DockStyle.Right;
@@ -90,6 +90,16 @@
             panel1.Size = new Size(120, 117);
             panel1.TabIndex = 9;
             // 
+            // btEliminarMozo
+            // 
+            btEliminarMozo.Location = new Point(6, 91);
+            btEliminarMozo.Name = "btEliminarMozo";
+            btEliminarMozo.Size = new Size(111, 23);
+            btEliminarMozo.TabIndex = 9;
+            btEliminarMozo.Text = "Eliminar mozo";
+            btEliminarMozo.UseVisualStyleBackColor = true;
+            btEliminarMozo.Click += btEliminarMozo_Click;
+            // 
             // agregarMozo
             // 
             agregarMozo.Location = new Point(6, 51);
@@ -114,6 +124,7 @@
             // listMozos
             // 
             listMozos.BackColor = Color.MistyRose;
+            listMozos.BorderStyle = BorderStyle.FixedSingle;
             listMozos.Dock = DockStyle.Fill;
             listMozos.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             listMozos.ForeColor = Color.Brown;
@@ -125,7 +136,7 @@
             // 
             // panelPlano
             // 
-            panelPlano.BackColor = Color.Bisque;
+            panelPlano.BackColor = Color.WhiteSmoke;
             panelPlano.BorderStyle = BorderStyle.FixedSingle;
             panelPlano.Dock = DockStyle.Fill;
             panelPlano.Location = new Point(0, 0);
@@ -146,7 +157,7 @@
             // 
             // panel5
             // 
-            panel5.BackColor = Color.MistyRose;
+            panel5.BackColor = Color.SlateGray;
             panel5.Controls.Add(btAsignarMozo);
             panel5.Dock = DockStyle.Right;
             panel5.Location = new Point(736, 0);
@@ -156,7 +167,7 @@
             // 
             // btAsignarMozo
             // 
-            btAsignarMozo.FlatStyle = FlatStyle.Flat;
+            btAsignarMozo.FlatStyle = FlatStyle.System;
             btAsignarMozo.Location = new Point(35, 15);
             btAsignarMozo.Name = "btAsignarMozo";
             btAsignarMozo.Size = new Size(147, 73);
@@ -164,16 +175,6 @@
             btAsignarMozo.Text = "Asignar mesa al mozo";
             btAsignarMozo.UseVisualStyleBackColor = true;
             btAsignarMozo.Click += btAsignarMozo_Click;
-            // 
-            // btEliminarMozo
-            // 
-            btEliminarMozo.Location = new Point(6, 91);
-            btEliminarMozo.Name = "btEliminarMozo";
-            btEliminarMozo.Size = new Size(111, 23);
-            btEliminarMozo.TabIndex = 9;
-            btEliminarMozo.Text = "Eliminar mozo";
-            btEliminarMozo.UseVisualStyleBackColor = true;
-            btEliminarMozo.Click += btEliminarMozo_Click;
             // 
             // PrevisualizacionForm
             // 

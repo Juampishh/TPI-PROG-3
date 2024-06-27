@@ -1,0 +1,38 @@
+[
+  {
+    "Tipo": "Mesa_para_6",
+    "X": 604,
+    "Y": 368,
+    "Alto": 0,
+    "Ancho": 0,
+    "Color": "Libre",
+    "Numero": 1,
+    "ColorFondoArgb": 0,
+    "Monto": 0,
+    "Pedidos": []
+  },
+  {
+    "Tipo": "Mesa_para_6",
+    "X": 743,
+    "Y": 369,
+    "Alto": 0,
+    "Ancho": 0,
+    "Color": "Libre",
+    "Numero": 1,
+    "ColorFondoArgb": 0,
+    "Monto": 0,
+    "Pedidos": []
+  },
+  {
+    "Tipo": "Mesa_para_6",
+    "X": 870,
+    "Y": 371,
+    "Alto": 0,
+    "Ancho": 0,
+    "Color": "Libre",
+    "Numero": 1,
+    "ColorFondoArgb": 0,
+    "Monto": 0,
+    "Pedidos": []
+  }
+]
