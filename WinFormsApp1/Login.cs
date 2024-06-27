@@ -10,7 +10,7 @@ namespace WinFormsApp1
         private const string CredentialsFilePath = "credentials.json";
         private Credentials credentials;
         public Menuop menu;
-        ////////////////
+
         public Login()
         {
             InitializeComponent();
@@ -40,10 +40,7 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
         }
-
-
 
         private void OnPasswordChanged(object sender, EventArgs e)
         {
@@ -90,7 +87,6 @@ namespace WinFormsApp1
         {
             if (Usuario.Text == credentials.Username && Contraseña.Text == credentials.Password)
             {
-                
                 menu.Show();
                 this.Hide();
             }
@@ -100,14 +96,9 @@ namespace WinFormsApp1
             }
         }
 
-
-
         private void Login_Load(object sender, EventArgs e)
         {
-
         }
-
-
 
         private void Usuario_TextChanged(object sender, EventArgs e)
         {
@@ -115,9 +106,17 @@ namespace WinFormsApp1
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            CambioContraseña contraseñanueva= new CambioContraseña();
-            contraseñanueva.ShowDialog();
-            
+            using (CambioContraseña contraseñanueva = new CambioContraseña())
+            {
+                contraseñanueva.OnPasswordChanged += credentials => {
+                    this.credentials = credentials; // Actualizar las credenciales
+                };
+
+                if (contraseñanueva.ShowDialog() == DialogResult.OK)
+                {
+                    // No es necesario volver a cargar las credenciales aquí
+                }
+            }
         }
     }
 

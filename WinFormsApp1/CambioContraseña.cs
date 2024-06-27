@@ -10,15 +10,13 @@ namespace WinFormsApp1
     {
         private const string CredentialsFilePath = "credentials.json";
         private Credentials credentials;
-
+        public event Action<Credentials> OnPasswordChanged; // Evento para notificar cambios de contraseña
 
         public CambioContraseña()
         {
             InitializeComponent();
             ConfigureForm();
             LoadCredentials();
-           
-
         }
 
         private void ConfigureForm()
@@ -26,15 +24,14 @@ namespace WinFormsApp1
             this.Text = "Cambio de Contraseña";
             this.BackColor = Color.FromArgb(240, 240, 240);
 
-            SetupTextBox(txtUsuario, "Usuario");
-            SetupTextBox(txtContraseñaActual, "Contraseña actual");
-            SetupTextBox(txtNuevaContraseña, "Nueva contraseña");
-            SetupTextBox(txtConfirmarContraseña, "Confirmar nueva contraseña");
+            SetupTextBox(txtUsuario, "Usuario", false);
+            SetupTextBox(txtContraseñaActual, "Contraseña actual", true);
+            SetupTextBox(txtNuevaContraseña, "Nueva contraseña", true);
+            SetupTextBox(txtConfirmarContraseña, "Confirmar nueva contraseña", true);
 
             btnCambiarContraseña.Click += BtnCambiarContraseña_Click;
             btnCancelar.Click += BtnCancelar_Click;
         }
-
 
         private void LoadCredentials()
         {
@@ -56,8 +53,6 @@ namespace WinFormsApp1
             File.WriteAllText(CredentialsFilePath, json);
         }
 
-
-
         private void BtnCambiarContraseña_Click(object sender, EventArgs e)
         {
             if (ValidateInputs())
@@ -65,8 +60,9 @@ namespace WinFormsApp1
                 if (ChangePassword())
                 {
                     MessageBox.Show("Contraseña cambiada con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    OnPasswordChanged?.Invoke(credentials); // Notificar el cambio de contraseña
                     DialogResult = DialogResult.OK;
-
+                    return; // Asegurar que no se muestra el mensaje de error después del éxito
                 }
                 else
                 {
@@ -124,61 +120,46 @@ namespace WinFormsApp1
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
-
         }
 
         private void CambioContraseña_Load(object sender, EventArgs e)
         {
-
         }
-        private void SetupTextBox(TextBox textBox, string placeholderText)
+
+        private void SetupTextBox(TextBox textBox, string placeholderText, bool isPassword)
         {
             textBox.Text = placeholderText;
             textBox.ForeColor = Color.Gray;
-            textBox.Enter += TextBox_Enter;
-            textBox.Leave += TextBox_Leave;
+            textBox.Enter += (s, e) => TextBox_Enter(textBox, placeholderText, isPassword);
+            textBox.Leave += (s, e) => TextBox_Leave(textBox, placeholderText, isPassword);
             textBox.Tag = placeholderText;
 
-            if (placeholderText.Contains("Contraseña"))
-            {
-                textBox.UseSystemPasswordChar = false;
-            }
-            if (placeholderText.Contains("Nueva contraseña") || placeholderText.Contains("Confirmar nueva contraseña"))
+            if (isPassword)
             {
                 textBox.UseSystemPasswordChar = false;
             }
         }
 
-        private void TextBox_Enter(object sender, EventArgs e)
+        private void TextBox_Enter(TextBox textBox, string placeholderText, bool isPassword)
         {
-            TextBox textBox = (TextBox)sender;
-            if (textBox.Text == textBox.Tag.ToString())
+            if (textBox.Text == placeholderText)
             {
                 textBox.Text = "";
                 textBox.ForeColor = Color.Black;
-                if (textBox.Tag.ToString().Contains("Contraseña"))
-                {
-                    textBox.UseSystemPasswordChar = true;
-                }
-                if (textBox.Tag.ToString().Contains("Nueva contraseña") || textBox.Tag.ToString().Contains("Confirmar nueva contraseña"))
+                if (isPassword)
                 {
                     textBox.UseSystemPasswordChar = true;
                 }
             }
         }
 
-        private void TextBox_Leave(object sender, EventArgs e)
+        private void TextBox_Leave(TextBox textBox, string placeholderText, bool isPassword)
         {
-            TextBox textBox = (TextBox)sender;
             if (string.IsNullOrWhiteSpace(textBox.Text))
             {
-                textBox.Text = textBox.Tag.ToString();
+                textBox.Text = placeholderText;
                 textBox.ForeColor = Color.Gray;
-                if (textBox.Tag.ToString().Contains("Contraseña"))
-                {
-                    textBox.UseSystemPasswordChar = false;
-                }
-                if (textBox.Tag.ToString().Contains("Nueva contraseña") || textBox.Tag.ToString().Contains("Confirmar nueva contraseña"))
+                if (isPassword)
                 {
                     textBox.UseSystemPasswordChar = false;
                 }
