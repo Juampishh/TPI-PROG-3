@@ -79,7 +79,7 @@ namespace WinFormsApp1
                     mesa.Location = new Point(estado.X, estado.Y);
                     mesa.CambiarColorMesa(estado.Color);
                     mesa.mesaNumber = estado.Numero;
-                    mesa.pedidos = estado.Pedidos;
+                    mesa.pedidos = estado.Pedidos.Select(p => new Pedidos(p.Producto, p.Cantidad, p.PrecioUnitario, p.Categoria) { Pagado = p.Pagado }).ToList();
                     mesa.montoFinal = estado.Monto;
 
                     panelPlano.Controls.Add(mesa);
@@ -92,7 +92,7 @@ namespace WinFormsApp1
                     mesa.Location = new Point(estado.X, estado.Y);
                     mesa.CambiarColorMesa(estado.Color);
                     mesa.mesaNumber = estado.Numero;
-                    mesa.pedidos = estado.Pedidos;
+                    mesa.pedidos = estado.Pedidos.Select(p => new Pedidos(p.Producto, p.Cantidad, p.PrecioUnitario, p.Categoria) { Pagado = p.Pagado }).ToList();
                     mesa.montoFinal = estado.Monto;
 
                     panelPlano.Controls.Add(mesa);
@@ -104,7 +104,7 @@ namespace WinFormsApp1
                     mesa.Location = new Point(estado.X, estado.Y);
                     mesa.CambiarColorMesa(estado.Color);
                     mesa.mesaNumber = estado.Numero;
-                    mesa.pedidos = estado.Pedidos;
+                    mesa.pedidos = estado.Pedidos.Select(p => new Pedidos(p.Producto, p.Cantidad, p.PrecioUnitario, p.Categoria) { Pagado = p.Pagado }).ToList();
                     mesa.montoFinal = estado.Monto;
 
                     panelPlano.Controls.Add(mesa);

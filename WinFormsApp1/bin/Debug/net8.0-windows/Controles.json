@@ -1,8 +1,76 @@
 [
   {
+    "Tipo": "Mesa_para_6",
+    "X": 783,
+    "Y": 424,
+    "Alto": 0,
+    "Ancho": 0,
+    "Color": "Libre",
+    "Numero": 3,
+    "ColorFondoArgb": 0,
+    "Monto": 0,
+    "Pedidos": []
+  },
+  {
+    "Tipo": "Mesa_para_6",
+    "X": 631,
+    "Y": 431,
+    "Alto": 0,
+    "Ancho": 0,
+    "Color": "Ocupado",
+    "Numero": 4,
+    "ColorFondoArgb": 0,
+    "Monto": 12.45,
+    "Pedidos": [
+      {
+        "Producto": "Caf\u00E9",
+        "Cantidad": 5,
+        "PrecioUnitario": 2.49,
+        "Categoria": "Bebidas",
+        "Pagado": false
+      }
+    ]
+  },
+  {
     "Tipo": "Mesa_para_4",
-    "X": 714,
+    "X": 627,
     "Y": 297,
+    "Alto": 0,
+    "Ancho": 0,
+    "Color": "Libre",
+    "Numero": 5,
+    "ColorFondoArgb": 0,
+    "Monto": 0,
+    "Pedidos": []
+  },
+  {
+    "Tipo": "Mesa_para_4",
+    "X": 784,
+    "Y": 313,
+    "Alto": 0,
+    "Ancho": 0,
+    "Color": "Ocupado",
+    "Numero": 6,
+    "ColorFondoArgb": 0,
+    "Monto": 0,
+    "Pedidos": []
+  },
+  {
+    "Tipo": "Mesa_para_2",
+    "X": 790,
+    "Y": 555,
+    "Alto": 0,
+    "Ancho": 0,
+    "Color": "Libre",
+    "Numero": 2,
+    "ColorFondoArgb": 0,
+    "Monto": 0,
+    "Pedidos": []
+  },
+  {
+    "Tipo": "Mesa_para_2",
+    "X": 638,
+    "Y": 553,
     "Alto": 0,
     "Ancho": 0,
     "Color": "Libre",
@@ -13,14 +81,38 @@
   },
   {
     "Tipo": "Pared",
-    "X": 365,
-    "Y": 236,
-    "Alto": 100,
-    "Ancho": 30,
+    "X": 743,
+    "Y": 180,
+    "Alto": 518,
+    "Ancho": 25,
     "Color": null,
     "Numero": 0,
-    "ColorFondoArgb": -256,
+    "ColorFondoArgb": -16777216,
     "Monto": 0,
-    "Pedidos": null
+    "Pedidos": []
+  },
+  {
+    "Tipo": "Pared",
+    "X": 500,
+    "Y": 151,
+    "Alto": 29,
+    "Ancho": 572,
+    "Color": null,
+    "Numero": 0,
+    "ColorFondoArgb": -16776961,
+    "Monto": 0,
+    "Pedidos": []
+  },
+  {
+    "Tipo": "Ba\u00F1o",
+    "X": 507,
+    "Y": 27,
+    "Alto": 116,
+    "Ancho": 128,
+    "Color": null,
+    "Numero": 0,
+    "ColorFondoArgb": 0,
+    "Monto": 0,
+    "Pedidos": []
   }
 ]

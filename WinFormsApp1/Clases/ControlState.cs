@@ -19,7 +19,7 @@ namespace WinFormsApp1.Clases
         public int ColorFondoArgb { get; set; }
 
         public decimal Monto { get; set; }
-        public List<Pedidos> Pedidos { get; set; }
+        public List<Pedidos> Pedidos { get; set; } = new List<Pedidos>();
 
         public ControlState() { }
 
@@ -33,7 +33,9 @@ namespace WinFormsApp1.Clases
             estado.Numero = mesa2.mesaNumber;
             estado.Color = mesa2.color;
             estado.Monto = mesa2.montoFinal;
-            estado.Pedidos = mesa2.pedidos;
+            // Convertimos cada pedido de estado.Pedidos a una nueva instancia de Pedidos,
+            // asegurándonos de copiar todas las propiedades correctamente, incluyendo Pagado.
+            estado.Pedidos = mesa2.pedidos.Select(p => new Pedidos(p.Producto, p.Cantidad, p.PrecioUnitario, p.Categoria) { Pagado = p.Pagado }).ToList();
 
 
             return estado;
@@ -49,7 +51,7 @@ namespace WinFormsApp1.Clases
             estado.Numero = mesa4.mesaNumber;
             estado.Color = mesa4.color;
             estado.Monto = mesa4.montoFinal;
-            estado.Pedidos = mesa4.pedidos;
+            estado.Pedidos = mesa4.pedidos.Select(p => new Pedidos(p.Producto, p.Cantidad, p.PrecioUnitario, p.Categoria) { Pagado = p.Pagado }).ToList();
 
 
             return estado;
@@ -65,7 +67,7 @@ namespace WinFormsApp1.Clases
             estado.Numero = mesa6.mesaNumber;
             estado.Color = mesa6.color;
             estado.Monto = mesa6.montoFinal;
-            estado.Pedidos = mesa6.pedidos;
+            estado.Pedidos = mesa6.pedidos.Select(p => new Pedidos(p.Producto, p.Cantidad, p.PrecioUnitario, p.Categoria) { Pagado = p.Pagado }).ToList();
 
             return estado;
         }
