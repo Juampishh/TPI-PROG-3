@@ -5,7 +5,7 @@
     "Y": 424,
     "Alto": 0,
     "Ancho": 0,
-    "Color": "Libre",
+    "Color": "Ocupado",
     "Numero": 3,
     "ColorFondoArgb": 0,
     "Monto": 0,
@@ -17,19 +17,11 @@
     "Y": 431,
     "Alto": 0,
     "Ancho": 0,
-    "Color": "Ocupado",
+    "Color": "Libre",
     "Numero": 4,
     "ColorFondoArgb": 0,
-    "Monto": 12.45,
-    "Pedidos": [
-      {
-        "Producto": "Caf\u00E9",
-        "Cantidad": 5,
-        "PrecioUnitario": 2.49,
-        "Categoria": "Bebidas",
-        "Pagado": false
-      }
-    ]
+    "Monto": 0,
+    "Pedidos": []
   },
   {
     "Tipo": "Mesa_para_4",
@@ -49,7 +41,7 @@
     "Y": 313,
     "Alto": 0,
     "Ancho": 0,
-    "Color": "Ocupado",
+    "Color": "Libre",
     "Numero": 6,
     "ColorFondoArgb": 0,
     "Monto": 0,

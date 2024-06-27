@@ -104,6 +104,8 @@ namespace WinFormsApp1
                     mesa.Location = new Point(estado.X, estado.Y);
                     mesa.CambiarColorMesa(estado.Color);
                     mesa.mesaNumber = estado.Numero;
+                    // Convertimos cada pedido de estado.Pedidos a una nueva instancia de Pedidos,
+                    // asegurándonos de copiar todas las propiedades correctamente, incluyendo Pagado.
                     mesa.pedidos = estado.Pedidos.Select(p => new Pedidos(p.Producto, p.Cantidad, p.PrecioUnitario, p.Categoria) { Pagado = p.Pagado }).ToList();
                     mesa.montoFinal = estado.Monto;
 
@@ -192,6 +194,7 @@ namespace WinFormsApp1
         //EVENTO PARA CONTROLAR EL CERRADO DEL FORMULARIO
         private void PrevisualizacionForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            GuardarControles();
             GuardarMozos(); // Guardar mozos en el archivo
             this.Hide();
         }

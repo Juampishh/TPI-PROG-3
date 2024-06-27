@@ -33,8 +33,6 @@ namespace WinFormsApp1.Clases
             estado.Numero = mesa2.mesaNumber;
             estado.Color = mesa2.color;
             estado.Monto = mesa2.montoFinal;
-            // Convertimos cada pedido de estado.Pedidos a una nueva instancia de Pedidos,
-            // asegurándonos de copiar todas las propiedades correctamente, incluyendo Pagado.
             estado.Pedidos = mesa2.pedidos.Select(p => new Pedidos(p.Producto, p.Cantidad, p.PrecioUnitario, p.Categoria) { Pagado = p.Pagado }).ToList();
 
 
