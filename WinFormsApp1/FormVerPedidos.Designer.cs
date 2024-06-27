@@ -36,11 +36,11 @@
             panel2 = new Panel();
             lblBienvenida = new Label();
             panel3 = new Panel();
+            btPagar = new Button();
             label2 = new Label();
             label1 = new Label();
             panel4 = new Panel();
             listBox1 = new ListBox();
-            btPagar = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -138,6 +138,20 @@
             panel3.Size = new Size(600, 68);
             panel3.TabIndex = 2;
             // 
+            // btPagar
+            // 
+            btPagar.BackColor = Color.ForestGreen;
+            btPagar.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            btPagar.ForeColor = Color.White;
+            btPagar.Location = new Point(388, 12);
+            btPagar.Margin = new Padding(3, 2, 3, 2);
+            btPagar.Name = "btPagar";
+            btPagar.Size = new Size(192, 38);
+            btPagar.TabIndex = 5;
+            btPagar.Text = "Pagar";
+            btPagar.UseVisualStyleBackColor = false;
+            btPagar.Click += btPagar_Click;
+            // 
             // label2
             // 
             label2.Anchor = AnchorStyles.None;
@@ -182,32 +196,21 @@
             listBox1.Size = new Size(600, 313);
             listBox1.TabIndex = 0;
             // 
-            // btPagar
-            // 
-            btPagar.BackColor = Color.ForestGreen;
-            btPagar.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            btPagar.ForeColor = Color.White;
-            btPagar.Location = new Point(388, 12);
-            btPagar.Margin = new Padding(3, 2, 3, 2);
-            btPagar.Name = "btPagar";
-            btPagar.Size = new Size(192, 38);
-            btPagar.TabIndex = 5;
-            btPagar.Text = "Pagar";
-            btPagar.UseVisualStyleBackColor = false;
-            btPagar.Click += btPagar_Click;
-            // 
             // FormVerPedidos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.NavajoWhite;
             ClientSize = new Size(800, 450);
+            ControlBox = false;
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             MaximizeBox = false;
+            MaximumSize = new Size(816, 489);
             MinimizeBox = false;
+            MinimumSize = new Size(816, 489);
             Name = "FormVerPedidos";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormVerPedidos";
