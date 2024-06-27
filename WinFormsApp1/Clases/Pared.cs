@@ -31,6 +31,7 @@ namespace WinFormsApp1.Clases
             this.ContextMenuStrip = new ContextMenuStrip();
             this.ContextMenuStrip.Items.Add("Cambiar Color").Click += new EventHandler(CambiarColor_Click);
             this.ContextMenuStrip.Items.Add("Eliminar Pared").Click += new EventHandler(EliminarPared_Click);
+            this.ContextMenuStrip.Items.Add("Agregar Texto").Click += new EventHandler(AgregarTexto_Click);
 
         }
 
@@ -91,6 +92,38 @@ namespace WinFormsApp1.Clases
         private void EliminarPared_Click(object sender, EventArgs e)
         {
             this.Parent.Controls.Remove(this);
+        }
+
+        //Evento para agregar Texto
+        private void AgregarTexto_Click(object sender, EventArgs e)
+        {
+            string texto = InputBox("Ingrese el texto para la pared:", "Agregar Texto");
+            if (!string.IsNullOrEmpty(texto))
+            {
+                this.Text = texto;
+            }
+        }
+
+        //Clase para el inputBox, para agregar texto.
+        public static string InputBox(string prompt, string title)
+        {
+            Form inputBox = new Form();
+            inputBox.Width = 400;
+            inputBox.Height = 150;
+            inputBox.Text = title;
+
+            Label label = new Label() { Left = 10, Top = 20, Text = prompt };
+            TextBox textBox = new TextBox() { Left = 10, Top = 50, Width = 360 };
+
+            Button okButton = new Button() { Text = "OK", Left = 300, Width = 70, Top = 80, DialogResult = DialogResult.OK };
+            okButton.Click += (sender, e) => { inputBox.Close(); };
+
+            inputBox.Controls.Add(label);
+            inputBox.Controls.Add(textBox);
+            inputBox.Controls.Add(okButton);
+            inputBox.AcceptButton = okButton;
+
+            return inputBox.ShowDialog() == DialogResult.OK ? textBox.Text : "";
         }
         // Método para dibujar el tamaño de la eventos
         protected override void OnPaint(PaintEventArgs pe)
